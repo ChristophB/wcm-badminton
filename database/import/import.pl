@@ -4,6 +4,12 @@ use strict;
 use Carp;
 use DateTime::Format::Strptime;
 use Data::Dumper;
+use DBI;
+use constant {
+    USER => 'postgres',
+    PASS => 'password',
+    DB   => 'dbi:Pg:dbname=testdb;host=localhost'
+};
 
 $Data::Dumper::Sortkeys = 1;
 
@@ -12,11 +18,10 @@ foreach my $file (<../../crawler/data/*.html>) {
     my $biodata_start = 0;
     my $athlete_start = 0;
     my %data;
-    my ($image, $firstname, $name, $nationality, $gender);
-
+    
     print 'Working on: '. $file. "\n";
-    open (FILE, $file);
-
+    open (FILE, $file) or croak('Error: Could not open $file');
+    
     while (<FILE>) {
 	chomp;
 	$profile_start = 1 if ($_ =~ /profileheader/);
@@ -28,12 +33,13 @@ foreach my $file (<../../crawler/data/*.html>) {
 	    ($data{firstname}, $data{name}) = getName(extractAttribute($_, 'title'));
 	    $data{nationality} = extractAttribute($_, 'alt');
 	}
+	$data{id}     = extractId($_) if ($_ =~ /overview\.aspx/g);
 	$data{image}  = extractAttribute($_, 'src') if ($_ =~ /cphPage_cphPage_imgPlayerImage/);
 	$data{gender} = 
-	    !$gender ? $_ =~ /Men's (singles|doubles):/g ? 'm' 
+	    !$data{gender} ? $_ =~ /Men's (singles|doubles):/g ? 'm' 
 	    : $_ =~ /Women's (singles|doubles):/g ? 'f'
-	    : 'u' 
-	    : 'u'
+	    : undef 
+	    : $data{gender}
 	    ;
 
 	if ($biodata_start && $_ =~ /li/) {
@@ -45,7 +51,45 @@ foreach my $file (<../../crawler/data/*.html>) {
 	    $athlete_start = 0;
 	}
     }
+    $data{gender} = $data{gender} ? $data{gender} : 'u';
     print Dumper(\%data);
+    insertData(\%data);
+}
+
+sub getName {
+    my $string = shift;
+    my @names = split ' ', $string;
+    my $part;
+    my $switch;
+    my @firstname;
+    my @name;
+
+    foreach (@names) {
+	$part = 2 if (!$part && $_ eq uc $_);
+	$part = 1 if (!$part && $_ ne uc $_); 
+	$switch = 1 and $part = 1 if ($part == 2 && $_ ne uc $_ && !$switch);
+	$switch = 1 and $part = 2 if ($part == 1 && $_ eq uc $_ && !$switch);
+	push @name, $_ if (($switch || $_ eq uc $_) && $part == 2);
+	push @firstname, $_ if (($switch || $_ ne uc $_) && $part == 1);
+    }
+    return ((join ' ', @firstname), (join ' ', @name));
+}
+
+sub extractAttribute {
+    my $line      = shift or croak('Error: Parameter $line missing!');
+    my $attribute = shift or croak('Error: Parameter $attribute missing!');
+    my $value     = ($line =~ /$attribute=".*?"/g)[0];
+    
+    $value =~ s/$attribute="|"//g;
+    return $value;
+}
+
+sub extractId {
+    my $line = shift or croak('Error: Parameter $line missing!');
+    my $id = ($line =~ /overview\.aspx.*?"/g)[0];
+    
+    $id =~ s/[^\dA-Z\-]*//g;
+    return $id;
 }
 
 sub extractBiodata {
@@ -110,6 +154,26 @@ sub extractAthlete {
     return addElementsToHash($line, \%hash);
 }
 
+sub insertData {
+    my $data = shift or croak('Error: Parameter %data missing!'); 
+    my $dbh  = DBI->connect(
+	DB, USER, PASS
+	, {AutoCommit => 0, RaiseError => 1, PrintError => 0}
+	) or croak('Error: DB-Connection failed!');
+
+    $dbh->do(
+	'INSERT INTO players'. "\n"
+	. 'VALUES (?, ?, ?, ?, ?)'
+	, undef
+	, $data->{id}
+	, $data->{firstname}
+	, $data->{name}
+	, $data->{birthdate}
+	, $data->{gender}
+	) or $dbh->errstr;
+    $dbh->commit;
+}
+
 sub addElementsToHash {
     my $line = shift or croak('Error: Parameter $line missing!');
     my $hash = shift or croak('Error: Parameter $hash missing!');
@@ -118,43 +182,6 @@ sub addElementsToHash {
 	$hash->{$key} = extractElement($line, $hash->{$key});
     }
     return %$hash;
-}
-
-sub extractAttribute {
-    my $line      = shift or croak('Error: Parameter $line missing!');
-    my $attribute = shift or croak('Error: Parameter $attribute missing!');
-    my $value     = ($line =~ /$attribute=".*?"/g)[0];
-    
-    $value =~ s/$attribute="|"//g;
-    return $value;
-}
-
-sub getName {
-    my $string = shift;
-    my @names = split ' ', $string;
-    my $part;
-    my $switch;
-    my @firstname;
-    my @name;
-
-    foreach (@names) {
-	$part = 2 if (!$part && $_ eq uc $_);
-	$part = 1 if (!$part && $_ ne uc $_); 
-	$switch = 1 and $part = 1 if ($part == 2 && $_ ne uc $_ && !$switch);
-	$switch = 1 and $part = 2 if ($part == 1 && $_ eq uc $_ && !$switch);
-	push @name, $_ if (($switch || $_ eq uc $_) && $part == 2);
-	push @firstname, $_ if (($switch || $_ ne uc $_) && $part == 1);
-    }
-    return ((join ' ', @firstname), (join ' ', @name));
-}
-
-sub extractElement {
-    my $line  = shift or croak('Error: Parameter $line missing!');
-    my $id    = shift or croak('Error: Parameter $id missing!');
-    my $value = ($line =~ /id="$id">.*?</g)[0];
-    
-    $value =~ s/id="$id">|<//g;
-    return $value;
 }
 
 sub extractHand {
@@ -177,6 +204,11 @@ sub getDate {
     return $dt->ymd;
 }
 
-sub insertData {
+sub extractElement {
+    my $line  = shift or croak('Error: Parameter $line missing!');
+    my $id    = shift or croak('Error: Parameter $id missing!');
+    my $value = ($line =~ /id="$id">.*?</g)[0];
     
+    $value =~ s/id="$id">|<//g;
+    return $value;
 }
