@@ -89,7 +89,7 @@ sub extractAttribute {
     my $value     = ($line =~ /$attribute=".*?"/g)[0];
     
     $value =~ s/$attribute="|"//g;
-    return $value;
+    return $value && $value ne '' ? $value : undef;
 }
 
 sub extractId {
@@ -97,7 +97,7 @@ sub extractId {
     my $id   = ($line =~ /overview\.aspx.*?"/g)[0];
     
     $id =~ s/[^\dA-Z\-]*//g;
-    return $id;
+    return $id && $id ne '' ? $id : undef;
 }
 
 sub extractBiodata {
@@ -117,8 +117,8 @@ sub extractBiodata {
 	, education           => 'EducationLevel'
 	, family              => 'FamilyInformation'
 	, style               => 'StyleOfPlay'
-	, otherSports         => 'OtherSports' 
-	, familySporting      => 'FamousSportingRelatives'
+	, other_sports        => 'OtherSports' 
+	, family_sporting     => 'FamousSportingRelatives'
 	, languages           => 'Languages'
 	, debut_year          => 'InternationalDebut' 
 	, debut_event         => 'InternationalDebut'
@@ -136,26 +136,26 @@ sub extractBiodata {
     $hash{cur_residence_city}  = (split ', ', $hash{cur_residence_city})[0];
     $hash{cur_residence_state} = (split ', ', $hash{cur_residence_state})[1];
     $hash{languages}           = [split ', ', $hash{languages}];
-    $hash{debut_year}          = (split ', ', $hash{debut_year})[0];
-    $hash{debut_event}         = (split ', ', $hash{debut_event})[0];
+    $hash{debut_year}          = (split ' ', $hash{debut_year}, 2)[0];
+    $hash{debut_event}         = (split ' ', $hash{debut_event}, 2)[1];
     return %hash;
 }
 
 sub extractAthlete {
     my $line = shift or croak('Erro: Parameter $line missing!');
     my %hash =  (
-	beginSport          => 'BeginSport'
-	, sponsor           => 'EquipmentSponsor'
-	, regime            => 'TrainingRegime'
-	, achivements       => 'MemorableAchievements'
-	, influentialPerson => 'MostInfluentialPerson'
-	, idol              => 'SportingHero'
-	, rituals           => 'SuperstitionsRituals'
-	, philosophy        => 'SportingPhilosophy'
-	, awards            => 'SportingAwards'
-	, ambitions         => 'SportingAmbitions'
-	, startCompetitive  => 'StartPlayingCompetitively'
-	, teammemberSince   => 'MemberNationalTeamSince'
+	beginSport           => 'BeginSport'
+	, sponsor            => 'EquipmentSponsor'
+	, regime             => 'TrainingRegime'
+	, achivements        => 'MemorableAchievements'
+	, influential_person => 'MostInfluentialPerson'
+	, idol               => 'SportingHero'
+	, rituals            => 'SuperstitionsRituals'
+	, philosophy         => 'SportingPhilosophy'
+	, awards             => 'SportingAwards'
+	, ambitions          => 'SportingAmbitions'
+	, start_competitive  => 'StartPlayingCompetitively'
+	, teammember_since   => 'MemberNationalTeamSince'
 	#,previousOlympics
 	);
     
@@ -165,12 +165,68 @@ sub extractAthlete {
 sub insertData {
     my $dbh  = shift or croak('Error: Parameter $dbh missing!');
     my $data = shift or croak('Error: Parameter %data missing!');
+    
+    if ($data->{club}) {
+	$dbh->do(
+	    'INSERT INTO clubs (name)'. "\n"
+	    . 'VALUES (?)'
+	    , undef
+	    , $data->{club}
+	    ) or croak($dbh->errstr);
+	$data->{club} = $dbh->last_insert_id(undef, undef, 'clubs', 'id');
+                                             # , undef, {sequence=>'clubs_id_seq'});
+    }
+    if ($data->{coach}) {
+	$dbh->do(
+	    'INSERT INTO coaches (name)'. "\n"
+	    . 'VALUES (?)'
+	    , undef
+	    , $data->{coach}
+	    ) or croak($dbh->errstr);
+	$data->{coach} = $dbh->last_insert_id(undef, undef, 'coaches', 'id');
+    }
+    if ($data->{nationality}) {
+	$dbh->do(
+	    'INSERT INTO nationalities (nationality)'. "\n"
+	    . 'VALUES (?)'
+	    , undef
+	    , $data->{nationality}
+	    ) or croak($dbh->errstr);
+	$data->{nationality} = $dbh->last_insert_id(undef, undef, 'nationalities', 'id');
+    }
     $dbh->do(
     	'INSERT INTO players'. "\n"
-    	. 'VALUES (?, ?, ?, ?, ?)'
+    	. 'VALUES (?, ?, ?, ?, ?,'. "\n"
+	. '        ?, ?, ?, ?, ?,'. "\n"
+	. '        ?, ?, ?, ?, ?,'. "\n"
+	. '        ?, ?, ?, ?, ?,'. "\n"
+	. '        ?, ?)'
     	, undef
-    	, @{$data}{('id', 'firstname', 'name', 'birthdate', 'gender')}
+    	, @{$data}{(
+	    'id', 'firstname', 'name', 'birthdate', 'gender'
+	    , 'birthplace_city', 'birthplace_state', 'club', 'coach', 'cur_residence_city'
+	    , 'cur_residence_state', 'debut_year', 'facebook', 'hand', 'height'
+	    , 'nationality', 'nickname', 'start_competitive', 'style', 'teammember_since'
+	    , 'twitter', 'website'
+	    )}
     	) or croak($dbh->errstr);
+    if ($data->{languages}) {
+	foreach (@{$data->{languages}}) {
+	    $dbh->do(
+		'INSERT INTO languages (language)'. "\n"
+		. 'VALUES (?)'
+		, undef
+		, $_
+		) or croak($dbh->errstr);
+	    $_ = $dbh->last_insert_id(undef, undef, 'languages', 'id');
+	    $dbh->do(
+		'INSERT INTO player_language'. "\n"
+		. 'VALUES (?, ?)'
+		, undef
+		, $data->{id}, $_
+		) or croak($dbh->errstr);
+	}
+    }
 }
 
 sub addElementsToHash {
@@ -189,8 +245,8 @@ sub extractHand {
     my $value = ($value =~ /readonly">.*?</g)[0];
     
     $value =~ s/readonly">|<//g;
-    return 'right' if ((lc $value) =~ /right/g);
-    return 'left' if ((lc $value) =~ /left/g);
+    return 'right' if ((lc $value) =~ /right/g); 
+    return 'left'  if ((lc $value) =~ /left/g); 
     return 'unknown';
 }
 
@@ -199,8 +255,7 @@ sub getDate {
     my $strp   = DateTime::Format::Strptime->new(pattern => '%d.%m.%Y');
     my $dt     = $strp->parse_datetime($string);
     
-    return undef unless defined $dt;
-    return $dt->ymd;
+    return defined $dt ? $dt->ymd : undef;
 }
 
 sub extractElement {
@@ -209,5 +264,5 @@ sub extractElement {
     my $value = ($line =~ /id="$id">.*?</g)[0];
     
     $value =~ s/id="$id">|<//g;
-    return $value;
+    return $value && $value ne '' ? $value : undef;
 }
