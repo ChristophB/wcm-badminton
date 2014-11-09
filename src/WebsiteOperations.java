@@ -77,7 +77,7 @@ public class WebsiteOperations {
 			//filenameOfLastCrawledWebsite = getCurrentFilename();
 			numberOfCrawledURLs++;
 			FileOutputStream fos = new FileOutputStream(
-					Directories.CRAWLED_URL_PATH + numberOfCrawledURLs);
+					Directories.CRAWLED_URL_PATH + numberOfCrawledURLs + ".html");
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 			fos.close();
 		} catch (IOException e) {
@@ -97,7 +97,7 @@ public class WebsiteOperations {
 		try {
 			in = new BufferedReader(new InputStreamReader(
 					new FileInputStream(Directories.CRAWLED_URL_PATH
-							+ numberOfCrawledURLs), "UTF-8"));
+							+ numberOfCrawledURLs + ".html"), "UTF-8"));
 			while ((line = in.readLine()) != null) {
 				if (start == true && counter == 0)
 					break;
@@ -168,10 +168,10 @@ public class WebsiteOperations {
 		try {
 			in = new BufferedReader(new InputStreamReader(
 					new FileInputStream(Directories.CRAWLED_URL_PATH
-							+ numberOfCrawledURLs), "UTF-8"));
+							+ numberOfCrawledURLs + ".html"), "UTF-8"));
 			Writer out = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream(Directories.CLEANED_HTML_FILE_PATH
-							+ numberOfCrawledURLs), "UTF-8"));
+							+ numberOfCrawledURLs + ".html"), "UTF-8"));
 			while ((line = in.readLine()) != null) {
 				if (start == true && counter == 0)
 					break;
@@ -179,6 +179,7 @@ public class WebsiteOperations {
 				cleanedLine = cleanedLine.trim();
 				if (cleanedLine.isEmpty())
 					continue;
+				//TO DO//
 				if (cleanedLine.contains("")) {
 					start = true;
 					continue;
