@@ -36,11 +36,6 @@ public class Directories {
 	/**
 	 * File path to the crawled urls.
 	 */
-	public static final String CRAWLED_URL_PATH = PROJECT_ROOT_PATH2 + "/files/origin/";
-	
-	/**
-	 * File path to the cleaned html file.
-	 */
-	public static final String CLEANED_HTML_FILE_PATH = PROJECT_ROOT_PATH2 + "/files/cleaned/";
+	public static final String CRAWLED_URL_PATH = PROJECT_ROOT_PATH2 + "/crawler/data/";
 
 }

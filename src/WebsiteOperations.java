@@ -1,13 +1,10 @@
 import io.Directories;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
@@ -158,58 +155,6 @@ public class WebsiteOperations {
 	}
 
 	/**
-	 * creates the cleaned file from the html file.
-	 */
-	public void createCleanedFile() {
-		String line = null;
-		boolean start = false;
-		int counter = 101;
-		BufferedReader in;
-		try {
-			in = new BufferedReader(new InputStreamReader(
-					new FileInputStream(Directories.CRAWLED_URL_PATH
-							+ numberOfCrawledURLs + ".html"), "UTF-8"));
-			Writer out = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(Directories.CLEANED_HTML_FILE_PATH
-							+ numberOfCrawledURLs + ".html"), "UTF-8"));
-			while ((line = in.readLine()) != null) {
-				if (start == true && counter == 0)
-					break;
-				String cleanedLine = Jsoup.parse(String.valueOf(line)).text();
-				cleanedLine = cleanedLine.trim();
-				if (cleanedLine.isEmpty())
-					continue;
-				//TO DO//
-				if (cleanedLine.contains("")) {
-					start = true;
-					continue;
-				}
-				if (start == true) {
-					String whitespaceCharclass = "[" + getWhiteSpaceChars()
-							+ "]";
-					// replace multiple whitespace chars with one
-					String helper = cleanedLine
-							.trim()
-							.replaceAll(
-									whitespaceCharclass + whitespaceCharclass
-											+ "+", " ").trim();
-					if (counter == 1) {
-						out.write(helper);
-					} else {
-						out.write(helper + "\n");
-					}
-					counter--;
-				}
-			}
-			in.close();
-			out.flush();
-			out.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * returns all whitespace characters.
 	 * 
 	 * @return String
@@ -274,5 +219,12 @@ public class WebsiteOperations {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * returns the current website url.
+	 * @return url
+	 */
+	public URL getWebsiteURL() {
+		return websiteURL;
+	}
 }
