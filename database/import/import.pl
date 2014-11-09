@@ -11,6 +11,11 @@ use constant {
     DB   => 'dbi:Pg:dbname=testdb;host=localhost'
 };
 
+my $dbh  = DBI->connect(
+    DB, USER, PASS
+    , {AutoCommit => 0, RaiseError => 1, PrintError => 0}
+    ) or croak('Error: DB-Connection failed!');
+
 $Data::Dumper::Sortkeys = 1;
 
 foreach my $file (<../../crawler/data/*.html>) {    
@@ -49,16 +54,19 @@ foreach my $file (<../../crawler/data/*.html>) {
 	if ($athlete_start && $_ =~ /li/) {
 	    %data = (%data, extractAthlete($_));
 	    $athlete_start = 0;
+	    $profile_start = 0;
 	}
     }
     $data{gender} = $data{gender} ? $data{gender} : 'u';
     print Dumper(\%data);
-    insertData(\%data);
+    insertData($dbh, \%data);
 }
+$dbh->commit;
+$dbh->disconnect;
 
 sub getName {
     my $string = shift;
-    my @names = split ' ', $string;
+    my @names  = split ' ', $string;
     my $part;
     my $switch;
     my @firstname;
@@ -86,7 +94,7 @@ sub extractAttribute {
 
 sub extractId {
     my $line = shift or croak('Error: Parameter $line missing!');
-    my $id = ($line =~ /overview\.aspx.*?"/g)[0];
+    my $id   = ($line =~ /overview\.aspx.*?"/g)[0];
     
     $id =~ s/[^\dA-Z\-]*//g;
     return $id;
@@ -155,23 +163,14 @@ sub extractAthlete {
 }
 
 sub insertData {
-    my $data = shift or croak('Error: Parameter %data missing!'); 
-    my $dbh  = DBI->connect(
-	DB, USER, PASS
-	, {AutoCommit => 0, RaiseError => 1, PrintError => 0}
-	) or croak('Error: DB-Connection failed!');
-
+    my $dbh  = shift or croak('Error: Parameter $dbh missing!');
+    my $data = shift or croak('Error: Parameter %data missing!');
     $dbh->do(
-	'INSERT INTO players'. "\n"
-	. 'VALUES (?, ?, ?, ?, ?)'
-	, undef
-	, $data->{id}
-	, $data->{firstname}
-	, $data->{name}
-	, $data->{birthdate}
-	, $data->{gender}
-	) or $dbh->errstr;
-    $dbh->commit;
+    	'INSERT INTO players'. "\n"
+    	. 'VALUES (?, ?, ?, ?, ?)'
+    	, undef
+    	, @{$data}{('id', 'firstname', 'name', 'birthdate', 'gender')}
+    	) or croak($dbh->errstr);
 }
 
 sub addElementsToHash {
