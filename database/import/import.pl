@@ -5,18 +5,20 @@ use Carp;
 use DateTime::Format::Strptime;
 use Data::Dumper;
 use DBI;
+use File::Basename;
 use constant {
     USER => 'postgres',
     PASS => 'password',
     DB   => 'dbi:Pg:dbname=testdb;host=localhost'
 };
 
-my $dbh  = DBI->connect(
+chdir dirname(__FILE__);
+$Data::Dumper::Sortkeys = 1;
+my $dbh = DBI->connect(
     DB, USER, PASS
     , {AutoCommit => 0, RaiseError => 1, PrintError => 0}
     ) or croak('Error: DB-Connection failed!');
 
-$Data::Dumper::Sortkeys = 1;
 
 foreach my $file (<../../crawler/data/*.html>) {    
     my $profile_start = 0;
