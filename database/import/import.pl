@@ -167,66 +167,34 @@ sub extractAthlete {
 sub insertData {
     my $dbh  = shift or croak('Error: Parameter $dbh missing!');
     my $data = shift or croak('Error: Parameter %data missing!');
+    my $id = getId($dbh, 'players', 'id', $data->{id});
     
-    if ($data->{club}) {
-	$dbh->do(
-	    'INSERT INTO clubs (name)'. "\n"
-	    . 'VALUES (?)'
-	    , undef
-	    , $data->{club}
-	    ) or croak($dbh->errstr);
-	$data->{club} = $dbh->last_insert_id(undef, undef, 'clubs', 'id');
-                                             # , undef, {sequence=>'clubs_id_seq'});
-    }
-    if ($data->{coach}) {
-	$dbh->do(
-	    'INSERT INTO coaches (name)'. "\n"
-	    . 'VALUES (?)'
-	    , undef
-	    , $data->{coach}
-	    ) or croak($dbh->errstr);
-	$data->{coach} = $dbh->last_insert_id(undef, undef, 'coaches', 'id');
-    }
-    if ($data->{nationality}) {
-	$dbh->do(
-	    'INSERT INTO nationalities (nationality)'. "\n"
-	    . 'VALUES (?)'
-	    , undef
-	    , $data->{nationality}
-	    ) or croak($dbh->errstr);
-	$data->{nationality} = $dbh->last_insert_id(undef, undef, 'nationalities', 'id');
-    }
-    $dbh->do(
-    	'INSERT INTO players'. "\n"
-    	. 'VALUES (?, ?, ?, ?, ?,'. "\n"
-	. '        ?, ?, ?, ?, ?,'. "\n"
-	. '        ?, ?, ?, ?, ?,'. "\n"
-	. '        ?, ?, ?, ?, ?,'. "\n"
-	. '        ?, ?)'
-    	, undef
-    	, @{$data}{(
-	    'id', 'firstname', 'name', 'birthdate', 'gender'
-	    , 'birthplace_city', 'birthplace_state', 'club', 'coach', 'cur_residence_city'
-	    , 'cur_residence_state', 'debut_year', 'facebook', 'hand', 'height'
-	    , 'nationality', 'nickname', 'start_competitive', 'style', 'teammember_since'
-	    , 'twitter', 'website'
-	    )}
-    	) or croak($dbh->errstr);
+    return if ($id);
+    $data->{club} = 
+	insertReferencedValue($dbh, 'clubs', 'name', $data->{club})
+	if ($data->{club});
+    $data->{coach} = 
+	insertReferencedValue($dbh, 'coaches', 'name', $data->{coach})
+	if ($data->{coach});
+    $data->{nationality} = 
+	insertReferencedValue($dbh, 'nationalities', 'nationality', $data->{nationality})
+	if ($data->{nationality});
+    insertRow(
+	$dbh
+	, 'players'
+	, undef
+	, [@{$data}{(
+	       'id', 'firstname', 'name', 'birthdate', 'gender', 'birthplace_city'
+	       , 'birthplace_state', 'club', 'coach', 'cur_residence_city'
+	       , 'cur_residence_state', 'debut_year', 'facebook', 'hand', 'height'
+	       , 'nationality', 'nickname', 'start_competitive', 'style'
+	       , 'teammember_since', 'twitter', 'website'
+	    )}]
+	);
     if ($data->{languages}) {
 	foreach (@{$data->{languages}}) {
-	    $dbh->do(
-		'INSERT INTO languages (language)'. "\n"
-		. 'VALUES (?)'
-		, undef
-		, $_
-		) or croak($dbh->errstr);
-	    $_ = $dbh->last_insert_id(undef, undef, 'languages', 'id');
-	    $dbh->do(
-		'INSERT INTO player_language'. "\n"
-		. 'VALUES (?, ?)'
-		, undef
-		, $data->{id}, $_
-		) or croak($dbh->errstr);
+	    $_ = insertReferencedValue($dbh, 'languages', 'language', $_);
+	    insertRow($dbh, 'player_language', undef, [$data->{id}, $_]);
 	}
     }
 }
@@ -267,4 +235,56 @@ sub extractElement {
     
     $value =~ s/id="$id">|<//g;
     return $value && $value ne '' ? $value : undef;
+}
+
+sub getId {
+    my $dbh    = shift or croak('Error: Parameter $dbh missing!');
+    my $table  = shift or croak('Error: Parameter $table missing!');
+    my $column = shift or croak('Error: Parameter $column missing!');
+    my $value  = shift or croak('Error: Parameter $value missing!');
+    my $id     = $dbh->selectrow_array(
+	'SELECT DISTINCT id'. "\n"
+	. 'FROM '. $table. "\n"
+	. 'WHERE '. $column. ' = ?'. "\n"
+	. 'LIMIT 1'
+	, undef
+	, $value
+	);
+    
+    return $id;
+}
+
+sub insertReferencedValue {
+    my $dbh    = shift or croak('Error: Parameter $dbh missing!');
+    my $table  = shift or croak('Error: Parameter $table missing!');
+    my $column = shift or croak('Error: Parameter $column missing!');
+    my $value  = shift or croak('Error: Parameter $value missing!');
+    my $club_id = getId($dbh, $table, $column, $value);
+    return insertRow($dbh, $table, $column, $value)
+	if (!$club_id);
+    return $club_id 
+	if ($club_id);
+}
+sub insertRow {
+    my $dbh    = shift or croak('Error: Parameter $dbh missing!');
+    my $table  = shift or croak('Error: Parameter $table missing!');
+    my $column = shift; 
+    my $value  = shift or croak('Error: Parameter $value missing!');
+    
+    if ($column) {
+	$dbh->do(
+	    'INSERT INTO '. $table. ' ('. $column. ')'. "\n"
+	    . 'VALUES (?)'
+	    , undef
+	    , $value
+	    ) or croak($dbh->errstr);
+	return $dbh->last_insert_id(undef, undef, $table, 'id');
+    } else {
+	$dbh->do(
+	    'INSERT INTO '. $table. "\n"
+	    . 'VALUES ('. ('?, ' x (@$value - 1)). '?)'
+	    , undef
+	    , @{$value}
+	    ) or croak($dbh->errstr);
+    }
 }
