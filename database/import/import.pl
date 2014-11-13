@@ -14,21 +14,30 @@ my $players_counter = 0;
 chdir dirname(__FILE__);
 $Data::Dumper::Sortkeys = 1;
 
-
+FILELOOP:
 foreach my $file (<../../crawler/data/*.html>) {    
     my $profile_start = 0;
     my $biodata_start = 0;
     my $athlete_start = 0;
+    my $body_start    = 0;
+    my $file_name = (split '/', $file)[-1];
     my %data;
     
-    #print 'Working on: '. $file. "\n";
+    next unless ($file_name =~ /^[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*\.html$/g);
+    print 'Working on: '. $file_name. "\n";
     open (FILE, $file) or croak('Error: Could not open $file');
     
     while (<FILE>) {
 	chomp;
+	$body_start    = 1 if ($_ =~ /<body id="bdBase">/g);
 	$profile_start = 1 if ($_ =~ /profileheader/);
 	$biodata_start = 1 if ($_ =~ /Biodata/);
 	$athlete_start = 1 if ($_ =~ /Athlete Profile/);
+	
+	if ($body_start && $_ =~ /<form/g) {
+	    next FILELOOP unless (extractAttribute($_, 'action') =~ /biography/g);
+	    $body_start = 0;
+	}
 	next unless ($profile_start);
 	
 	if ($_ =~ /<h3 title="/) {
@@ -55,8 +64,9 @@ foreach my $file (<../../crawler/data/*.html>) {
 	}
     }
     $data{gender} = $data{gender} ? $data{gender} : 'u';
-    $players_counter++ if (insertData(\%data));
     #print Dumper(\%data);
+    next unless($data{id});
+    $players_counter++ if (insertData(\%data));
 }
 
 finishTransaction();

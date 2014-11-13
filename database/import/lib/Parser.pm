@@ -46,7 +46,7 @@ sub extractBiodata {
 	, coach               => 'Coach' #evtl. unterteilen in vor- und nachname
 	#, majorInjuries
 	);
-
+    
     %hash = addElementsToHash($line, \%hash);
     $hash{hand}                = extractHand($line);
     $hash{birthdate}           = getDate($hash{birthdate});
