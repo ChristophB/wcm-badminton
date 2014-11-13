@@ -1,17 +1,22 @@
-import io.Directories;
-
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
-import java.util.ArrayList;
 
+import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
+
+import parser.ProxyManager;
+import parser.html.sites.HideMyAssHTMLParser;
 
 /**
  * this class can execute different kind of operations on a website.
@@ -29,17 +34,21 @@ public class WebsiteOperations {
 	 * the url of the website will be stored here.
 	 */
 	private URL websiteURL;
+
+	/**
+	 * this is the hide my ass proxy parser.
+	 */
+	private HideMyAssHTMLParser hideMyAss;
 	
 	/**
-	 * the number of pages for the current discipline will be stored here.
+	 * stores the destination of the last successfully downloaded url.
 	 */
-	private int numberOfPagesForDiscipline;
-	
+	private String destinationOfLastFile;
+
 	/**
 	 * default constructor
 	 */
 	public WebsiteOperations() {
-		
 	}
 
 	/**
@@ -66,92 +75,66 @@ public class WebsiteOperations {
 
 	/**
 	 * saves the website in a file.
+	 * 
+	 * @throws IOException
 	 */
-	public void saveWebsiteToHTMLFile() {
-		ReadableByteChannel rbc;
-		try {
-			rbc = Channels.newChannel(websiteURL.openStream());
-			//filenameOfLastCrawledWebsite = getCurrentFilename();
-			numberOfCrawledURLs++;
-			FileOutputStream fos = new FileOutputStream(
-					Directories.CRAWLED_URL_PATH + numberOfCrawledURLs + ".html");
-			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
-			fos.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+	public void saveWebsiteToHTMLFile(String filename) {
+		boolean completed = false;
+		while(completed == false){
+			try {
+				ReadableByteChannel rbc = Channels.newChannel(websiteURL
+						.openStream());
+				FileOutputStream fos = new FileOutputStream(new File(filename));
+				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+				fos.close();
+				completed = true;
+			} catch (IOException e) {
+				System.out.println("Could not download website.");
+			}
 		}
+		numberOfCrawledURLs++;
+		destinationOfLastFile = filename;
 	}
 
 	/**
-	 * this creates a link list of profiles, which need to be crawled.
+	 * saves the website to a html file, using a proxy. if an error occures, the
+	 * next proxy will be taken for loading the content from the url.
 	 */
-	public ArrayList<URL> createLinklistOfProfiles() {
-		ArrayList<URL> linkList = new ArrayList<URL>();
-		String line = null;
-		boolean start = false;
-		int counter = 101;
-		BufferedReader in;
-		try {
-			in = new BufferedReader(new InputStreamReader(
-					new FileInputStream(Directories.CRAWLED_URL_PATH
-							+ numberOfCrawledURLs + ".html"), "UTF-8"));
-			while ((line = in.readLine()) != null) {
-				if (start == true && counter == 0)
-					break;
-				if (line.contains("Rank") && line.contains("Country")
-						&& line.contains("Player")
-						&& line.contains("Member ID")) {
-					start = true;
-					continue;
-				}
-				if (start == true) {
-					String cleanedLine = Jsoup.parse(String.valueOf(line))
-							.text();
-					cleanedLine = cleanedLine.trim();
-					if (cleanedLine.isEmpty())
-						continue;
-					else {
-						if(counter > 1){
-							String startPattern = "<a href=\"../profile/default.aspx?id=";
-							String endPattern = " class=\"icon profile\" title=\"Profile\"";
-							line = line.substring(line.indexOf(startPattern) + "<a href=\"".length(),
-									line.indexOf(endPattern) - 1);
-							line.trim();
-							line = line.replace("../", "http://bwf.tournamentsoftware.com/");
-						}
-						else{
-							//last line is for determing the number of results -> number of loops
-							line = Jsoup.parse(String.valueOf(line)).text();
-							String startPattern = "Page 1 of ";
-							if (line.contains(startPattern)){
-								int index = line.indexOf(startPattern);
-								//this parameter will only set once for each discipline
-								line = line.substring(index + startPattern.length());
-								char[] array = line.toCharArray();
-								String numberAsString = "";
-								for(char c: array){
-									if(Character.isDigit(c)){
-										numberAsString+= c;
-									}
-									else break;
-								}
-								numberOfPagesForDiscipline = Integer.parseInt(numberAsString);
-							}
-						}
-						
-						//last line is no link and should not be added
-						if(counter != 1){
-							linkList.add(new URL(line));
-						}
-						counter--;
-					}
+	public void saveWebsiteToHTMLFile(boolean useProxy, String filename) {
+		if (useProxy == true) {
+			ProxyManager proxyManager = ProxyManager.getInstance();
+			if (hideMyAss == null) {
+				hideMyAss = new HideMyAssHTMLParser();
+				try {
+					proxyManager.setProxyParser(hideMyAss);
+					proxyManager.loadProxies();
+					proxyManager.switchProxy();
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
-			in.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+			boolean completed = false;
+			boolean firstTry = true;
+			while (completed == false) {
+				try {
+					if (firstTry != true) {
+						proxyManager.switchProxy();
+					}
+					String code = hideMyAss.fetch(String.valueOf(websiteURL),
+							proxyManager.getCurrentProxy());
+					FileUtils.writeStringToFile(new File(filename), code);
+					completed = true;
+				} catch (Exception e1) {
+					System.out.println("Could not download website.");
+					firstTry = false;
+					continue;
+				}
+			}
+			numberOfCrawledURLs++;
+			destinationOfLastFile = filename;
+		} else {
+			saveWebsiteToHTMLFile(filename);
 		}
-		return linkList;
 	}
 
 	/**
@@ -189,15 +172,7 @@ public class WebsiteOperations {
 				+ "\\u3000"; // IDEOGRAPHIC SPACE
 		return whitespaceChars;
 	}
-	
-	/**
-	 * returns the number of pages for discipline.
-	 * @return int
-	 */
-	public int getNumberOfPagesForDiscipline() {
-		return numberOfPagesForDiscipline;
-	}
-	
+
 	/**
 	 * sets the url.
 	 * 
@@ -206,25 +181,71 @@ public class WebsiteOperations {
 	public void setWebsiteURL(URL websiteURL) {
 		this.websiteURL = websiteURL;
 	}
-	
+
 	/**
 	 * sets the url after converting the string in an url.
 	 * 
 	 * @param websiteURLAsString
 	 */
-	public void setWebsiteURL(String websiteURLAsString){
+	public void setWebsiteURL(String websiteURLAsString) {
 		try {
 			this.websiteURL = new URL(websiteURLAsString);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * returns the current website url.
+	 * 
 	 * @return url
 	 */
 	public URL getWebsiteURL() {
 		return websiteURL;
+	}
+
+	/**
+	 * returns the current number of successfully crawled urls.
+	 * 
+	 * @return int
+	 */
+	public int getNumberOfCrawledURLs() {
+		return numberOfCrawledURLs;
+	}
+
+	/**
+	 * transfers the html text into plain text.
+	 */
+	public void createCleanedFile(String inputFilename, String outputFilename,
+			boolean removeEmptyLines) {
+		String line = null;
+		try {
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					new FileInputStream(inputFilename), "UTF-8"));
+			Writer out = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(outputFilename), "UTF-8"));
+			while ((line = in.readLine()) != null) {
+
+				String cleanedLine = Jsoup.parse(String.valueOf(line)).text();
+				cleanedLine = cleanedLine.trim();
+				if (removeEmptyLines == true && cleanedLine.equals("")) {
+					continue;
+				}
+				out.write(cleanedLine + "\n");
+			}
+			in.close();
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * returns the destination of the last successfully downloaded url.
+	 * @return String
+	 */
+	public String getDestinationOfLastFile() {
+		return destinationOfLastFile;
 	}
 }
