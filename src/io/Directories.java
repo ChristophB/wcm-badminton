@@ -37,5 +37,30 @@ public class Directories {
 	 * File path to the crawled urls.
 	 */
 	public static final String CRAWLED_URL_PATH = PROJECT_ROOT_PATH2 + "/crawler/data/";
+	
+	/**
+	 * File path to the crawled urls for mens singles.
+	 */
+	public static final String MENS_SINGLES_PROFILES = PROJECT_ROOT_PATH2 + "/crawler/data/mensSingles/";
+	
+	/**
+	 * File path to the crawled urls for womens singles.
+	 */
+	public static final String WOMENS_SINGLES_PROFILES = PROJECT_ROOT_PATH2 + "/crawler/data/womensSingles/";
+	
+	/**
+	 * File path to the crawled urls for mens doubles.
+	 */
+	public static final String MENS_DOUBLES_PROFILES = PROJECT_ROOT_PATH2 + "/crawler/data/mensDoubles/";
+	
+	/**
+	 * File path to the crawled urls for womens doubles.
+	 */
+	public static final String WOMENS_DOUBLES_PROFILES = PROJECT_ROOT_PATH2 + "/crawler/data/womensDoubles/";
+	
+	/**
+	 * File path to the crawled urls for womens doubles.
+	 */
+	public static final String MIXED_DOUBLES_PROFILES = PROJECT_ROOT_PATH2 + "/crawler/data/mixedDoubles/";
 
 }
