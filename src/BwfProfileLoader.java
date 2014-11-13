@@ -285,9 +285,12 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 */
 	public String getFilename() {
 		String urlAsString = String.valueOf(getWebsiteURL());
-		int index = urlAsString.indexOf("id=");
-		String filename = urlAsString.substring(index + "id=".length());
-		filename += ".html";
+		//int index = urlAsString.indexOf("id=");
+		//String filename = urlAsString.substring(index + "id=".length());
+		String[] array  = urlAsString.split("/");
+		String filename = array[array.length - 1]; 
+
+		filename = filename.replaceAll("[\\?\\.=]", "_") + ".html";
 		return filename;
 	}
 	
