@@ -51,8 +51,10 @@ sub insertData {
 	insertRow('player_language', undef, [$data->{id}, $_]);
     }
 
-    insertRow('images', undef, [@{$data}{('id', 'image')}]);
-    insertRow('webresources', undef, [@{$data}{('id', 'facebook', 'twitter', 'website')}]);
+    insertRow('images', undef, [@{$data}{('id', 'image')}])
+	if ($data->{image});
+    insertRow('webresources', undef, [@{$data}{('id', 'facebook', 'twitter', 'website')}])
+	if ($data->{facebook} || $data->{twitter} || $data->{website});
 
     return 1;
 }

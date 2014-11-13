@@ -14,30 +14,30 @@ my $players_counter = 0;
 chdir dirname(__FILE__);
 $Data::Dumper::Sortkeys = 1;
 
-FILELOOP:
-foreach my $file (<../../crawler/data/*.html>) {    
+#FILELOOP:
+foreach my $file (<../../crawler/data/*>) {    
     my $profile_start = 0;
     my $biodata_start = 0;
     my $athlete_start = 0;
-    my $body_start    = 0;
+    #my $body_start    = 0;
     my $file_name = (split '/', $file)[-1];
     my %data;
     
-    next unless ($file_name =~ /^[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*\.html$/g);
-    print 'Working on: '. $file_name. "\n";
+    next unless ($file_name =~ /id=[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*$/g);
+    #print 'Working on: '. $file_name. "\n";
     open (FILE, $file) or croak('Error: Could not open $file');
     
     while (<FILE>) {
 	chomp;
-	$body_start    = 1 if ($_ =~ /<body id="bdBase">/g);
+	#$body_start    = 1 if ($_ =~ /<body id="bdBase">/g);
 	$profile_start = 1 if ($_ =~ /profileheader/);
 	$biodata_start = 1 if ($_ =~ /Biodata/);
 	$athlete_start = 1 if ($_ =~ /Athlete Profile/);
 	
-	if ($body_start && $_ =~ /<form/g) {
-	    next FILELOOP unless (extractAttribute($_, 'action') =~ /biography/g);
-	    $body_start = 0;
-	}
+	# if ($body_start && $_ =~ /<form/g) {
+	#     next FILELOOP unless (extractAttribute($_, 'action') =~ /biography/g);
+	#     $body_start = 0;
+	# }
 	next unless ($profile_start);
 	
 	if ($_ =~ /<h3 title="/) {
@@ -65,7 +65,7 @@ foreach my $file (<../../crawler/data/*.html>) {
     }
     $data{gender} = $data{gender} ? $data{gender} : 'u';
     #print Dumper(\%data);
-    next unless($data{id});
+    #exit;
     $players_counter++ if (insertData(\%data));
 }
 
@@ -93,9 +93,14 @@ sub getName {
 
 sub getDate {
     my $string = shift or return;
-    my $strp   = DateTime::Format::Strptime->new(pattern => '%d.%m.%Y');
-    my $dt     = $strp->parse_datetime($string);
-    
+    my $strp;
+    my $dt;
+
+    $strp = DateTime::Format::Strptime->new(pattern => '%d.%m.%Y')
+	if ($string =~ /\./g);
+    $strp = DateTime::Format::Strptime->new(pattern => '%d/%m/%Y')
+	if ($string =~ /\//g);
+    $dt = $strp->parse_datetime($string);
     return defined $dt ? $dt->ymd : undef;
 }
 
