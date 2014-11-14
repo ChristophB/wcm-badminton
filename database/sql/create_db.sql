@@ -35,7 +35,8 @@ CREATE TABLE styles (
 CREATE TABLE cities (
        id serial PRIMARY KEY
        , name text NOT NULL
-       , state text NOT NULL
+       , state text
+       , UNIQUE (name, state)
 );
 CREATE TABLE players (
        id                      text PRIMARY KEY
@@ -55,21 +56,24 @@ CREATE TABLE players (
        , cur_residence_city_id integer REFERENCES cities(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , debut_year            integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate) 
-       	 		     			        AND EXTRACT(year FROM CURRENT_DATE))
+       , debut_year            text
+       --, debut_year            integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate) 
+       	 		     			        --AND EXTRACT(year FROM CURRENT_DATE))
        , hand                  hand NOT NULL
        , height                double precision CHECK(height BETWEEN 50 AND 250)
        , nationality_id        integer REFERENCES nationalities(id)
        	 		     	       ON DELETE NO ACTION
 				       ON UPDATE CASCADE
        , nickname 	       text
-       , start_competitive     integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate)
-       	 		        			AND EXTRACT(year FROM CURRENT_DATE))
+       , start_competitive     text 
+       --, start_competitive     integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate)
+       	 		        			--AND EXTRACT(year FROM CURRENT_DATE))
        , style_id 	       integer REFERENCES styles(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , teammember_since      integer CHECK(teammember_since BETWEEN EXTRACT(year FROM birthdate)
-       	 		     	     			      AND EXTRACT(year FROM CURRENT_DATE))
+       , teammember_since      text
+       --, teammember_since      integer CHECK(teammember_since BETWEEN EXTRACT(year FROM birthdate)
+       	 		     	     			      --AND EXTRACT(year FROM CURRENT_DATE))
 );
 CREATE TABLE images (
        player_id text REFERENCES players(id)

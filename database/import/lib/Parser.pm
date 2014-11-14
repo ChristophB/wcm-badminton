@@ -11,13 +11,13 @@ sub extractAttribute {
     return $value && $value ne '' ? $value : undef;
 }
 
-sub extractId {
-    my $line = shift or croak('Error: Parameter $line missing!');
-    my $id   = ($line =~ /overview\.aspx.*?"/g)[0];
+# sub extractId {
+#     my $line = shift or croak('Error: Parameter $line missing!');
+#     my $id   = ($line =~ /overview\.aspx.*?"/g)[0];
     
-    $id =~ s/[^\dA-Z\-]*//g;
-    return $id && $id ne '' ? $id : undef;
-}
+#     $id =~ s/[^\dA-Z\-]*//g;
+#     return $id && $id ne '' ? $id : undef;
+# }
 
 sub extractBiodata {
     my $line = shift or croak('Error: Parameter $line missing!');
@@ -55,8 +55,8 @@ sub extractBiodata {
     $hash{cur_residence_city}  = (split ', ', $hash{cur_residence_city})[0];
     $hash{cur_residence_state} = (split ', ', $hash{cur_residence_state})[1];
     $hash{languages}           = [split ', ', $hash{languages}];
-    $hash{debut_year}          = (split ' ', $hash{debut_year}, 2)[0];
-    $hash{debut_event}         = (split ' ', $hash{debut_event}, 2)[1];
+    #$hash{debut_year}          = (split ' ', $hash{debut_year}, 2)[0];
+    #$hash{debut_event}         = (split ' ', $hash{debut_event}, 2)[1];
     return %hash;
 }
 

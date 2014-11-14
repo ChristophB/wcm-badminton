@@ -26,7 +26,7 @@ foreach my $file (<../../crawler/data/*>) {
     next unless ($file_name =~ /id=[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*$/g);
     #print 'Working on: '. $file_name. "\n";
     open (FILE, $file) or croak('Error: Could not open $file');
-    
+    $data{id} = (split '=', $file)[-1];
     while (<FILE>) {
 	chomp;
 	#$body_start    = 1 if ($_ =~ /<body id="bdBase">/g);
@@ -44,11 +44,10 @@ foreach my $file (<../../crawler/data/*>) {
 	    ($data{firstname}, $data{name}) = getName(extractAttribute($_, 'title'));
 	    $data{nationality} = extractAttribute($_, 'alt');
 	}
-	$data{id}     = extractId($_) if ($_ =~ /overview\.aspx/g);
 	$data{image}  = extractAttribute($_, 'src') if ($_ =~ /cphPage_cphPage_imgPlayerImage/);
 	$data{gender} = 
-	    !$data{gender} ? $_ =~ /Men's (singles|doubles):/g ? 'm' 
-	    : $_ =~ /Women's (singles|doubles):/g ? 'f'
+	    !$data{gender} ? $_ =~ /Men's (Singles|Doubles):/g ? 'm' 
+	    : $_ =~ /Women's (Singles|Doubles):/g ? 'f'
 	    : undef 
 	    : $data{gender}
 	    ;
