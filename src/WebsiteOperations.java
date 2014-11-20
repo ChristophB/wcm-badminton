@@ -15,7 +15,9 @@ import java.nio.channels.ReadableByteChannel;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 
+import parser.Parser;
 import parser.ProxyManager;
+import parser.html.HTMLParser;
 import parser.html.sites.HideMyAssHTMLParser;
 
 /**
@@ -75,15 +77,12 @@ public class WebsiteOperations {
 
 	/**
 	 * saves the website in a file.
-	 * 
-	 * @throws IOException
 	 */
 	public void saveWebsiteToHTMLFile(String filename) {
 		boolean completed = false;
 		while(completed == false){
 			try {
-				ReadableByteChannel rbc = Channels.newChannel(websiteURL
-						.openStream());
+				ReadableByteChannel rbc = Channels.newChannel(getWebsiteURL().openStream());
 				FileOutputStream fos = new FileOutputStream(new File(filename));
 				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 				fos.close();
@@ -120,10 +119,16 @@ public class WebsiteOperations {
 					if (firstTry != true) {
 						proxyManager.switchProxy();
 					}
-					String code = hideMyAss.fetch(String.valueOf(websiteURL),
+					String code = hideMyAss.fetch(String.valueOf(getWebsiteURL()),
 							proxyManager.getCurrentProxy());
-					FileUtils.writeStringToFile(new File(filename), code);
-					completed = true;
+					if(code != null){
+						FileUtils.writeStringToFile(new File(filename), code);
+						completed = true;
+					}
+					else {
+						firstTry = false;
+						continue;
+					}
 				} catch (Exception e1) {
 					System.out.println("Could not download website.");
 					firstTry = false;

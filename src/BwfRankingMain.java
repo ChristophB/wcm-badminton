@@ -18,7 +18,8 @@ public class BwfRankingMain {
 	 */
 	public static void main(String[] args) {	
 		BwfProfileLoader loader = new BwfProfileLoader();
-		loader.loadAllProfilesAsHTML(true);
-		//loader.loadAllMensDoublesProfilesAsHTML(true);
+		//loader.loadAllProfilesAsHTML(true);
+		loader.loadAllWomensSinglesProfilesAsHTML(true);
+		loader.loadAllMixedProfilesAsHTML(true);
 	}
 }

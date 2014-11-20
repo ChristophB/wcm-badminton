@@ -167,6 +167,8 @@ public class HTMLParser implements Parser {
 	 * @throws Exception 
 	 */
 	public String fetch(String url, boolean decodeHTML, Proxy proxy) throws Exception {
+		this.code = null;
+		System.out.println(url + " "+ proxy.toString());
 		if ( proxy == null )
 			proxy = Proxy.NO_PROXY;
 
@@ -214,7 +216,8 @@ public class HTMLParser implements Parser {
 
 		if ( decodeHTML )
 			this.code = this.decode();
-		return String.valueOf(this.code);
+		if(this.code == null) return this.code;
+		else return String.valueOf(this.code);
 	}
 
 	/**

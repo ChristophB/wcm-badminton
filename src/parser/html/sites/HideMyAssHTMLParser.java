@@ -25,7 +25,7 @@ public class HideMyAssHTMLParser extends HTMLParser implements PaginatedParser, 
 	/**
 	 * determines the maximum number of pages, that will be parsed.
 	 */
-	private int maxPages = 10;
+	private int maxPages = 2;
 	
 	/**
 	 * stores the current page.
