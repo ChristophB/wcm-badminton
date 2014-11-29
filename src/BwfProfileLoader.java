@@ -7,13 +7,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
+import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
 
 import org.jsoup.Jsoup;
 
 /**
- * this class can load profiles for each discipline.
+ * this class can load profiles for each discipline from bwf.
+ * for this purpose no proxy, proxies from hidemyass or a custom proxy can be used.
  * 
  * @author Marcel
  *
@@ -26,6 +28,11 @@ public class BwfProfileLoader extends WebsiteOperations{
 	private boolean useProxy;
 	
 	/**
+	 * proxy for loading the website will be stored here.
+	 */
+	private Proxy proxy;
+	
+	/**
 	 * the number of pages for the current discipline will be stored here.
 	 */
 	private int numberOfPagesForDiscipline;
@@ -34,6 +41,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 * default constructor.
 	 */
 	public BwfProfileLoader() {
+		this.useProxy = false;
 	}
 
 	/**
@@ -47,6 +55,18 @@ public class BwfProfileLoader extends WebsiteOperations{
 		loadAllWomensDoublesProfilesAsHTML(useProxy);
 		loadAllMixedProfilesAsHTML(useProxy);
 	}
+	
+	/**
+	 * all profiles for all disciplines will be loaded using the given proxy.
+	 * @param proxy
+	 */
+	public void loadAllProfilesAsHTML(Proxy proxy) {
+		loadAllMensSinglesProfilesAsHTML(proxy);
+		loadAllMensDoublesProfilesAsHTML(proxy);
+		loadAllWomensSinglesProfilesAsHTML(proxy);
+		loadAllWomensDoublesProfilesAsHTML(proxy);
+		loadAllMixedProfilesAsHTML(proxy);
+	}
 
 	/**
 	 * load profiles for all men who play singles.
@@ -54,6 +74,15 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 */
 	public void loadAllMensSinglesProfilesAsHTML(boolean useProxy) {
 		this.useProxy = useProxy;
+		loadAllProfilesFromUrlAsHTML(Disciplines.MENS_SINGLES);
+	}
+	
+	/**
+	 * load profiles for all men who play singles.
+	 * @param proxy
+	 */
+	public void loadAllMensSinglesProfilesAsHTML(Proxy proxy) {
+		this.proxy = proxy;
 		loadAllProfilesFromUrlAsHTML(Disciplines.MENS_SINGLES);
 	}
 
@@ -65,6 +94,15 @@ public class BwfProfileLoader extends WebsiteOperations{
 		this.useProxy = useProxy;
 		loadAllProfilesFromUrlAsHTML(Disciplines.MENS_DOUBLES);
 	}
+	
+	/**
+	 * load profiles for all men who play doubles.
+	 * @param proxy
+	 */
+	public void loadAllMensDoublesProfilesAsHTML(Proxy proxy) {
+		this.proxy = proxy;
+		loadAllProfilesFromUrlAsHTML(Disciplines.MENS_DOUBLES);
+	}
 
 	/**
 	 * load profiles for all women who play singles.
@@ -72,6 +110,15 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 */
 	public void loadAllWomensSinglesProfilesAsHTML(boolean useProxy) {
 		this.useProxy = useProxy;
+		loadAllProfilesFromUrlAsHTML(Disciplines.WOMENS_SINGLES);
+	}
+	
+	/**
+	 * load profiles for all women who play singles.
+	 * @param proxy
+	 */
+	public void loadAllWomensSinglesProfilesAsHTML(Proxy proxy) {
+		this.proxy = proxy;
 		loadAllProfilesFromUrlAsHTML(Disciplines.WOMENS_SINGLES);
 	}
 
@@ -83,6 +130,15 @@ public class BwfProfileLoader extends WebsiteOperations{
 		this.useProxy = useProxy;
 		loadAllProfilesFromUrlAsHTML(Disciplines.WOMENS_DOUBLES);
 	}
+	
+	/**
+	 * load profiles for all women who play doubles.
+	 * @param proxy
+	 */
+	public void loadAllWomensDoublesProfilesAsHTML(Proxy proxy) {
+		this.proxy = proxy;
+		loadAllProfilesFromUrlAsHTML(Disciplines.WOMENS_DOUBLES);
+	}
 
 	/**
 	 * load profiles for all men and women who play mixed.
@@ -90,6 +146,15 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 */
 	public void loadAllMixedProfilesAsHTML(boolean useProxy) {
 		this.useProxy = useProxy;
+		loadAllProfilesFromUrlAsHTML(Disciplines.MIXED);
+	}
+	
+	/**
+	 * load profiles for all men and women who play mixed.
+	 * @param proxy
+	 */
+	public void loadAllMixedProfilesAsHTML(Proxy proxy) {
+		this.proxy = proxy;
 		loadAllProfilesFromUrlAsHTML(Disciplines.MIXED);
 	}
 
@@ -113,7 +178,12 @@ public class BwfProfileLoader extends WebsiteOperations{
 			setWebsiteURL(currentUrl);
 			filename = getFilename();
 			directory = getDirectory(discipline);
+			if(this.proxy == null){
 			saveWebsiteToHTMLFile(useProxy, directory + filename);
+			}
+			else{
+				saveWebsiteToHTMLFile(this.proxy, directory + filename);
+			}
 			linkList = createLinklistOfProfiles();
 			System.out.println(linkList.size() + " profiles to process");
 			if (currentPage == 1) {
@@ -124,7 +194,13 @@ public class BwfProfileLoader extends WebsiteOperations{
 			for (URL url : linkList) {
 				setWebsiteURL(url);
 				filename = getFilename();
-				saveWebsiteToHTMLFile(useProxy, directory + filename);
+				if(this.proxy == null){
+					saveWebsiteToHTMLFile(useProxy, directory + filename);
+				}
+				else{
+					saveWebsiteToHTMLFile(this.proxy, directory + filename);
+				}
+				
 			}
 		}
 	}

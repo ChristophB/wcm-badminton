@@ -1,1 +1,6 @@
 /build/
+/crawler/data/mensDoubles/
+/crawler/data/mensSingles/
+/crawler/data/mixedDoubles/
+/crawler/data/womensDoubles/
+/crawler/data/womensSingles/
