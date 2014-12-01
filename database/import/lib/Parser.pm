@@ -83,7 +83,7 @@ sub extractAthlete {
 
 sub extractHand {
     my $line  = shift or croak('Error: Parameter $line missing!');
-    my $value = ($line =~ /Plays:<\/.*?\/label/g)[0]; 
+    my $value = ($line =~ /Play R or L:<\/.*?\/label/g)[0];
     my $value = ($value =~ /readonly">.*?</g)[0];
     
     $value =~ s/readonly">|<//g;

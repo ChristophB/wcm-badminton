@@ -14,30 +14,23 @@ my $players_counter = 0;
 chdir dirname(__FILE__);
 $Data::Dumper::Sortkeys = 1;
 
-#FILELOOP:
 foreach my $file (<../../crawler/data/*>) {    
     my $profile_start = 0;
     my $biodata_start = 0;
     my $athlete_start = 0;
-    #my $body_start    = 0;
-    my $file_name = (split '/', $file)[-1];
+    my $file_name     = (split '/', $file)[-1];
     my %data;
     
-    next unless ($file_name =~ /id=[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*$/g);
+    next unless ($file_name =~ /id=[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?$/g);
     #print 'Working on: '. $file_name. "\n";
     open (FILE, $file) or croak('Error: Could not open $file');
-    $data{id} = (split '=', $file)[-1];
+    $data{id} = (split 'id=', $file)[-1];
     while (<FILE>) {
 	chomp;
-	#$body_start    = 1 if ($_ =~ /<body id="bdBase">/g);
 	$profile_start = 1 if ($_ =~ /profileheader/);
 	$biodata_start = 1 if ($_ =~ /Biodata/);
 	$athlete_start = 1 if ($_ =~ /Athlete Profile/);
 	
-	# if ($body_start && $_ =~ /<form/g) {
-	#     next FILELOOP unless (extractAttribute($_, 'action') =~ /biography/g);
-	#     $body_start = 0;
-	# }
 	next unless ($profile_start);
 	
 	if ($_ =~ /<h3 title="/) {

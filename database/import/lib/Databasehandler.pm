@@ -16,26 +16,26 @@ my $dbh = DBI->connect(
 
 sub insertData {
     my $data = shift or croak('Error: Parameter %data missing!');
-    my $id = getId('players', ['id'], [$data->{id}]);
+    my $id = getId('player', ['id'], [$data->{id}]);
     
     return if ($id);
     $data->{club} = 
-	insertReferencedValue('clubs', ['name'], [$data->{club}]);
+	insertReferencedValue('club', ['name'], [$data->{club}]);
     $data->{coach} = 
-	insertReferencedValue('coaches', ['name'], [$data->{coach}]);
+	insertReferencedValue('coach', ['name'], [$data->{coach}]);
     $data->{nationality} = 
-	insertReferencedValue('nationalities', ['nationality'], [$data->{nationality}]);
+	insertReferencedValue('nationality', ['nationality'], [$data->{nationality}]);
     $data->{style} =
-	insertReferencedValue('styles', ['style'], [$data->{style}]);
+	insertReferencedValue('style', ['style'], [$data->{style}]);
     $data->{birthplace_city} = 
-	insertReferencedValue('cities', ['name', 'state']
+	insertReferencedValue('city', ['name', 'state']
 			      , [@{$data}{('birthplace_city', 'birthplace_state')}]);
     $data->{cur_residence_city} = 
-	insertReferencedValue('cities', ['name', 'state']
+	insertReferencedValue('city', ['name', 'state']
 			     , [@{$data}{('cur_residence_city', 'cur_residence_state')}]);
 
     insertRow(
-	'players'
+	'player'
 	, undef
 	, [@{$data}{(
 	       'id', 'firstname', 'name', 'birthdate'
@@ -46,14 +46,14 @@ sub insertData {
 	    )}]
 	);
     
-    foreach (@{$data->{languages}}) {
-	$_ = insertReferencedValue('languages', ['language'], [$_]);
+    foreach (@{$data->{language}}) {
+	$_ = insertReferencedValue('language', ['language'], [$_]);
 	insertRow('player_language', undef, [$data->{id}, $_]);
     }
 
-    insertRow('images', undef, [@{$data}{('id', 'image')}])
+    insertRow('image', undef, [@{$data}{('id', 'image')}])
 	if ($data->{image});
-    insertRow('webresources', undef, [@{$data}{('id', 'facebook', 'twitter', 'website')}])
+    insertRow('webresource', undef, [@{$data}{('id', 'facebook', 'twitter', 'website')}])
 	if ($data->{facebook} || $data->{twitter} || $data->{website});
 
     return 1;

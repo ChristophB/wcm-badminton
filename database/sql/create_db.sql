@@ -1,13 +1,13 @@
 DROP TABLE player_language;
-DROP TABLE images;
-DROP TABLE webresources;
-DROP TABLE players;
-DROP TABLE languages;
-DROP TABLE styles;
-DROP TABLE cities;
-DROP TABLE clubs;
-DROP TABLE coaches;
-DROP TABLE nationalities;
+DROP TABLE image;
+DROP TABLE webresource;
+DROP TABLE player;
+DROP TABLE language;
+DROP TABLE style;
+DROP TABLE city;
+DROP TABLE club;
+DROP TABLE coach;
+DROP TABLE nationality;
 DROP TYPE gender;
 DROP TYPE hand;
 DROP TYPE image_url;
@@ -16,44 +16,44 @@ CREATE TYPE gender AS ENUM ('m', 'f', 'u');
 CREATE TYPE hand AS ENUM ('right', 'left', 'unknown');
 CREATE TYPE image_url AS ENUM ('profile', 'other');
 
-CREATE TABLE clubs (
+CREATE TABLE club (
        id     serial PRIMARY KEY
        , name text NOT NULL UNIQUE
 );
-CREATE TABLE coaches (
+CREATE TABLE coach (
        id serial PRIMARY KEY
        , name text NOT NULL UNIQUE
 );    
-CREATE TABLE nationalities (
+CREATE TABLE nationality (
        id serial PRIMARY KEY
        , nationality text NOT NULL UNIQUE
 );
-CREATE TABLE styles (
+CREATE TABLE style (
        id serial PRIMARY KEY
        , style text NOT NULL UNIQUE
 );
-CREATE TABLE cities (
+CREATE TABLE city (
        id serial PRIMARY KEY
        , name text NOT NULL
        , state text
        , UNIQUE (name, state)
 );
-CREATE TABLE players (
+CREATE TABLE player (
        id                      text PRIMARY KEY
        , firstname 	       text
        , name 		       text
        , birthdate 	       date CHECK(birthdate BETWEEN '1900-01-01' AND CURRENT_DATE)
        , gender 	       gender NOT NULL 
-       , birthplace_city_id    integer REFERENCES cities(id)
+       , birthplace_city_id    integer REFERENCES city(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , club_id 	       integer REFERENCES clubs(id) 
+       , club_id 	       integer REFERENCES club(id) 
                                        ON DELETE NO ACTION 
   				       ON UPDATE CASCADE
-       , coach_id	       integer REFERENCES coaches(id)
+       , coach_id	       integer REFERENCES coach(id)
        	 		      	       ON DELETE NO ACTION
 				       ON UPDATE CASCADE
-       , cur_residence_city_id integer REFERENCES cities(id)
+       , cur_residence_city_id integer REFERENCES city(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
        , debut_year            text
@@ -61,29 +61,29 @@ CREATE TABLE players (
        	 		     			        --AND EXTRACT(year FROM CURRENT_DATE))
        , hand                  hand NOT NULL
        , height                double precision CHECK(height BETWEEN 50 AND 250)
-       , nationality_id        integer REFERENCES nationalities(id)
+       , nationality_id        integer REFERENCES nationality(id)
        	 		     	       ON DELETE NO ACTION
 				       ON UPDATE CASCADE
        , nickname 	       text
        , start_competitive     text 
        --, start_competitive     integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate)
        	 		        			--AND EXTRACT(year FROM CURRENT_DATE))
-       , style_id 	       integer REFERENCES styles(id)
+       , style_id 	       integer REFERENCES style(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
        , teammember_since      text
        --, teammember_since      integer CHECK(teammember_since BETWEEN EXTRACT(year FROM birthdate)
        	 		     	     			      --AND EXTRACT(year FROM CURRENT_DATE))
 );
-CREATE TABLE images (
-       player_id text REFERENCES players(id)
+CREATE TABLE image (
+       player_id text REFERENCES player(id)
                       ON DELETE CASCADE
                       ON UPDATE CASCADE
        , url     text NOT NULL
        , PRIMARY KEY(player_id, url)
 );
-CREATE TABLE webresources (
-       player_id  text PRIMARY KEY REFERENCES players(id)
+CREATE TABLE webresource (
+       player_id  text PRIMARY KEY REFERENCES player(id)
                                    ON DELETE CASCADE
                                    ON UPDATE CASCADE
        , facebook text
@@ -93,15 +93,15 @@ CREATE TABLE webresources (
                OR twitter IS NOT NULL
                OR website IS NOT NULL)
 );
-CREATE TABLE languages (
+CREATE TABLE language (
        id         serial PRIMARY KEY
        , language text NOT NULL UNIQUE
 );
 CREATE TABLE player_language (
-       player_id     text REFERENCES players(id) 
+       player_id     text REFERENCES player(id) 
        		          ON DELETE CASCADE
        		      	  ON UPDATE CASCADE
-       , language_id integer REFERENCES languages(id)
+       , language_id integer REFERENCES language(id)
        	 	     	     ON DELETE NO ACTION
 			     ON UPDATE CASCADE
        , PRIMARY KEY(player_id, language_id) 			    
