@@ -106,3 +106,7 @@ CREATE TABLE player_language (
 			     ON UPDATE CASCADE
        , PRIMARY KEY(player_id, language_id) 			    
 );
+
+GRANT ALL ON ALL TABLES IN SCHEMA public TO wcm_badminton;
+GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO wcm_badminton;
+

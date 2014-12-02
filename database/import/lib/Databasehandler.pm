@@ -4,9 +4,9 @@ use DBI;
 use Carp;
 use DBI;
 use constant {
-    USER => 'postgres',
+    USER => 'wcm_badminton',
     PASS => 'password',
-    DB   => 'dbi:Pg:dbname=testdb;host=localhost'
+    DB   => 'dbi:Pg:dbname=wcm_badminton;host=localhost'
 };
 
 my $dbh = DBI->connect(
