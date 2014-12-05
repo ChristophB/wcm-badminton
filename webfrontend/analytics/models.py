@@ -83,14 +83,20 @@ class Player(models.Model):
     RIGHT       = 'right'
     UNKNOWN     = 'unknown'
     GENDER_CHOICES = (
-        (MALE,        'm'), 
-        (FEMALE,      'f'), 
-        (UNSPECIFIED, 'u')
+        (MALE,        'm') 
+        , (FEMALE,      'f') 
+        , (UNSPECIFIED, 'u')
     )
     HAND_CHOICES   = (
-        (LEFT,    'left'),
-        (RIGHT,   'right'),
-        (UNKNOWN, 'unknown'),
+        (LEFT,    'left')
+        , (RIGHT,   'right')
+        , (UNKNOWN, 'unknown')
+    )
+    HAND_CHOICES_AND_EMPTY = (
+        ('',      '---------')
+        , (LEFT,    'left')
+        , (RIGHT,   'right')
+        , (UNKNOWN, 'unknown')
     )
 
     id                 = models.TextField(primary_key=True)

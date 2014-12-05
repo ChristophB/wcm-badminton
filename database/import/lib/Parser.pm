@@ -54,7 +54,7 @@ sub extractBiodata {
     $hash{birthplace_state}    = (split ', ', $hash{birthplace_state})[1];
     $hash{cur_residence_city}  = (split ', ', $hash{cur_residence_city})[0];
     $hash{cur_residence_state} = (split ', ', $hash{cur_residence_state})[1];
-    $hash{languages}           = [split ', ', $hash{languages}];
+    $hash{languages}           = [split ', |,| and ', $hash{languages}];
     #$hash{debut_year}          = (split ' ', $hash{debut_year}, 2)[0];
     #$hash{debut_event}         = (split ' ', $hash{debut_event}, 2)[1];
     return %hash;
@@ -83,7 +83,8 @@ sub extractAthlete {
 
 sub extractHand {
     my $line  = shift or croak('Error: Parameter $line missing!');
-    my $value = ($line =~ /Play R or L:<\/.*?\/label/g)[0];
+    #my $value = ($line =~ /Play R or L:<\/.*?\/label/g)[0]; new Website-Version
+    my $value = ($line =~ /Plays:<\/.*?\/label/g)[0];
     my $value = ($value =~ /readonly">.*?</g)[0];
     
     $value =~ s/readonly">|<//g;

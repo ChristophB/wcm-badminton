@@ -3,36 +3,18 @@
 <link rel="stylesheet" type="text/css" 
       href="{% static 'analytics/style.css' %}" />
 
-{% if players %}
-<h1>Players</h1>
+<h1><a href=".">Players</a></h1>
 <div class="filter">
-  <form action="." method="post">
-    <label for="name_free">Name: Freitext</label>
-    <input type="text" name="name_free" />
-    <br />
-    <label for="birthdate_start">
-      Birthdate between: Falls nur erstes Datum gegeben, dann exakt
-    </label>
-    <input type="date" name="birthdate_start" />
-    <br />
-    <label for="club_free">Club: Auswahl oder Freitext</label>
-    <input type="text" name="club_free" />
-    <br />
-    <label for="language">Language: Auswahl</label>
-    <select name="language">
-      <option value="german">german</option>
-    </select>
-    <br />
-    <label for="nationality">Nationality: Auswahl</label>
-    <select name="nationality">
-      <option value="germany">germany</option>
-    </select>
-    <br />
-    Hand: Auswhal
-    <br />
-    Playstyle: Auswahl
-    <br />
-    <input type="submit" name="submit" value="search" />
+  <form action="." method="get">
+    {% csrf_token %}
+    {{ searchForm }}
+    
+    <!-- <label for="language">Language: Auswahl</label> -->
+    <!-- <select name="language"> -->
+    <!--   <option value="german">german</option> -->
+    <!-- </select> -->
+    <!-- <br /> -->
+    <input type="submit" name="searchSubmit" value="search" />
   </form>
 </div>
 <div class="datagrid">
@@ -41,6 +23,7 @@
       <tr>
 	<th>Name</th>
 	<th>Firstname</th>
+	<th>Hand</th>
 	<th>Birthdate</th>
       </tr>
     </thead>
@@ -49,17 +32,19 @@
       <tr>
 	<td><a href="/analytics/{{ player.id }}">{{ player.name }}</a></td>
 	<td>{{ player.firstname }}</td>
+	<td>{{ player.hand }}</td>
 	<td>{{ player.birthdate }}</td>
       </tr>
     </tbody>
     {% endfor %}
     <tfoot>
 	<tr>
-	  <td colspan="3">
+	  <td colspan="4">
 	    <div id="paging">
 	      <ul>
 		<li>
 		  <form action="." method="get">
+		    {% csrf_token %}
 		    <label for="paginate_by">Players per page:</label>
 		    <select onchange="this.form.submit()" name="paginate_by">
 		      {% for value in paginate_by_list %}
@@ -77,7 +62,8 @@
 	          Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
 		</li>
 		<li>
-	  	  <form action="/analytics/search" method="get">
+	  	  <form action="." method="get">
+		    {% csrf_token %}
 		    <input type="hidden" name="paginate_by" 
 			   value="{{ paginate_by }}" />
 		    {% if page_obj.has_previous %}
@@ -89,7 +75,8 @@
 	  	  </form>
 		</li>
 		<li>
-	  	  <form action="/analytics/search" method="get">
+	  	  <form action="." method="get">
+		    {% csrf_token %}
 		    <input type="hidden" name="paginate_by" 
 			   value="{{ paginate_by }}" />
 	  	    {% if page_obj.has_next %}
@@ -107,8 +94,3 @@
 	</tr>
     </tfoot>
 </table>
-
-{% else %}
-<h3>Players</h3>
-<p>No players found!</p>
-{% endif %}

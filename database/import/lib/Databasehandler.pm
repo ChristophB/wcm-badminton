@@ -46,7 +46,7 @@ sub insertData {
 	    )}]
 	);
     
-    foreach (@{$data->{language}}) {
+    foreach (@{$data->{languages}}) {
 	$_ = insertReferencedValue('language', ['language'], [$_]);
 	insertRow('player_language', undef, [$data->{id}, $_]);
     }

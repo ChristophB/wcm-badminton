@@ -56,9 +56,10 @@ foreach my $file (<../../crawler/data/*>) {
 	}
     }
     $data{gender} = $data{gender} ? $data{gender} : 'u';
+    $players_counter++ if (insertData(\%data));
+    
     #print Dumper(\%data);
     #exit;
-    $players_counter++ if (insertData(\%data));
 }
 
 finishTransaction();

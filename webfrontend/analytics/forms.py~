@@ -1,0 +1,6 @@
+from django import forms
+
+class SearchForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    birthdate_start = forms.DateField(label='Birthdate')
+    birthdate_to = forms.DateField(label='To')
