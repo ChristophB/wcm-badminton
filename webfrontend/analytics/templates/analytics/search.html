@@ -1,96 +1,71 @@
+{% load render_table from django_tables2 %}
 {% load staticfiles %}
 
-<link rel="stylesheet" type="text/css" 
-      href="{% static 'analytics/style.css' %}" />
-
-<h1><a href=".">Players</a></h1>
-<div class="filter">
-  <form action="." method="get">
-    {% csrf_token %}
-    {{ searchForm }}
-    
-    <!-- <label for="language">Language: Auswahl</label> -->
-    <!-- <select name="language"> -->
-    <!--   <option value="german">german</option> -->
-    <!-- </select> -->
-    <!-- <br /> -->
-    <input type="submit" name="searchSubmit" value="search" />
-  </form>
-</div>
-<div class="datagrid">
-  <table>
-    <thead>
-      <tr>
-	<th>Name</th>
-	<th>Firstname</th>
-	<th>Hand</th>
-	<th>Birthdate</th>
-      </tr>
-    </thead>
-    {% for player in players %}
-    <tbody>
-      <tr>
-	<td><a href="/analytics/{{ player.id }}">{{ player.name }}</a></td>
-	<td>{{ player.firstname }}</td>
-	<td>{{ player.hand }}</td>
-	<td>{{ player.birthdate }}</td>
-      </tr>
-    </tbody>
-    {% endfor %}
-    <tfoot>
-	<tr>
-	  <td colspan="4">
-	    <div id="paging">
-	      <ul>
-		<li>
-		  <form action="." method="get">
-		    {% csrf_token %}
-		    <label for="paginate_by">Players per page:</label>
-		    <select onchange="this.form.submit()" name="paginate_by">
-		      {% for value in paginate_by_list %}
-		      <option value="{{ value }}" 
-			      {% if paginate_by == value %}
-			      selected="selected"
-			      {% endif %}>{{ value }}
-		      </option>
-		      {% endfor %}
-		    </select>
-		  </form>
-		  {% if is_paginated %}
-		</li>
-		<li>
-	          Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-		</li>
-		<li>
-	  	  <form action="." method="get">
-		    {% csrf_token %}
-		    <input type="hidden" name="paginate_by" 
-			   value="{{ paginate_by }}" />
-		    {% if page_obj.has_previous %}
-	  	    <input type="hidden" name="page" 
-			   value="{{ page_obj.previous_page_number }}" />
-		    {% endif %}
-	  	    <input type="submit" name="submit" value="previous" 
-			   {% if not page_obj.has_previous %}disabled{% endif %} />
-	  	  </form>
-		</li>
-		<li>
-	  	  <form action="." method="get">
-		    {% csrf_token %}
-		    <input type="hidden" name="paginate_by" 
-			   value="{{ paginate_by }}" />
-	  	    {% if page_obj.has_next %}
-		    <input type="hidden" name="page" 
-			   value="{{ page_obj.next_page_number }}" />
-		    {% endif %}
-	  	    <input type="submit" name="submit" value="next"
-			   {% if not page_obj.has_next %}disabled{% endif %}/>
-	  	  </form>
-		</li>
-	      </ul>
-	      {% endif %}
-	    </div>
-	  </td>
-	</tr>
-    </tfoot>
-</table>
+<!doctype html>
+<html>
+  <link rel="stylesheet" type="text/css" 
+	href="{% static 'analytics/style.css' %}" />
+  <head>
+    <link rel="stylesheet" 
+	  href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css" />
+  </head>
+  <body>
+    <h1>Players</h1>
+    <div class="filter">
+      {{ filter.form.non_field_errors }}
+      <form action="" method="get">
+	<table>
+	  <tr>
+	    <td>{{ filter.form.name.label_tag }}</td>
+	    <td>{{ filter.form.name }}</td>
+	    <td>{{ filter.form.firstname.label_tag }}</td>
+	    <td>{{ filter.form.firstname }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.gender.label_tag }}</td>
+	    <td>{{ filter.form.gender }}</td>
+	    <td>{{ filter.form.hand.label_tag }}</td>
+	    <td>{{ filter.form.hand }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.birthdate.label_tag }}</td>
+	    <td>{{ filter.form.birthdate }}</td>
+	    <td>{{ filter.form.height.label_tag }}</td>
+	    <td>{{ filter.form.height }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.nationality.label_tag }}</td>
+	    <td>{{ filter.form.nationality }}</td>
+	    <td>{{ filter.form.style.label_tag }}</td>
+	    <td>{{ filter.form.style }}</td>
+	  <tr>
+	    <td>{{ filter.form.birthplace_city.label_tag }}</td>
+	    <td>{{ filter.form.birthplace_city }}</td>
+	    <td>{{ filter.form.cur_residence_city.label_tag }}</td>
+	    <td>{{ filter.form.cur_residence_city }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.club.label_tag }}</td>
+	    <td>{{ filter.form.club }}</td>
+	    <td>{{ filter.form.coach.label_tag }}</td>
+	    <td>{{ filter.form.coach }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.debut_year.label_tag }}</td>
+	    <td>{{ filter.form.debut_year }}</td>
+	    <td>{{ filter.form.teammember_since.label_tag }}</td>
+	    <td>{{ filter.form.teammember_since }}</td>
+	  </tr>
+	  <tr>
+	    <td>{{ filter.form.start_competitive.label_tag }}</td>
+	    <td>{{ filter.form.start_competitive }}</td>
+	  </tr>
+	  <tr><td><input type="submit" /></td></tr>
+	</table>
+      </form>
+    </div>
+    <div class="table">
+      {% render_table table %}
+    </div>
+  </body>
+</html>

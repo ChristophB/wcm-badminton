@@ -1,0 +1,107 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+  <link rel="stylesheet" type="text/css" 
+	href="{% static 'analytics/style.css' %}" />
+
+  <body>
+    <h1><a href=".">Players</a></h1>
+    <div class="filter">
+      <form action="." method="get">
+        {% csrf_token %}
+        {{ searchForm }}
+        <input type="submit" name="searchSubmit" value="search" />
+      </form>
+    </div>
+    <div class="datagrid">
+      <table>
+	<thead>
+	  <tr>
+	    {% for title in title_list %}
+	    <th>
+	      {{ title }}
+	      <form action="{{ cur_url }}" method="get">
+		<input type="hidden" name="order_by"
+		       value="{{ '-' }}{{ title.lower }}" />
+		<input type="submit" value="&#9650;" />
+	      </form>
+	      <form action="{{ cur_url }}" method="get">
+		<input type="hidden" name="order_by"
+		       value="{{ title.lower }}" />
+		<input type="submit" value="&#9660;" />
+	      </form>
+	    </th>
+	    {% endfor %}
+	  </tr>
+	</thead>
+	{% for player in players %}
+	<tbody>
+	  <tr>
+	    <td><a href="/analytics/{{ player.id }}">{{ player.name }}</a></td>
+	    <td>{{ player.firstname }}</td>
+	    <td>{{ player.hand }}</td>
+	    <td>{{ player.birthdate }}</td>
+	  </tr>
+	</tbody>
+	{% endfor %}
+	<tfoot>
+	  <tr>
+	    <td colspan="4">
+	      <div id="paging">
+		<ul>
+		  <li>
+		    <form action="." method="get">
+		      {% csrf_token %}
+		      <label for="paginate_by">Players per page:</label>
+		      <select onchange="this.form.submit()" name="paginate_by">
+			{% for value in paginate_by_list %}
+			<option value="{{ value }}"
+				{% if paginate_by == value %}
+				selected="selected"
+				{% endif %}>{{ value }}
+			</option>
+			{% endfor %}
+		      </select>
+		    </form>
+		    {% if is_paginated %}
+		  </li>
+		  <li>
+	            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+		  </li>
+		  <li>
+	  	    <form action="." method="get">
+		      {% csrf_token %}
+		      <input type="hidden" name="paginate_by"
+			     value="{{ paginate_by }}" />
+		      {% if page_obj.has_previous %}
+	  	      <input type="hidden" name="page"
+			     value="{{ page_obj.previous_page_number }}" />
+		      {% endif %}
+	  	      <input type="submit" name="submit" value="previous"
+			     {% if not page_obj.has_previous %}disabled{% endif %} />
+	  	    </form>
+		  </li>
+		  <li>
+	  	    <form action="." method="get">
+		      {% csrf_token %}
+		      <input type="hidden" name="paginate_by"
+			     value="{{ paginate_by }}" />
+	  	      {% if page_obj.has_next %}
+		      <input type="hidden" name="page"
+			     value="{{ page_obj.next_page_number }}" />
+		      {% endif %}
+	  	      <input type="submit" name="submit" value="next"
+			     {% if not page_obj.has_next %}disabled{% endif %}/>
+	  	    </form>
+		  </li>
+		</ul>
+		{% endif %}
+	      </div>
+	    </td>
+	  </tr>
+	</tfoot>
+      </table>
+  </body>
+</html>
+
+

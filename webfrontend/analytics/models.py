@@ -83,12 +83,14 @@ class Player(models.Model):
     RIGHT       = 'right'
     UNKNOWN     = 'unknown'
     GENDER_CHOICES = (
-        (MALE,        'm') 
+        (None, '---------')
+        , (MALE,        'm') 
         , (FEMALE,      'f') 
         , (UNSPECIFIED, 'u')
     )
     HAND_CHOICES   = (
-        (LEFT,    'left')
+        (None, '---------')
+        ,(LEFT,    'left')
         , (RIGHT,   'right')
         , (UNKNOWN, 'unknown')
     )
