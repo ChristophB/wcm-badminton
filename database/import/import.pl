@@ -50,7 +50,7 @@ foreach my $file (<../../crawler/data/*>) {
 	    $biodata_start = 0;
 	}
 	if ($athlete_start && $_ =~ /li/) {
-	    %data = (%data, extractAthlete($_));
+	    %data = (%data, extractAthlete($_, $data{birthdate}));
 	    $athlete_start = 0;
 	    $profile_start = 0;
 	}
@@ -91,7 +91,7 @@ sub getDate {
 
     $strp = DateTime::Format::Strptime->new(pattern => '%d.%m.%Y')
 	if ($string =~ /\./g);
-    $strp = DateTime::Format::Strptime->new(pattern => '%d/%m/%Y')
+    $strp = DateTime::Format::Strptime->new(pattern => '%m/%d/%Y')
 	if ($string =~ /\//g);
     $dt = $strp->parse_datetime($string);
     return defined $dt ? $dt->ymd : undef;
