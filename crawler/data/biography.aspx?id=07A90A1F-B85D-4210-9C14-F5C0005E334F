@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head id="hdBase"><meta charset="utf-8" /><title>
+	BWF
+</title><meta name="description" content="www.tournamentsoftware.com: Online Entry and tournament publication with the Tournament Planner of Visual Reality. For Tennis, Squash and Badminton Tournaments" /><meta name="keywords" content="tennis, tournament, planner, tennis, amateur tennis, software, tournamentplanner, register, sport, www.tournamentsoftware.com, www.tournament.com, www.tennistournament.com, www.tennistoernooi.com, register, squash, badminton, entry, tournament, planner, tournooi, tournament, volleybal, volleyball, association, planning, poule, draw, tennis software, match, poule, match overview, teamsport, team, official, teamsportplanner, hockey, basketball, competition, league" /><link rel="search" type="application/opensearchdescription+xml" title="BWF" href="../extension/searchprovider.aspx" /><meta name="copyright" content="Copyright 2000-2014 Visual Reality" /><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-1668601-1', 'auto');ga('send', 'pageview');</script><meta http-equiv="robots" content="noindex,nofollow" /><link rel="stylesheet" type="text/css" media="screen" href="/VisualResource.ashx?id=ad2f4aa73687cb8b3726fc2f40844e4d" /><link rel="stylesheet" type="text/css" media="print" href="/VisualResource.ashx?id=b18a9d2b63d3422c4fc4a11e75f6c858" /><link rel="stylesheet" type="text/css" media="all" href="/VisualResource.ashx?id=362cce0b600ab2bcf83d536d35e6f210" /></head>
+<body id="bdBase">
+  <form method="post" action="biography.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F" id="formBasePage" class="playerprofilepage bwf_logo lcid1033">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg5MzgwMTQ2N2QYAwUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFJ2N0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRjdGwwMAUvY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGNwaFBhZ2UkY3RsMDAFJWN0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRWRjAFLWN0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRjcGhQYWdlJFZGMAUvY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGNwaFBhZ2UkY3RsMDAPD2RmZAUnY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGN0bDAwDw9kZmSQWdJMFNdyYXeFyHiOgUaVG+JtKw==" />
+
+
+<script src="/VisualResource.ashx?id=7b133c564a3539893bc2b5d7cd6c4bd6" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AD094956" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAX5NRjA6GDUpIiLHY3uSZVKdmnot/8kTbQoMJWL8OT6yGb8vSp+pEGnrjR/Rs0QveHXABJTmyCPmRXTMDB+EkDH3OGX2T0JtluKT7I0IOMGhemU6x722s5M2Xdf87LZonmevWUa" />
+  
+  
+  <div id="container">
+    
+      <div id="header">
+        <h1><a href="http://www.bwfbadminton.org" class="bwf_logo" title="BWF" target="_blank"><img src="../images/style/bwf/logo_print.png" alt="BWF" /></a></h1>
+        
+      </div>
+    
+    
+      <div id="mainmenu">
+        <ul id="cphPage_tmFlagMenu" class="flags">
+	<li class="parent"><a class="flag_1033" href="../lang.aspx?lcid=1033">USA</a><ul>
+		<li><a class="flag_1043 nowrap" href="../lang.aspx?lcid=1043">NED</a></li><li><a class="flag_1033 nowrap" href="../lang.aspx?lcid=1033">USA</a></li><li><a class="flag_2057 nowrap" href="../lang.aspx?lcid=2057">GBR</a></li><li><a class="flag_6153 nowrap" href="../lang.aspx?lcid=6153">IRL</a></li><li><a class="flag_3081 nowrap" href="../lang.aspx?lcid=3081">AUS</a></li><li><a class="flag_5129 nowrap" href="../lang.aspx?lcid=5129">NZL</a></li><li><a class="flag_1031 nowrap" href="../lang.aspx?lcid=1031">GER</a></li><li><a class="flag_1030 nowrap" href="../lang.aspx?lcid=1030">DEN</a></li><li><a class="flag_3082 nowrap" href="../lang.aspx?lcid=3082">ESP</a></li><li><a class="flag_1036 nowrap" href="../lang.aspx?lcid=1036">FRA</a></li><li><a class="flag_1053 nowrap" href="../lang.aspx?lcid=1053">SWE</a></li><li><a class="flag_1044 nowrap" href="../lang.aspx?lcid=1044">NOR</a></li>
+	</ul></li>
+</ul><ul id="cphPage_tmMainMenu" class="left">
+	<li><a href="../">Home</a></li><li><a href="../rankings.aspx">Ranking</a></li><li class="parent"><a target="_blank" href="//www.tournamentsoftware.com/product/">Products</a><ul>
+		<li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=2">Tournament Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=6">League Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=7">Team Sport Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=15">Tournament TV</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=25">SMS</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=27">Visual ClubWeb</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=32">Live Scores</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/page.aspx?id=48&amp;s=35">Ranking</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/page.aspx?id=64&amp;s=42">Advertise</a></li>
+	</ul></li><li class="parent"><a href="../contact.aspx">About</a><ul>
+		<li><a class="nowrap" href="../contact.aspx">Contact</a></li><li><a class="nowrap" href="../disclaimer.aspx">Disclaimer</a></li><li><a class="nowrap" href="../product/faqgroups.aspx?pgid=11">FAQ</a></li>
+	</ul></li>
+</ul>
+        <ul class="right">
+          <li><a id="cphPage_hlLogin" href="../member/login.aspx">Login</a></li>
+          <li></li>
+        </ul>
+      </div>
+    
+    
+      <div id="searchbar">
+        <p>
+          <span id="cphPage_spnFindTournament">
+            Find tournament: 
+            <input id="tbxTournament" name="tbxTournament" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnTournamentGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnTournamentGo&#39;, &#39;&#39;, &#39;../findtournament.aspx&#39;); return false;" id="cphPage_btnTournamentGo" class="button" />
+          </span><span id="cphPage_spnFindPlayer">
+            Find player: 
+            <input id="tbxPlayer" name="tbxPlayer" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnPlayerGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnPlayerGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnPlayerGo" class="button" />
+          </span><span id="cphPage_spnFindTeam">
+            Find team: 
+            <input id="tbxTeam" name="tbxTeam" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnTeamGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnTeamGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnTeamGo" class="button" />
+          </span><span id="cphPage_spnFindClub">
+            Find club: 
+            <input id="tbxClub" name="tbxClub" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnClubGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnClubGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnClubGo" class="button" />
+          </span>
+        </p>
+      </div>
+    
+    <div id="content">
+      
+  <div class="profileheader">
+    <img id="cphPage_cphPage_imgPlayerImage" class="photo" src="//content.tournamentsoftware.com/images/profile/player.gif" />
+    <div class="profiledata">
+      <h3 title="Mathilda LINDHOLM"><img src="//static.tournamentsoftware.com/images/flags/16/FIN.png" class="intext flag" width="16" height="14" alt="Finland" title="Finland" /><span class="printonly flag">[FIN] </span>Mathilda LINDHOLM</h3>
+      
+      
+        <div class="biography">
+          <span id="cphPage_cphPage_pbPlayerBiography"><fieldset id="cphPage_cphPage_VF0_fs0">
+	<ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_upload" class="captionleft readonly">Profile image:</label><label></label></li><li><label for="cphPage_cphPage_VF0_fs0_DOB" class="captionleft readonly">Date of birth:</label><label class="text readonly" id="DOB">7/17/1995</label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_POB" class="captionleft readonly">Place of birth:</label><label class="text readonly" id="POB"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Height" class="captionleft readonly">Height:</label><label class="text readonly" id="Height"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Facebook" class="captionleft readonly">Facebook Fan Page:</label><label class="text readonly" id="Facebook"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Twitter" class="captionleft readonly">Twitter:</label><label class="text readonly" id="Twitter"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Website" class="captionleft readonly">Website:</label><label class="text readonly" id="Website"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_CurrentResidence" class="captionleft readonly">Current Residence:</label><label class="text readonly" id="CurrentResidence"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Occupation" class="captionleft readonly">Occupation (if not a full-time athlete):</label><label class="text readonly" id="Occupation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Hobbies" class="captionleft readonly">Hobbies:</label><label class="text readonly" id="Hobbies"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_EducationLevel" class="captionleft readonly">Highest Level of Education:</label><label class="text readonly" id="EducationLevel"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_FamilyInformation" class="captionleft readonly">Family Information:</label><label class="text readonly" id="FamilyInformation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_StyleOfPlay" class="captionleft readonly">Style of Play:</label><label class="text readonly" id="StyleOfPlay"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Plays" class="captionleft readonly">Plays:</label><label class="text readonly"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_OtherSports" class="captionleft readonly">Other sports played at a high level:</label><label class="text readonly" id="OtherSports"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_FamousSportingRelatives" class="captionleft readonly">Famous or elite sporting relatives:</label><label class="text readonly" id="FamousSportingRelatives"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Languages" class="captionleft readonly">Language(s):</label><label class="text readonly" id="Languages"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_InternationalDebut" class="captionleft readonly">International Debut:</label><label class="text readonly" id="InternationalDebut"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Nickname" class="captionleft readonly">Nickname:</label><label class="text readonly" id="Nickname"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Club" class="captionleft readonly">Club:</label><label class="text readonly" id="Club"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Coach" class="captionleft readonly">Coach:</label><label class="text readonly" id="Coach"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_MajorInjuries" class="captionleft readonly">Major Injuries:</label><label class="text readonly" id="MajorInjuries"></label></li>
+	</ol>
+</fieldset><fieldset id="cphPage_cphPage_VF0_fs1">
+	<ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_PreviousOlympics" class="captionlarge readonly">Previous Olympics Games competed and result:</label><label class="text readonly" id="PreviousOlympics"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_BeginSport" class="captionlarge readonly">When and Where begin playing this sport, and Why this sport?:</label><label class="text readonly" id="BeginSport"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_EquipmentSponsor" class="captionlarge readonly">Equipment Sponsor and Current Racket Model:</label><label class="text readonly" id="EquipmentSponsor"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_TrainingRegime" class="captionlarge readonly">Training Regime:</label><label class="text readonly" id="TrainingRegime"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MemorableAchievements" class="captionlarge readonly">Memorable Sporting Achievements:</label><label class="text readonly" id="MemorableAchievements"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MostInfluentialPerson" class="captionlarge readonly">Most Influential Person:</label><label class="text readonly" id="MostInfluentialPerson"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingHero" class="captionlarge readonly">Sporting Hero or Idol:</label><label class="text readonly" id="SportingHero"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SuperstitionsRituals" class="captionlarge readonly">Any Superstitions or Rituals?:</label><label class="text readonly" id="SuperstitionsRituals"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingPhilosophy" class="captionlarge readonly">Sporting Philosophy or Personal Slogan or Favourite Quote:</label><label class="text readonly" id="SportingPhilosophy"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingAwards" class="captionlarge readonly">Sporting Awards / Honours (so far):</label><label class="text readonly" id="SportingAwards"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingAmbitions" class="captionlarge readonly">Sporting Ambitions:</label><label class="text readonly" id="SportingAmbitions"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_StartPlayingCompetitively" class="captionlarge readonly">When did you start competing or playing competitively?:</label><label class="text readonly" id="StartPlayingCompetitively"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MemberNationalTeamSince" class="captionlarge readonly">Member of current national team since:</label><label class="text readonly" id="MemberNationalTeamSince"></label></li>
+	</ol>
+</fieldset></span>
+        </div>
+      
+      
+      <div class="currentrank">
+        <h4>Current Ranking (11/13/2014)</h4>
+        <table>
+	<tr>
+		<td class="caption" align="left">Women's Doubles:</td><td align="left">108 (Best: 103, 7/3/2014)</td>
+	</tr><tr>
+		<td class="caption" align="left">Mixed Doubles:</td><td align="left">309 (Best: 165, 7/18/2013)</td>
+	</tr>
+</table>
+      </div>
+      
+    </div>
+    <div id="cphPage_cphPage_pnlChartContainer" class="chart">
+	<span id="cphPage_cphPage_ChartRankingPosition475" style="display:inline-block;"><img id="cphPage_cphPage_imgTopRanking_475_07A90A1F-B85D-4210-9C14-F5C0005E334F" usemap="#ImageMapTopRanking_475_07A90A1F-B85D-4210-9C14-F5C0005E334F" src="//content.tournamentsoftware.com/images/chart/Chart_TopRanking_475_07A90A1F-B85D-4210-9C14-F5C0005E334F_1033.png" />
+<map name="ImageMapTopRanking_475_07A90A1F-B85D-4210-9C14-F5C0005E334F" id="ImageMapTopRanking_475_07A90A1F-B85D-4210-9C14-F5C0005E334F">
+
+	<area shape="poly" coords="244,96,248,96,248,106,244,106" title="Nanna VAINIO, 9/18/2014 : 876" alt="Nanna VAINIO, 9/18/2014 : 876" />
+	<area shape="poly" coords="237,96,240,96,240,106,237,106,240,96,244,96,244,106,240,106" title="Nanna VAINIO, 9/11/2014 : 876" alt="Nanna VAINIO, 9/11/2014 : 876" />
+	<area shape="poly" coords="230,97,233,96,233,106,230,107,233,96,237,96,237,106,233,106" title="Nanna VAINIO, 9/4/2014 : 876" alt="Nanna VAINIO, 9/4/2014 : 876" />
+	<area shape="poly" coords="223,96,226,97,226,107,223,106,226,97,230,97,230,107,226,107" title="Nanna VAINIO, 8/28/2014 : 881" alt="Nanna VAINIO, 8/28/2014 : 881" />
+	<area shape="poly" coords="215,96,219,96,219,106,215,106,219,96,223,96,223,106,219,106" title="Nanna VAINIO, 8/21/2014 : 867" alt="Nanna VAINIO, 8/21/2014 : 867" />
+	<area shape="poly" coords="208,97,212,97,212,107,208,107,212,97,215,96,215,106,212,107" title="Nanna VAINIO, 8/14/2014 : 880" alt="Nanna VAINIO, 8/14/2014 : 880" />
+	<area shape="poly" coords="201,97,205,97,205,107,201,107,205,97,208,97,208,107,205,107" title="Nanna VAINIO, 8/7/2014 : 880" alt="Nanna VAINIO, 8/7/2014 : 880" />
+	<area shape="poly" coords="194,96,198,96,198,106,194,106,198,96,201,97,201,107,198,106" title="Nanna VAINIO, 7/31/2014 : 875" alt="Nanna VAINIO, 7/31/2014 : 875" />
+	<area shape="poly" coords="187,96,190,96,190,106,187,106,190,96,194,96,194,106,190,106" title="Nanna VAINIO, 7/24/2014 : 873" alt="Nanna VAINIO, 7/24/2014 : 873" />
+	<area shape="poly" coords="180,97,183,97,183,107,180,107,183,97,187,96,187,106,183,107" title="Nanna VAINIO, 7/17/2014 : 880" alt="Nanna VAINIO, 7/17/2014 : 880" />
+	<area shape="poly" coords="173,97,176,97,176,107,173,107,176,97,180,97,180,107,176,107" title="Nanna VAINIO, 7/10/2014 : 881" alt="Nanna VAINIO, 7/10/2014 : 881" />
+	<area shape="poly" coords="165,97,169,97,169,107,165,107,169,97,173,97,173,107,169,107" title="Nanna VAINIO, 7/3/2014 : 886" alt="Nanna VAINIO, 7/3/2014 : 886" />
+	<area shape="poly" coords="158,97,162,97,162,107,158,107,162,97,165,97,165,107,162,107" title="Nanna VAINIO, 6/26/2014 : 883" alt="Nanna VAINIO, 6/26/2014 : 883" />
+	<area shape="poly" coords="151,96,155,97,155,107,151,106,155,97,158,97,158,107,155,107" title="Nanna VAINIO, 6/19/2014 : 882" alt="Nanna VAINIO, 6/19/2014 : 882" />
+	<area shape="poly" coords="144,96,148,96,148,106,144,106,148,96,151,96,151,106,148,106" title="Nanna VAINIO, 6/12/2014 : 867" alt="Nanna VAINIO, 6/12/2014 : 867" />
+	<area shape="poly" coords="137,96,140,96,140,106,137,106,140,96,144,96,144,106,140,106" title="Nanna VAINIO, 6/5/2014 : 868" alt="Nanna VAINIO, 6/5/2014 : 868" />
+	<area shape="poly" coords="130,95,133,96,133,106,130,105,133,96,137,96,137,106,133,106" title="Nanna VAINIO, 5/29/2014 : 868" alt="Nanna VAINIO, 5/29/2014 : 868" />
+	<area shape="poly" coords="123,94,126,95,126,105,123,104,126,95,130,95,130,105,126,105" title="Nanna VAINIO, 5/22/2014 : 858" alt="Nanna VAINIO, 5/22/2014 : 858" />
+	<area shape="poly" coords="115,94,119,94,119,104,115,104,119,94,123,94,123,104,119,104" title="Nanna VAINIO, 5/15/2014 : 853" alt="Nanna VAINIO, 5/15/2014 : 853" />
+	<area shape="poly" coords="108,94,112,94,112,104,108,104,112,94,115,94,115,104,112,104" title="Nanna VAINIO, 5/8/2014 : 851" alt="Nanna VAINIO, 5/8/2014 : 851" />
+	<area shape="poly" coords="101,94,105,94,105,104,101,104,105,94,108,94,108,104,105,104" title="Nanna VAINIO, 5/1/2014 : 856" alt="Nanna VAINIO, 5/1/2014 : 856" />
+	<area shape="poly" coords="94,94,98,93,98,103,94,104,98,93,101,94,101,104,98,103" title="Nanna VAINIO, 4/24/2014 : 847" alt="Nanna VAINIO, 4/24/2014 : 847" />
+	<area shape="poly" coords="87,95,90,95,90,105,87,105,90,95,94,94,94,104,90,105" title="Nanna VAINIO, 4/17/2014 : 859" alt="Nanna VAINIO, 4/17/2014 : 859" />
+	<area shape="poly" coords="80,94,83,94,83,104,80,104,83,94,87,95,87,105,83,104" title="Nanna VAINIO, 4/10/2014 : 856" alt="Nanna VAINIO, 4/10/2014 : 856" />
+	<area shape="poly" coords="73,94,76,94,76,104,73,104,76,94,80,94,80,104,76,104" title="Nanna VAINIO, 4/3/2014 : 848" alt="Nanna VAINIO, 4/3/2014 : 848" />
+	<area shape="poly" coords="65,95,69,94,69,104,65,105,69,94,73,94,73,104,69,104" title="Nanna VAINIO, 3/27/2014 : 854" alt="Nanna VAINIO, 3/27/2014 : 854" />
+	<area shape="poly" coords="58,96,62,95,62,105,58,106,62,95,65,95,65,105,62,105" title="Nanna VAINIO, 3/20/2014 : 863" alt="Nanna VAINIO, 3/20/2014 : 863" />
+	<area shape="poly" coords="51,97,55,97,55,107,51,107,55,97,58,96,58,106,55,107" title="Nanna VAINIO, 3/13/2014 : 879" alt="Nanna VAINIO, 3/13/2014 : 879" />
+	<area shape="poly" coords="48,97,51,97,51,107,48,107" title="Nanna VAINIO, 3/6/2014 : 882" alt="Nanna VAINIO, 3/6/2014 : 882" />
+	<area shape="poly" coords="308,17,312,17,312,27,308,27" title="Jenny NYSTROM, 11/20/2014 : 108" alt="Jenny NYSTROM, 11/20/2014 : 108" />
+	<area shape="poly" coords="301,17,305,17,305,27,301,27,305,17,308,17,308,27,305,27" title="Jenny NYSTROM, 11/13/2014 : 109" alt="Jenny NYSTROM, 11/13/2014 : 109" />
+	<area shape="poly" coords="294,17,298,17,298,27,294,27,298,17,301,17,301,27,298,27" title="Jenny NYSTROM, 11/6/2014 : 108" alt="Jenny NYSTROM, 11/6/2014 : 108" />
+	<area shape="poly" coords="287,17,290,17,290,27,287,27,290,17,294,17,294,27,290,27" title="Jenny NYSTROM, 10/30/2014 : 104" alt="Jenny NYSTROM, 10/30/2014 : 104" />
+	<area shape="poly" coords="280,18,283,18,283,28,280,28,283,18,287,17,287,27,283,28" title="Jenny NYSTROM, 10/23/2014 : 112" alt="Jenny NYSTROM, 10/23/2014 : 112" />
+	<area shape="poly" coords="273,18,276,18,276,28,273,28,276,18,280,18,280,28,276,28" title="Jenny NYSTROM, 10/16/2014 : 113" alt="Jenny NYSTROM, 10/16/2014 : 113" />
+	<area shape="poly" coords="265,18,269,18,269,28,265,28,269,18,273,18,273,28,269,28" title="Jenny NYSTROM, 10/9/2014 : 112" alt="Jenny NYSTROM, 10/9/2014 : 112" />
+	<area shape="poly" coords="258,17,262,17,262,27,258,27,262,17,265,18,265,28,262,27" title="Jenny NYSTROM, 10/2/2014 : 110" alt="Jenny NYSTROM, 10/2/2014 : 110" />
+	<area shape="poly" coords="251,18,255,18,255,28,251,28,255,18,258,17,258,27,255,28" title="Jenny NYSTROM, 9/25/2014 : 111" alt="Jenny NYSTROM, 9/25/2014 : 111" />
+	<area shape="poly" coords="244,18,248,18,248,28,244,28,248,18,251,18,251,28,248,28" title="Jenny NYSTROM, 9/18/2014 : 114" alt="Jenny NYSTROM, 9/18/2014 : 114" />
+	<area shape="poly" coords="237,18,240,18,240,28,237,28,240,18,244,18,244,28,240,28" title="Jenny NYSTROM, 9/11/2014 : 111" alt="Jenny NYSTROM, 9/11/2014 : 111" />
+	<area shape="poly" coords="230,18,233,18,233,28,230,28,233,18,237,18,237,28,233,28" title="Jenny NYSTROM, 9/4/2014 : 111" alt="Jenny NYSTROM, 9/4/2014 : 111" />
+	<area shape="poly" coords="223,17,226,18,226,28,223,27,226,18,230,18,230,28,226,28" title="Jenny NYSTROM, 8/28/2014 : 111" alt="Jenny NYSTROM, 8/28/2014 : 111" />
+	<area shape="poly" coords="215,17,219,17,219,27,215,27,219,17,223,17,223,27,219,27" title="Jenny NYSTROM, 8/21/2014 : 108" alt="Jenny NYSTROM, 8/21/2014 : 108" />
+	<area shape="poly" coords="208,17,212,17,212,27,208,27,212,17,215,17,215,27,212,27" title="Jenny NYSTROM, 8/14/2014 : 108" alt="Jenny NYSTROM, 8/14/2014 : 108" />
+	<area shape="poly" coords="201,17,205,17,205,27,201,27,205,17,208,17,208,27,205,27" title="Jenny NYSTROM, 8/7/2014 : 108" alt="Jenny NYSTROM, 8/7/2014 : 108" />
+	<area shape="poly" coords="194,17,198,17,198,27,194,27,198,17,201,17,201,27,198,27" title="Jenny NYSTROM, 7/31/2014 : 108" alt="Jenny NYSTROM, 7/31/2014 : 108" />
+	<area shape="poly" coords="187,17,190,17,190,27,187,27,190,17,194,17,194,27,190,27" title="Jenny NYSTROM, 7/24/2014 : 108" alt="Jenny NYSTROM, 7/24/2014 : 108" />
+	<area shape="poly" coords="180,17,183,17,183,27,180,27,183,17,187,17,187,27,183,27" title="Jenny NYSTROM, 7/17/2014 : 104" alt="Jenny NYSTROM, 7/17/2014 : 104" />
+	<area shape="poly" coords="173,17,176,17,176,27,173,27,176,17,180,17,180,27,176,27" title="Jenny NYSTROM, 7/10/2014 : 103" alt="Jenny NYSTROM, 7/10/2014 : 103" />
+	<area shape="poly" coords="165,17,169,17,169,27,165,27,169,17,173,17,173,27,169,27" title="Jenny NYSTROM, 7/3/2014 : 105" alt="Jenny NYSTROM, 7/3/2014 : 105" />
+	<area shape="poly" coords="158,17,162,17,162,27,158,27,162,17,165,17,165,27,162,27" title="Jenny NYSTROM, 6/26/2014 : 104" alt="Jenny NYSTROM, 6/26/2014 : 104" />
+	<area shape="poly" coords="151,17,155,17,155,27,151,27,155,17,158,17,158,27,155,27" title="Jenny NYSTROM, 6/19/2014 : 108" alt="Jenny NYSTROM, 6/19/2014 : 108" />
+	<area shape="poly" coords="144,17,148,17,148,27,144,27,148,17,151,17,151,27,148,27" title="Jenny NYSTROM, 6/12/2014 : 107" alt="Jenny NYSTROM, 6/12/2014 : 107" />
+	<area shape="poly" coords="137,17,140,17,140,27,137,27,140,17,144,17,144,27,140,27" title="Jenny NYSTROM, 6/5/2014 : 107" alt="Jenny NYSTROM, 6/5/2014 : 107" />
+	<area shape="poly" coords="130,17,133,17,133,27,130,27,133,17,137,17,137,27,133,27" title="Jenny NYSTROM, 5/29/2014 : 109" alt="Jenny NYSTROM, 5/29/2014 : 109" />
+	<area shape="poly" coords="123,17,126,17,126,27,123,27,126,17,130,17,130,27,126,27" title="Jenny NYSTROM, 5/22/2014 : 109" alt="Jenny NYSTROM, 5/22/2014 : 109" />
+	<area shape="poly" coords="115,17,119,17,119,27,115,27,119,17,123,17,123,27,119,27" title="Jenny NYSTROM, 5/15/2014 : 109" alt="Jenny NYSTROM, 5/15/2014 : 109" />
+	<area shape="poly" coords="108,18,112,17,112,27,108,28,112,17,115,17,115,27,112,27" title="Jenny NYSTROM, 5/8/2014 : 109" alt="Jenny NYSTROM, 5/8/2014 : 109" />
+	<area shape="poly" coords="101,19,105,19,105,29,101,29,105,19,108,18,108,28,105,29" title="Jenny NYSTROM, 5/1/2014 : 123" alt="Jenny NYSTROM, 5/1/2014 : 123" />
+	<area shape="poly" coords="94,20,98,20,98,30,94,30,98,20,101,19,101,29,98,30" title="Jenny NYSTROM, 4/24/2014 : 134" alt="Jenny NYSTROM, 4/24/2014 : 134" />
+	<area shape="poly" coords="87,20,90,20,90,30,87,30,90,20,94,20,94,30,90,30" title="Jenny NYSTROM, 4/17/2014 : 135" alt="Jenny NYSTROM, 4/17/2014 : 135" />
+	<area shape="poly" coords="80,19,83,19,83,29,80,29,83,19,87,20,87,30,83,29" title="Jenny NYSTROM, 4/10/2014 : 126" alt="Jenny NYSTROM, 4/10/2014 : 126" />
+	<area shape="poly" coords="73,19,76,19,76,29,73,29,76,19,80,19,80,29,76,29" title="Jenny NYSTROM, 4/3/2014 : 125" alt="Jenny NYSTROM, 4/3/2014 : 125" />
+	<area shape="poly" coords="65,20,69,20,69,30,65,30,69,20,73,19,73,29,69,30" title="Jenny NYSTROM, 3/27/2014 : 133" alt="Jenny NYSTROM, 3/27/2014 : 133" />
+	<area shape="poly" coords="58,20,62,20,62,30,58,30,62,20,65,20,65,30,62,30" title="Jenny NYSTROM, 3/20/2014 : 133" alt="Jenny NYSTROM, 3/20/2014 : 133" />
+	<area shape="poly" coords="51,20,55,20,55,30,51,30,55,20,58,20,58,30,55,30" title="Jenny NYSTROM, 3/13/2014 : 136" alt="Jenny NYSTROM, 3/13/2014 : 136" />
+	<area shape="poly" coords="48,20,51,20,51,30,48,30" title="Jenny NYSTROM, 3/6/2014 : 137" alt="Jenny NYSTROM, 3/6/2014 : 137" />
+</map></span><span id="cphPage_cphPage_ChartRankingPosition476" style="display:inline-block;"><img id="cphPage_cphPage_imgTopRanking_476_07A90A1F-B85D-4210-9C14-F5C0005E334F" usemap="#ImageMapTopRanking_476_07A90A1F-B85D-4210-9C14-F5C0005E334F" src="//content.tournamentsoftware.com/images/chart/Chart_TopRanking_476_07A90A1F-B85D-4210-9C14-F5C0005E334F_1033.png" />
+<map name="ImageMapTopRanking_476_07A90A1F-B85D-4210-9C14-F5C0005E334F" id="ImageMapTopRanking_476_07A90A1F-B85D-4210-9C14-F5C0005E334F">
+
+	<area shape="poly" coords="309,106,312,107,312,117,309,116" title="SAPUTRA Albert, 11/20/2014 : 1379" alt="SAPUTRA Albert, 11/20/2014 : 1379" />
+	<area shape="poly" coords="302,105,305,106,305,116,302,115,305,106,309,106,309,116,305,116" title="SAPUTRA Albert, 11/13/2014 : 1356" alt="SAPUTRA Albert, 11/13/2014 : 1356" />
+	<area shape="poly" coords="295,105,298,105,298,115,295,115,298,105,302,105,302,115,298,115" title="SAPUTRA Albert, 11/6/2014 : 1350" alt="SAPUTRA Albert, 11/6/2014 : 1350" />
+	<area shape="poly" coords="288,104,291,104,291,114,288,114,291,104,295,105,295,115,291,114" title="SAPUTRA Albert, 10/30/2014 : 1338" alt="SAPUTRA Albert, 10/30/2014 : 1338" />
+	<area shape="poly" coords="281,104,285,103,285,113,281,114,285,103,288,104,288,114,285,113" title="SAPUTRA Albert, 10/23/2014 : 1329" alt="SAPUTRA Albert, 10/23/2014 : 1329" />
+	<area shape="poly" coords="274,104,278,104,278,114,274,114,278,104,281,104,281,114,278,114" title="SAPUTRA Albert, 10/16/2014 : 1339" alt="SAPUTRA Albert, 10/16/2014 : 1339" />
+	<area shape="poly" coords="267,102,271,103,271,113,267,112,271,103,274,104,274,114,271,113" title="SAPUTRA Albert, 10/9/2014 : 1330" alt="SAPUTRA Albert, 10/9/2014 : 1330" />
+	<area shape="poly" coords="260,99,264,100,264,110,260,109,264,100,267,102,267,112,264,110" title="SAPUTRA Albert, 10/2/2014 : 1291" alt="SAPUTRA Albert, 10/2/2014 : 1291" />
+	<area shape="poly" coords="254,99,257,98,257,108,254,109,257,98,260,99,260,109,257,108" title="SAPUTRA Albert, 9/25/2014 : 1266" alt="SAPUTRA Albert, 9/25/2014 : 1266" />
+	<area shape="poly" coords="247,99,250,100,250,110,247,109,250,100,254,99,254,109,250,110" title="SAPUTRA Albert, 9/18/2014 : 1287" alt="SAPUTRA Albert, 9/18/2014 : 1287" />
+	<area shape="poly" coords="240,99,243,99,243,109,240,109,243,99,247,99,247,109,243,109" title="SAPUTRA Albert, 9/11/2014 : 1274" alt="SAPUTRA Albert, 9/11/2014 : 1274" />
+	<area shape="poly" coords="233,99,236,99,236,109,233,109,236,99,240,99,240,109,236,109" title="SAPUTRA Albert, 9/4/2014 : 1274" alt="SAPUTRA Albert, 9/4/2014 : 1274" />
+	<area shape="poly" coords="226,99,229,100,229,110,226,109,229,100,233,99,233,109,229,110" title="SAPUTRA Albert, 8/28/2014 : 1289" alt="SAPUTRA Albert, 8/28/2014 : 1289" />
+	<area shape="poly" coords="219,97,223,97,223,107,219,107,223,97,226,99,226,109,223,107" title="SAPUTRA Albert, 8/21/2014 : 1256" alt="SAPUTRA Albert, 8/21/2014 : 1256" />
+	<area shape="poly" coords="212,97,216,97,216,107,212,107,216,97,219,97,219,107,216,107" title="SAPUTRA Albert, 8/14/2014 : 1259" alt="SAPUTRA Albert, 8/14/2014 : 1259" />
+	<area shape="poly" coords="205,97,209,97,209,107,205,107,209,97,212,97,212,107,209,107" title="SAPUTRA Albert, 8/7/2014 : 1259" alt="SAPUTRA Albert, 8/7/2014 : 1259" />
+	<area shape="poly" coords="198,96,202,96,202,106,198,106,202,96,205,97,205,107,202,106" title="SAPUTRA Albert, 7/31/2014 : 1246" alt="SAPUTRA Albert, 7/31/2014 : 1246" />
+	<area shape="poly" coords="192,96,195,96,195,106,192,106,195,96,198,96,198,106,195,106" title="SAPUTRA Albert, 7/24/2014 : 1242" alt="SAPUTRA Albert, 7/24/2014 : 1242" />
+	<area shape="poly" coords="185,98,188,97,188,107,185,108,188,97,192,96,192,106,188,107" title="SAPUTRA Albert, 7/17/2014 : 1255" alt="SAPUTRA Albert, 7/17/2014 : 1255" />
+	<area shape="poly" coords="178,99,181,98,181,108,178,109,181,98,185,98,185,108,181,108" title="SAPUTRA Albert, 7/10/2014 : 1268" alt="SAPUTRA Albert, 7/10/2014 : 1268" />
+	<area shape="poly" coords="171,99,174,99,174,109,171,109,174,99,178,99,178,109,174,109" title="SAPUTRA Albert, 7/3/2014 : 1278" alt="SAPUTRA Albert, 7/3/2014 : 1278" />
+	<area shape="poly" coords="164,98,167,99,167,109,164,108,167,99,171,99,171,109,167,109" title="SAPUTRA Albert, 6/26/2014 : 1273" alt="SAPUTRA Albert, 6/26/2014 : 1273" />
+	<area shape="poly" coords="157,98,161,98,161,108,157,108,161,98,164,98,164,108,161,108" title="SAPUTRA Albert, 6/19/2014 : 1271" alt="SAPUTRA Albert, 6/19/2014 : 1271" />
+	<area shape="poly" coords="150,98,154,98,154,108,150,108,154,98,157,98,157,108,154,108" title="SAPUTRA Albert, 6/12/2014 : 1267" alt="SAPUTRA Albert, 6/12/2014 : 1267" />
+	<area shape="poly" coords="143,99,147,99,147,109,143,109,147,99,150,98,150,108,147,109" title="SAPUTRA Albert, 6/5/2014 : 1274" alt="SAPUTRA Albert, 6/5/2014 : 1274" />
+	<area shape="poly" coords="137,100,140,100,140,110,137,110,140,100,143,99,143,109,140,110" title="SAPUTRA Albert, 5/29/2014 : 1286" alt="SAPUTRA Albert, 5/29/2014 : 1286" />
+	<area shape="poly" coords="130,99,133,100,133,110,130,109,133,100,137,100,137,110,133,110" title="SAPUTRA Albert, 5/22/2014 : 1285" alt="SAPUTRA Albert, 5/22/2014 : 1285" />
+	<area shape="poly" coords="123,99,126,99,126,109,123,109,126,99,130,99,130,109,126,109" title="SAPUTRA Albert, 5/15/2014 : 1282" alt="SAPUTRA Albert, 5/15/2014 : 1282" />
+	<area shape="poly" coords="116,99,119,99,119,109,116,109,119,99,123,99,123,109,119,109" title="SAPUTRA Albert, 5/8/2014 : 1279" alt="SAPUTRA Albert, 5/8/2014 : 1279" />
+	<area shape="poly" coords="109,99,112,100,112,110,109,109,112,100,116,99,116,109,112,110" title="SAPUTRA Albert, 5/1/2014 : 1288" alt="SAPUTRA Albert, 5/1/2014 : 1288" />
+	<area shape="poly" coords="102,98,106,98,106,108,102,108,106,98,109,99,109,109,106,108" title="SAPUTRA Albert, 4/24/2014 : 1262" alt="SAPUTRA Albert, 4/24/2014 : 1262" />
+	<area shape="poly" coords="95,98,99,99,99,109,95,108,99,99,102,98,102,108,99,109" title="SAPUTRA Albert, 4/17/2014 : 1273" alt="SAPUTRA Albert, 4/17/2014 : 1273" />
+	<area shape="poly" coords="88,97,92,98,92,108,88,107,92,98,95,98,95,108,92,108" title="SAPUTRA Albert, 4/10/2014 : 1271" alt="SAPUTRA Albert, 4/10/2014 : 1271" />
+	<area shape="poly" coords="85,97,88,97,88,107,85,107" title="SAPUTRA Albert, 4/3/2014 : 1249" alt="SAPUTRA Albert, 4/3/2014 : 1249" />
+	<area shape="poly" coords="309,17,312,17,312,27,309,27" title="Marko PYYKONEN, 11/20/2014 : 309" alt="Marko PYYKONEN, 11/20/2014 : 309" />
+	<area shape="poly" coords="302,17,305,17,305,27,302,27,305,17,309,17,309,27,305,27" title="Marko PYYKONEN, 11/13/2014 : 308" alt="Marko PYYKONEN, 11/13/2014 : 308" />
+	<area shape="poly" coords="295,17,298,17,298,27,295,27,298,17,302,17,302,27,298,27" title="Marko PYYKONEN, 11/6/2014 : 305" alt="Marko PYYKONEN, 11/6/2014 : 305" />
+	<area shape="poly" coords="288,18,291,17,291,27,288,28,291,17,295,17,295,27,291,27" title="Marko PYYKONEN, 10/30/2014 : 306" alt="Marko PYYKONEN, 10/30/2014 : 306" />
+	<area shape="poly" coords="281,18,285,18,285,28,281,28,285,18,288,18,288,28,285,28" title="Marko PYYKONEN, 10/23/2014 : 317" alt="Marko PYYKONEN, 10/23/2014 : 317" />
+	<area shape="poly" coords="274,18,278,18,278,28,274,28,278,18,281,18,281,28,278,28" title="Marko PYYKONEN, 10/16/2014 : 321" alt="Marko PYYKONEN, 10/16/2014 : 321" />
+	<area shape="poly" coords="267,19,271,18,271,28,267,29,271,18,274,18,274,28,271,28" title="Marko PYYKONEN, 10/9/2014 : 320" alt="Marko PYYKONEN, 10/9/2014 : 320" />
+	<area shape="poly" coords="260,19,264,19,264,29,260,29,264,19,267,19,267,29,264,29" title="Marko PYYKONEN, 10/2/2014 : 325" alt="Marko PYYKONEN, 10/2/2014 : 325" />
+	<area shape="poly" coords="254,19,257,19,257,29,254,29,257,19,260,19,260,29,257,29" title="Marko PYYKONEN, 9/25/2014 : 326" alt="Marko PYYKONEN, 9/25/2014 : 326" />
+	<area shape="poly" coords="247,19,250,19,250,29,247,29,250,19,254,19,254,29,250,29" title="Marko PYYKONEN, 9/18/2014 : 327" alt="Marko PYYKONEN, 9/18/2014 : 327" />
+	<area shape="poly" coords="240,19,243,19,243,29,240,29,243,19,247,19,247,29,243,29" title="Marko PYYKONEN, 9/11/2014 : 328" alt="Marko PYYKONEN, 9/11/2014 : 328" />
+	<area shape="poly" coords="233,19,236,19,236,29,233,29,236,19,240,19,240,29,236,29" title="Marko PYYKONEN, 9/4/2014 : 328" alt="Marko PYYKONEN, 9/4/2014 : 328" />
+	<area shape="poly" coords="226,19,229,19,229,29,226,29,229,19,233,19,233,29,229,29" title="Marko PYYKONEN, 8/28/2014 : 332" alt="Marko PYYKONEN, 8/28/2014 : 332" />
+	<area shape="poly" coords="219,19,223,19,223,29,219,29,223,19,226,19,226,29,223,29" title="Marko PYYKONEN, 8/21/2014 : 326" alt="Marko PYYKONEN, 8/21/2014 : 326" />
+	<area shape="poly" coords="212,19,216,19,216,29,212,29,216,19,219,19,219,29,216,29" title="Marko PYYKONEN, 8/14/2014 : 328" alt="Marko PYYKONEN, 8/14/2014 : 328" />
+	<area shape="poly" coords="205,19,209,19,209,29,205,29,209,19,212,19,212,29,209,29" title="Marko PYYKONEN, 8/7/2014 : 328" alt="Marko PYYKONEN, 8/7/2014 : 328" />
+	<area shape="poly" coords="198,19,202,19,202,29,198,29,202,19,205,19,205,29,202,29" title="Marko PYYKONEN, 7/31/2014 : 324" alt="Marko PYYKONEN, 7/31/2014 : 324" />
+	<area shape="poly" coords="192,19,195,19,195,29,192,29,195,19,198,19,198,29,195,29" title="Marko PYYKONEN, 7/24/2014 : 323" alt="Marko PYYKONEN, 7/24/2014 : 323" />
+	<area shape="poly" coords="185,19,188,19,188,29,185,29,188,19,192,19,192,29,188,29" title="Marko PYYKONEN, 7/17/2014 : 325" alt="Marko PYYKONEN, 7/17/2014 : 325" />
+	<area shape="poly" coords="178,19,181,19,181,29,178,29,181,19,185,19,185,29,181,29" title="Marko PYYKONEN, 7/10/2014 : 329" alt="Marko PYYKONEN, 7/10/2014 : 329" />
+	<area shape="poly" coords="171,19,174,19,174,29,171,29,174,19,178,19,178,29,174,29" title="Marko PYYKONEN, 7/3/2014 : 330" alt="Marko PYYKONEN, 7/3/2014 : 330" />
+	<area shape="poly" coords="164,19,167,19,167,29,164,29,167,19,171,19,171,29,167,29" title="Marko PYYKONEN, 6/26/2014 : 327" alt="Marko PYYKONEN, 6/26/2014 : 327" />
+	<area shape="poly" coords="157,19,161,19,161,29,157,29,161,19,164,19,164,29,161,29" title="Marko PYYKONEN, 6/19/2014 : 325" alt="Marko PYYKONEN, 6/19/2014 : 325" />
+	<area shape="poly" coords="150,19,154,19,154,29,150,29,154,19,157,19,157,29,154,29" title="Marko PYYKONEN, 6/12/2014 : 332" alt="Marko PYYKONEN, 6/12/2014 : 332" />
+	<area shape="poly" coords="143,20,147,20,147,30,143,30,147,20,150,19,150,29,147,30" title="Marko PYYKONEN, 6/5/2014 : 333" alt="Marko PYYKONEN, 6/5/2014 : 333" />
+	<area shape="poly" coords="137,20,140,20,140,30,137,30,140,20,143,20,143,30,140,30" title="Marko PYYKONEN, 5/29/2014 : 340" alt="Marko PYYKONEN, 5/29/2014 : 340" />
+	<area shape="poly" coords="130,20,133,20,133,30,130,30,133,20,137,20,137,30,133,30" title="Marko PYYKONEN, 5/22/2014 : 336" alt="Marko PYYKONEN, 5/22/2014 : 336" />
+	<area shape="poly" coords="123,20,126,20,126,30,123,30,126,20,130,20,130,30,126,30" title="Marko PYYKONEN, 5/15/2014 : 337" alt="Marko PYYKONEN, 5/15/2014 : 337" />
+	<area shape="poly" coords="116,20,119,20,119,30,116,30,119,20,123,20,123,30,119,30" title="Marko PYYKONEN, 5/8/2014 : 342" alt="Marko PYYKONEN, 5/8/2014 : 342" />
+	<area shape="poly" coords="104,32,107,25,117,25,114,32,112,20,116,20,116,30,112,30" title="Marko PYYKONEN, 5/1/2014 : 339" alt="Marko PYYKONEN, 5/1/2014 : 339" />
+	<area shape="poly" coords="102,34,106,34,106,44,102,44,101,39,104,32,114,32,111,39" title="Marko PYYKONEN, 4/24/2014 : 503" alt="Marko PYYKONEN, 4/24/2014 : 503" />
+	<area shape="poly" coords="90,50,94,39,104,39,100,50,99,34,102,34,102,44,99,44" title="Marko PYYKONEN, 4/17/2014 : 507" alt="Marko PYYKONEN, 4/17/2014 : 507" />
+	<area shape="poly" coords="88,55,92,55,92,65,88,65,87,60,90,50,100,50,97,60" title="Marko PYYKONEN, 4/10/2014 : 761" alt="Marko PYYKONEN, 4/10/2014 : 761" />
+	<area shape="poly" coords="81,55,85,55,85,65,81,65,85,55,88,55,88,65,85,65" title="Marko PYYKONEN, 4/3/2014 : 750" alt="Marko PYYKONEN, 4/3/2014 : 750" />
+	<area shape="poly" coords="75,55,78,55,78,65,75,65,78,55,81,55,81,65,78,65" title="Marko PYYKONEN, 3/27/2014 : 754" alt="Marko PYYKONEN, 3/27/2014 : 754" />
+	<area shape="poly" coords="68,56,71,55,71,65,68,66,71,55,75,55,75,65,71,65" title="Marko PYYKONEN, 3/20/2014 : 761" alt="Marko PYYKONEN, 3/20/2014 : 761" />
+	<area shape="poly" coords="61,57,64,57,64,67,61,67,64,57,68,56,68,66,64,67" title="Marko PYYKONEN, 3/13/2014 : 774" alt="Marko PYYKONEN, 3/13/2014 : 774" />
+	<area shape="poly" coords="57,57,61,57,61,67,57,67" title="Marko PYYKONEN, 3/6/2014 : 777" alt="Marko PYYKONEN, 3/6/2014 : 777" />
+	<area shape="poly" coords="309,99,312,99,312,109,309,109" title="Mika KONGAS, 11/20/2014 : 1284" alt="Mika KONGAS, 11/20/2014 : 1284" />
+	<area shape="poly" coords="302,97,305,98,305,108,302,107,305,98,309,99,309,109,305,108" title="Mika KONGAS, 11/13/2014 : 1264" alt="Mika KONGAS, 11/13/2014 : 1264" />
+	<area shape="poly" coords="295,97,298,97,298,107,295,107,298,97,302,97,302,107,298,107" title="Mika KONGAS, 11/6/2014 : 1256" alt="Mika KONGAS, 11/6/2014 : 1256" />
+	<area shape="poly" coords="288,96,291,96,291,106,288,106,291,96,295,97,295,107,291,106" title="Mika KONGAS, 10/30/2014 : 1246" alt="Mika KONGAS, 10/30/2014 : 1246" />
+	<area shape="poly" coords="281,96,285,96,285,106,281,106,285,96,288,96,288,106,285,106" title="Mika KONGAS, 10/23/2014 : 1242" alt="Mika KONGAS, 10/23/2014 : 1242" />
+	<area shape="poly" coords="274,96,278,97,278,107,274,106,278,97,281,96,281,106,278,107" title="Mika KONGAS, 10/16/2014 : 1249" alt="Mika KONGAS, 10/16/2014 : 1249" />
+	<area shape="poly" coords="262,78,266,101,276,101,272,78,271,96,274,96,274,106,271,106" title="Mika KONGAS, 10/9/2014 : 1240" alt="Mika KONGAS, 10/9/2014 : 1240" />
+	<area shape="poly" coords="260,50,264,50,264,60,260,60,259,55,262,78,272,78,269,55" title="Mika KONGAS, 10/2/2014 : 695" alt="Mika KONGAS, 10/2/2014 : 695" />
+	<area shape="poly" coords="254,50,257,50,257,60,254,60,257,50,260,50,260,60,257,60" title="Mika KONGAS, 9/25/2014 : 690" alt="Mika KONGAS, 9/25/2014 : 690" />
+	<area shape="poly" coords="247,50,250,50,250,60,247,60,250,50,254,50,254,60,250,60" title="Mika KONGAS, 9/18/2014 : 693" alt="Mika KONGAS, 9/18/2014 : 693" />
+	<area shape="poly" coords="240,49,243,49,243,59,240,59,243,49,247,50,247,60,243,59" title="Mika KONGAS, 9/11/2014 : 687" alt="Mika KONGAS, 9/11/2014 : 687" />
+	<area shape="poly" coords="233,49,236,49,236,59,233,59,236,49,240,49,240,59,236,59" title="Mika KONGAS, 9/4/2014 : 687" alt="Mika KONGAS, 9/4/2014 : 687" />
+	<area shape="poly" coords="226,48,229,49,229,59,226,58,229,49,233,49,233,59,229,59" title="Mika KONGAS, 8/28/2014 : 683" alt="Mika KONGAS, 8/28/2014 : 683" />
+	<area shape="poly" coords="219,48,223,48,223,58,219,58,223,48,226,48,226,58,223,58" title="Mika KONGAS, 8/21/2014 : 667" alt="Mika KONGAS, 8/21/2014 : 667" />
+	<area shape="poly" coords="212,48,216,48,216,58,212,58,216,48,219,48,219,58,216,58" title="Mika KONGAS, 8/14/2014 : 668" alt="Mika KONGAS, 8/14/2014 : 668" />
+	<area shape="poly" coords="205,47,209,48,209,58,205,57,209,48,212,48,212,58,209,58" title="Mika KONGAS, 8/7/2014 : 668" alt="Mika KONGAS, 8/7/2014 : 668" />
+	<area shape="poly" coords="198,46,202,47,202,57,198,56,202,47,205,47,205,57,202,57" title="Mika KONGAS, 7/31/2014 : 655" alt="Mika KONGAS, 7/31/2014 : 655" />
+	<area shape="poly" coords="192,47,195,46,195,56,192,57,195,46,198,46,198,56,195,56" title="Mika KONGAS, 7/24/2014 : 653" alt="Mika KONGAS, 7/24/2014 : 653" />
+	<area shape="poly" coords="185,47,188,47,188,57,185,57,188,47,192,47,192,57,188,57" title="Mika KONGAS, 7/17/2014 : 660" alt="Mika KONGAS, 7/17/2014 : 660" />
+	<area shape="poly" coords="178,47,181,47,181,57,178,57,181,47,185,47,185,57,181,57" title="Mika KONGAS, 7/10/2014 : 658" alt="Mika KONGAS, 7/10/2014 : 658" />
+	<area shape="poly" coords="171,47,174,47,174,57,171,57,174,47,178,47,178,57,174,57" title="Mika KONGAS, 7/3/2014 : 662" alt="Mika KONGAS, 7/3/2014 : 662" />
+	<area shape="poly" coords="164,48,167,48,167,58,164,58,167,48,171,47,171,57,167,58" title="Mika KONGAS, 6/26/2014 : 668" alt="Mika KONGAS, 6/26/2014 : 668" />
+	<area shape="poly" coords="157,48,161,48,161,58,157,58,161,48,164,48,164,58,161,58" title="Mika KONGAS, 6/19/2014 : 670" alt="Mika KONGAS, 6/19/2014 : 670" />
+	<area shape="poly" coords="150,48,154,48,154,58,150,58,154,48,157,48,157,58,154,58" title="Mika KONGAS, 6/12/2014 : 668" alt="Mika KONGAS, 6/12/2014 : 668" />
+	<area shape="poly" coords="143,48,147,48,147,58,143,58,147,48,150,48,150,58,147,58" title="Mika KONGAS, 6/5/2014 : 671" alt="Mika KONGAS, 6/5/2014 : 671" />
+	<area shape="poly" coords="137,49,140,49,140,59,137,59,140,49,143,48,143,58,140,59" title="Mika KONGAS, 5/29/2014 : 681" alt="Mika KONGAS, 5/29/2014 : 681" />
+	<area shape="poly" coords="130,49,133,49,133,59,130,59,133,49,137,49,137,59,133,59" title="Mika KONGAS, 5/22/2014 : 685" alt="Mika KONGAS, 5/22/2014 : 685" />
+	<area shape="poly" coords="123,50,126,49,126,59,123,60,126,49,130,49,130,59,126,59" title="Mika KONGAS, 5/15/2014 : 686" alt="Mika KONGAS, 5/15/2014 : 686" />
+	<area shape="poly" coords="116,50,119,50,119,60,116,60,119,50,123,50,123,60,119,60" title="Mika KONGAS, 5/8/2014 : 694" alt="Mika KONGAS, 5/8/2014 : 694" />
+	<area shape="poly" coords="109,50,112,50,112,60,109,60,112,50,116,50,116,60,112,60" title="Mika KONGAS, 5/1/2014 : 694" alt="Mika KONGAS, 5/1/2014 : 694" />
+	<area shape="poly" coords="102,50,106,50,106,60,102,60,106,50,109,50,109,60,106,60" title="Mika KONGAS, 4/24/2014 : 690" alt="Mika KONGAS, 4/24/2014 : 690" />
+	<area shape="poly" coords="95,50,99,50,99,60,95,60,99,50,102,50,102,60,99,60" title="Mika KONGAS, 4/17/2014 : 695" alt="Mika KONGAS, 4/17/2014 : 695" />
+	<area shape="poly" coords="88,50,92,51,92,61,88,60,92,51,95,50,95,60,92,61" title="Mika KONGAS, 4/10/2014 : 704" alt="Mika KONGAS, 4/10/2014 : 704" />
+	<area shape="poly" coords="81,49,85,49,85,59,81,59,85,49,88,50,88,60,85,59" title="Mika KONGAS, 4/3/2014 : 688" alt="Mika KONGAS, 4/3/2014 : 688" />
+	<area shape="poly" coords="75,50,78,49,78,59,75,60,78,49,81,49,81,59,78,59" title="Mika KONGAS, 3/27/2014 : 689" alt="Mika KONGAS, 3/27/2014 : 689" />
+	<area shape="poly" coords="68,51,71,50,71,60,68,61,71,50,75,50,75,60,71,60" title="Mika KONGAS, 3/20/2014 : 700" alt="Mika KONGAS, 3/20/2014 : 700" />
+	<area shape="poly" coords="61,51,64,51,64,61,61,61,64,51,68,51,68,61,64,61" title="Mika KONGAS, 3/13/2014 : 708" alt="Mika KONGAS, 3/13/2014 : 708" />
+	<area shape="poly" coords="57,51,61,51,61,61,57,61" title="Mika KONGAS, 3/6/2014 : 711" alt="Mika KONGAS, 3/6/2014 : 711" />
+	<area shape="poly" coords="309,99,312,99,312,109,309,109" title="Iikka Heino, 11/20/2014 : 1284" alt="Iikka Heino, 11/20/2014 : 1284" />
+	<area shape="poly" coords="302,97,305,98,305,108,302,107,305,98,309,99,309,109,305,108" title="Iikka Heino, 11/13/2014 : 1264" alt="Iikka Heino, 11/13/2014 : 1264" />
+	<area shape="poly" coords="295,97,298,97,298,107,295,107,298,97,302,97,302,107,298,107" title="Iikka Heino, 11/6/2014 : 1256" alt="Iikka Heino, 11/6/2014 : 1256" />
+	<area shape="poly" coords="288,96,291,96,291,106,288,106,291,96,295,97,295,107,291,106" title="Iikka Heino, 10/30/2014 : 1246" alt="Iikka Heino, 10/30/2014 : 1246" />
+	<area shape="poly" coords="281,96,285,96,285,106,281,106,285,96,288,96,288,106,285,106" title="Iikka Heino, 10/23/2014 : 1242" alt="Iikka Heino, 10/23/2014 : 1242" />
+	<area shape="poly" coords="274,96,278,97,278,107,274,106,278,97,281,96,281,106,278,107" title="Iikka Heino, 10/16/2014 : 1249" alt="Iikka Heino, 10/16/2014 : 1249" />
+	<area shape="poly" coords="267,94,271,96,271,106,267,104,271,96,274,96,274,106,271,106" title="Iikka Heino, 10/9/2014 : 1240" alt="Iikka Heino, 10/9/2014 : 1240" />
+	<area shape="poly" coords="260,91,264,92,264,102,260,101,264,92,267,94,267,104,264,102" title="Iikka Heino, 10/2/2014 : 1200" alt="Iikka Heino, 10/2/2014 : 1200" />
+	<area shape="poly" coords="254,89,257,90,257,100,254,99,257,90,260,91,260,101,257,100" title="Iikka Heino, 9/25/2014 : 1171" alt="Iikka Heino, 9/25/2014 : 1171" />
+	<area shape="poly" coords="247,87,250,88,250,98,247,97,250,88,254,89,254,99,250,98" title="Iikka Heino, 9/18/2014 : 1142" alt="Iikka Heino, 9/18/2014 : 1142" />
+	<area shape="poly" coords="240,87,243,87,243,97,240,97,243,87,247,87,247,97,243,97" title="Iikka Heino, 9/11/2014 : 1135" alt="Iikka Heino, 9/11/2014 : 1135" />
+	<area shape="poly" coords="233,87,236,87,236,97,233,97,236,87,240,87,240,97,236,97" title="Iikka Heino, 9/4/2014 : 1135" alt="Iikka Heino, 9/4/2014 : 1135" />
+	<area shape="poly" coords="226,86,229,87,229,97,226,96,229,87,233,87,233,97,229,97" title="Iikka Heino, 8/28/2014 : 1135" alt="Iikka Heino, 8/28/2014 : 1135" />
+	<area shape="poly" coords="219,85,223,84,223,94,219,95,223,84,226,86,226,96,223,94" title="Iikka Heino, 8/21/2014 : 1104" alt="Iikka Heino, 8/21/2014 : 1104" />
+	<area shape="poly" coords="212,85,216,85,216,95,212,95,216,85,219,85,219,95,216,95" title="Iikka Heino, 8/14/2014 : 1108" alt="Iikka Heino, 8/14/2014 : 1108" />
+	<area shape="poly" coords="205,84,209,85,209,95,205,94,209,85,212,85,212,95,209,95" title="Iikka Heino, 8/7/2014 : 1108" alt="Iikka Heino, 8/7/2014 : 1108" />
+	<area shape="poly" coords="198,83,202,84,202,94,198,93,202,84,205,84,205,94,202,94" title="Iikka Heino, 7/31/2014 : 1095" alt="Iikka Heino, 7/31/2014 : 1095" />
+	<area shape="poly" coords="192,84,195,83,195,93,192,94,195,83,198,83,198,93,195,93" title="Iikka Heino, 7/24/2014 : 1093" alt="Iikka Heino, 7/24/2014 : 1093" />
+	<area shape="poly" coords="185,85,188,85,188,95,185,95,188,85,192,84,192,94,188,95" title="Iikka Heino, 7/17/2014 : 1106" alt="Iikka Heino, 7/17/2014 : 1106" />
+	<area shape="poly" coords="178,86,181,86,181,96,178,96,181,86,185,85,185,95,181,96" title="Iikka Heino, 7/10/2014 : 1121" alt="Iikka Heino, 7/10/2014 : 1121" />
+	<area shape="poly" coords="171,87,174,87,174,97,171,97,174,87,178,86,178,96,174,97" title="Iikka Heino, 7/3/2014 : 1131" alt="Iikka Heino, 7/3/2014 : 1131" />
+	<area shape="poly" coords="164,86,167,86,167,96,164,96,167,86,171,87,171,97,167,96" title="Iikka Heino, 6/26/2014 : 1129" alt="Iikka Heino, 6/26/2014 : 1129" />
+	<area shape="poly" coords="157,86,161,86,161,96,157,96,161,86,164,86,164,96,161,96" title="Iikka Heino, 6/19/2014 : 1124" alt="Iikka Heino, 6/19/2014 : 1124" />
+	<area shape="poly" coords="150,86,154,86,154,96,150,96,154,86,157,86,157,96,154,96" title="Iikka Heino, 6/12/2014 : 1118" alt="Iikka Heino, 6/12/2014 : 1118" />
+	<area shape="poly" coords="138,74,142,91,152,91,148,74,147,86,150,86,150,96,147,96" title="Iikka Heino, 6/5/2014 : 1125" alt="Iikka Heino, 6/5/2014 : 1125" />
+	<area shape="poly" coords="137,53,140,53,140,63,137,63,135,58,138,74,148,74,145,58" title="Iikka Heino, 5/29/2014 : 728" alt="Iikka Heino, 5/29/2014 : 728" />
+	<area shape="poly" coords="130,53,133,53,133,63,130,63,133,53,137,53,137,63,133,63" title="Iikka Heino, 5/22/2014 : 733" alt="Iikka Heino, 5/22/2014 : 733" />
+	<area shape="poly" coords="123,54,126,53,126,63,123,64,126,53,130,53,130,63,126,63" title="Iikka Heino, 5/15/2014 : 734" alt="Iikka Heino, 5/15/2014 : 734" />
+	<area shape="poly" coords="116,54,119,54,119,64,116,64,119,54,123,54,123,64,119,64" title="Iikka Heino, 5/8/2014 : 742" alt="Iikka Heino, 5/8/2014 : 742" />
+	<area shape="poly" coords="109,53,112,54,112,64,109,63,112,54,116,54,116,64,112,64" title="Iikka Heino, 5/1/2014 : 742" alt="Iikka Heino, 5/1/2014 : 742" />
+	<area shape="poly" coords="102,54,106,53,106,63,102,64,106,53,109,53,109,63,106,63" title="Iikka Heino, 4/24/2014 : 730" alt="Iikka Heino, 4/24/2014 : 730" />
+	<area shape="poly" coords="90,44,94,59,104,59,100,44,99,54,102,54,102,64,99,64" title="Iikka Heino, 4/17/2014 : 745" alt="Iikka Heino, 4/17/2014 : 745" />
+	<area shape="poly" coords="88,23,92,23,92,33,88,33,87,28,90,44,100,44,97,28" title="Iikka Heino, 4/10/2014 : 376" alt="Iikka Heino, 4/10/2014 : 376" />
+	<area shape="poly" coords="81,23,85,23,85,33,81,33,85,23,88,23,88,33,85,33" title="Iikka Heino, 4/3/2014 : 374" alt="Iikka Heino, 4/3/2014 : 374" />
+	<area shape="poly" coords="75,23,78,23,78,33,75,33,78,23,81,23,81,33,78,33" title="Iikka Heino, 3/27/2014 : 375" alt="Iikka Heino, 3/27/2014 : 375" />
+	<area shape="poly" coords="68,23,71,23,71,33,68,33,71,23,75,23,75,33,71,33" title="Iikka Heino, 3/20/2014 : 376" alt="Iikka Heino, 3/20/2014 : 376" />
+	<area shape="poly" coords="61,23,64,23,64,33,61,33,64,23,68,23,68,33,64,33" title="Iikka Heino, 3/13/2014 : 380" alt="Iikka Heino, 3/13/2014 : 380" />
+	<area shape="poly" coords="57,24,61,23,61,33,57,34" title="Iikka Heino, 3/6/2014 : 381" alt="Iikka Heino, 3/6/2014 : 381" />
+</map></span>
+</div>
+  </div>
+  <div id="tournamentsubmenu" class="profile">
+    <ul id="cphPage_cphPage_tmProfileMenu">
+	<li><a href="overview.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F">Career Overview</a></li><li class="active"><a class="active" href="biography.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F">Full Profile</a></li><li><a href="matches.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F">Matches</a></li><li><a href="history.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F">Ranking History</a></li><li><a href="selectheadtohead.aspx?id=07A90A1F-B85D-4210-9C14-F5C0005E334F">Head To Head</a></li>
+</ul>
+  </div>
+  <div class="clear"></div>
+  
+  
+  <div>
+    <div style="float:left;"><h2>Full Profile</h2></div>
+    <div style="float:right;"></div>
+  </div><br />
+  <br />
+  <br />
+  <span id="cphPage_cphPage_cphPage_pbPlayerBiography"><fieldset id="cphPage_cphPage_cphPage_VF0_fs0">
+	<legend>
+		Biodata
+	</legend><ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_upload" class="captionleft readonly">Profile image:</label><label></label></li><li><label for="cphPage_cphPage_cphPage_VF0_fs0_DOB" class="captionleft readonly">Date of birth:</label><label class="text readonly" id="DOB">7/17/1995</label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_POB" class="captionleft readonly">Place of birth:</label><label class="text readonly" id="POB"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Height" class="captionleft readonly">Height:</label><label class="text readonly" id="Height"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Facebook" class="captionleft readonly">Facebook Fan Page:</label><label class="text readonly" id="Facebook"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Twitter" class="captionleft readonly">Twitter:</label><label class="text readonly" id="Twitter"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Website" class="captionleft readonly">Website:</label><label class="text readonly" id="Website"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_CurrentResidence" class="captionleft readonly">Current Residence:</label><label class="text readonly" id="CurrentResidence"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Occupation" class="captionleft readonly">Occupation (if not a full-time athlete):</label><label class="text readonly" id="Occupation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Hobbies" class="captionleft readonly">Hobbies:</label><label class="text readonly" id="Hobbies"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_EducationLevel" class="captionleft readonly">Highest Level of Education:</label><label class="text readonly" id="EducationLevel"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_FamilyInformation" class="captionleft readonly">Family Information:</label><label class="text readonly" id="FamilyInformation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_StyleOfPlay" class="captionleft readonly">Style of Play:</label><label class="text readonly" id="StyleOfPlay"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Plays" class="captionleft readonly">Plays:</label><label class="text readonly"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_OtherSports" class="captionleft readonly">Other sports played at a high level:</label><label class="text readonly" id="OtherSports"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_FamousSportingRelatives" class="captionleft readonly">Famous or elite sporting relatives:</label><label class="text readonly" id="FamousSportingRelatives"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Languages" class="captionleft readonly">Language(s):</label><label class="text readonly" id="Languages"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_InternationalDebut" class="captionleft readonly">International Debut:</label><label class="text readonly" id="InternationalDebut"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Nickname" class="captionleft readonly">Nickname:</label><label class="text readonly" id="Nickname"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Club" class="captionleft readonly">Club:</label><label class="text readonly" id="Club"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Coach" class="captionleft readonly">Coach:</label><label class="text readonly" id="Coach"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_MajorInjuries" class="captionleft readonly">Major Injuries:</label><label class="text readonly" id="MajorInjuries"></label></li>
+	</ol>
+</fieldset><fieldset id="cphPage_cphPage_cphPage_VF0_fs1">
+	<legend>
+		Athlete Profile
+	</legend><ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_PreviousOlympics" class="captionlarge readonly">Previous Olympics Games competed and result:</label><label class="text readonly" id="PreviousOlympics"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_BeginSport" class="captionlarge readonly">When and Where begin playing this sport, and Why this sport?:</label><label class="text readonly" id="BeginSport"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_EquipmentSponsor" class="captionlarge readonly">Equipment Sponsor and Current Racket Model:</label><label class="text readonly" id="EquipmentSponsor"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_TrainingRegime" class="captionlarge readonly">Training Regime:</label><label class="text readonly" id="TrainingRegime"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MemorableAchievements" class="captionlarge readonly">Memorable Sporting Achievements:</label><label class="text readonly" id="MemorableAchievements"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MostInfluentialPerson" class="captionlarge readonly">Most Influential Person:</label><label class="text readonly" id="MostInfluentialPerson"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingHero" class="captionlarge readonly">Sporting Hero or Idol:</label><label class="text readonly" id="SportingHero"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SuperstitionsRituals" class="captionlarge readonly">Any Superstitions or Rituals?:</label><label class="text readonly" id="SuperstitionsRituals"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingPhilosophy" class="captionlarge readonly">Sporting Philosophy or Personal Slogan or Favourite Quote:</label><label class="text readonly" id="SportingPhilosophy"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingAwards" class="captionlarge readonly">Sporting Awards / Honours (so far):</label><label class="text readonly" id="SportingAwards"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingAmbitions" class="captionlarge readonly">Sporting Ambitions:</label><label class="text readonly" id="SportingAmbitions"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_StartPlayingCompetitively" class="captionlarge readonly">When did you start competing or playing competitively?:</label><label class="text readonly" id="StartPlayingCompetitively"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MemberNationalTeamSince" class="captionlarge readonly">Member of current national team since:</label><label class="text readonly" id="MemberNationalTeamSince"></label></li>
+	</ol>
+</fieldset></span>
+
+
+    </div>
+  </div>
+  
+
+  
+    <div id="endnote"><a href="http://www.tournamentsoftware.com" target="_blank">provided by tournamentsoftware.com</a></div>
+  
+  
+
+<script type="text/javascript">
+//<![CDATA[
+var FindClubFX;
+var FindTournamentFX;
+var FindPlayerFX;
+var FindTeamFX;
+function CreateTextBoxFXObjects() {
+  FindClubFX = new TextBoxFXObject('FindClubFX','tbxClub','cphPage_spnFindClub','../find.aspx');
+  FindTournamentFX = new TextBoxFXObject('FindTournamentFX','tbxTournament','cphPage_spnFindTournament','../findtournament.aspx');
+  FindPlayerFX = new TextBoxFXObject('FindPlayerFX','tbxPlayer','cphPage_spnFindPlayer','../find.aspx');
+  FindTeamFX = new TextBoxFXObject('FindTeamFX','tbxTeam','cphPage_spnFindTeam','../find.aspx');
+}
+AddEvent(window,'load',CreateTextBoxFXObjects);
+function IEHEvents(AID){if (document.getElementById && document.getElementsByTagName){if(document.getElementById(AID)!=null){var LIE=document.getElementById(AID).getElementsByTagName('LI');for (var i=0; i<LIE.length; i++){if(LIE[i].className=='parent'){LIE[i].onmouseover=function(){this.className+=' over';};LIE[i].onmouseout=function(){this.className='parent';};}}}}}
+if (window.attachEvent) IEHEvents('cphPage_tmFlagMenu');
+//]]>
+</script>
+</form>
+</body>
+</html>

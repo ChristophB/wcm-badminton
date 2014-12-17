@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head id="hdBase"><meta charset="utf-8" /><title>
+	BWF
+</title><meta name="description" content="www.tournamentsoftware.com: Online Entry and tournament publication with the Tournament Planner of Visual Reality. For Tennis, Squash and Badminton Tournaments" /><meta name="keywords" content="tennis, tournament, planner, tennis, amateur tennis, software, tournamentplanner, register, sport, www.tournamentsoftware.com, www.tournament.com, www.tennistournament.com, www.tennistoernooi.com, register, squash, badminton, entry, tournament, planner, tournooi, tournament, volleybal, volleyball, association, planning, poule, draw, tennis software, match, poule, match overview, teamsport, team, official, teamsportplanner, hockey, basketball, competition, league" /><link rel="search" type="application/opensearchdescription+xml" title="BWF" href="../extension/searchprovider.aspx" /><meta name="copyright" content="Copyright 2000-2014 Visual Reality" /><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-1668601-1', 'auto');ga('send', 'pageview');</script><meta http-equiv="robots" content="noindex,nofollow" /><link rel="stylesheet" type="text/css" media="screen" href="/VisualResource.ashx?id=ad2f4aa73687cb8b3726fc2f40844e4d" /><link rel="stylesheet" type="text/css" media="print" href="/VisualResource.ashx?id=b18a9d2b63d3422c4fc4a11e75f6c858" /><link rel="stylesheet" type="text/css" media="all" href="/VisualResource.ashx?id=362cce0b600ab2bcf83d536d35e6f210" /></head>
+<body id="bdBase">
+  <form method="post" action="biography.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE" id="formBasePage" class="playerprofilepage bwf_logo lcid1033">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg5MzgwMTQ2N2QYAwUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFJ2N0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRjdGwwMAUvY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGNwaFBhZ2UkY3RsMDAFJWN0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRWRjAFLWN0bDAwJGN0bDAwJGN0bDAwJGNwaFBhZ2UkY3BoUGFnZSRjcGhQYWdlJFZGMAUvY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGNwaFBhZ2UkY3RsMDAPD2RmZAUnY3RsMDAkY3RsMDAkY3RsMDAkY3BoUGFnZSRjcGhQYWdlJGN0bDAwDw9kZmSQWdJMFNdyYXeFyHiOgUaVG+JtKw==" />
+
+
+<script src="/VisualResource.ashx?id=7b133c564a3539893bc2b5d7cd6c4bd6" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AD094956" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAX5NRjA6GDUpIiLHY3uSZVKdmnot/8kTbQoMJWL8OT6yGb8vSp+pEGnrjR/Rs0QveHXABJTmyCPmRXTMDB+EkDH3OGX2T0JtluKT7I0IOMGhemU6x722s5M2Xdf87LZonmevWUa" />
+  
+  
+  <div id="container">
+    
+      <div id="header">
+        <h1><a href="http://www.bwfbadminton.org" class="bwf_logo" title="BWF" target="_blank"><img src="../images/style/bwf/logo_print.png" alt="BWF" /></a></h1>
+        
+      </div>
+    
+    
+      <div id="mainmenu">
+        <ul id="cphPage_tmFlagMenu" class="flags">
+	<li class="parent"><a class="flag_1033" href="../lang.aspx?lcid=1033">USA</a><ul>
+		<li><a class="flag_1043 nowrap" href="../lang.aspx?lcid=1043">NED</a></li><li><a class="flag_1033 nowrap" href="../lang.aspx?lcid=1033">USA</a></li><li><a class="flag_2057 nowrap" href="../lang.aspx?lcid=2057">GBR</a></li><li><a class="flag_6153 nowrap" href="../lang.aspx?lcid=6153">IRL</a></li><li><a class="flag_3081 nowrap" href="../lang.aspx?lcid=3081">AUS</a></li><li><a class="flag_5129 nowrap" href="../lang.aspx?lcid=5129">NZL</a></li><li><a class="flag_1031 nowrap" href="../lang.aspx?lcid=1031">GER</a></li><li><a class="flag_1030 nowrap" href="../lang.aspx?lcid=1030">DEN</a></li><li><a class="flag_3082 nowrap" href="../lang.aspx?lcid=3082">ESP</a></li><li><a class="flag_1036 nowrap" href="../lang.aspx?lcid=1036">FRA</a></li><li><a class="flag_1053 nowrap" href="../lang.aspx?lcid=1053">SWE</a></li><li><a class="flag_1044 nowrap" href="../lang.aspx?lcid=1044">NOR</a></li>
+	</ul></li>
+</ul><ul id="cphPage_tmMainMenu" class="left">
+	<li><a href="../">Home</a></li><li><a href="../rankings.aspx">Ranking</a></li><li class="parent"><a target="_blank" href="//www.tournamentsoftware.com/product/">Products</a><ul>
+		<li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=2">Tournament Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=6">League Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=7">Team Sport Planner</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=15">Tournament TV</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=25">SMS</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=27">Visual ClubWeb</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/home.aspx?s=32">Live Scores</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/page.aspx?id=48&amp;s=35">Ranking</a></li><li><a target="_blank" class="nowrap" href="//www.tournamentsoftware.com/product/page.aspx?id=64&amp;s=42">Advertise</a></li>
+	</ul></li><li class="parent"><a href="../contact.aspx">About</a><ul>
+		<li><a class="nowrap" href="../contact.aspx">Contact</a></li><li><a class="nowrap" href="../disclaimer.aspx">Disclaimer</a></li><li><a class="nowrap" href="../product/faqgroups.aspx?pgid=11">FAQ</a></li>
+	</ul></li>
+</ul>
+        <ul class="right">
+          <li><a id="cphPage_hlLogin" href="../member/login.aspx">Login</a></li>
+          <li></li>
+        </ul>
+      </div>
+    
+    
+      <div id="searchbar">
+        <p>
+          <span id="cphPage_spnFindTournament">
+            Find tournament: 
+            <input id="tbxTournament" name="tbxTournament" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnTournamentGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnTournamentGo&#39;, &#39;&#39;, &#39;../findtournament.aspx&#39;); return false;" id="cphPage_btnTournamentGo" class="button" />
+          </span><span id="cphPage_spnFindPlayer">
+            Find player: 
+            <input id="tbxPlayer" name="tbxPlayer" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnPlayerGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnPlayerGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnPlayerGo" class="button" />
+          </span><span id="cphPage_spnFindTeam">
+            Find team: 
+            <input id="tbxTeam" name="tbxTeam" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnTeamGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnTeamGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnTeamGo" class="button" />
+          </span><span id="cphPage_spnFindClub">
+            Find club: 
+            <input id="tbxClub" name="tbxClub" class="textfield" type="text" /><input type="submit" name="ctl00$ctl00$ctl00$cphPage$btnClubGo" value="" onclick="javascript:VRWebForm_DoCrossPagePostBack(&#39;ctl00$ctl00$ctl00$cphPage$btnClubGo&#39;, &#39;&#39;, &#39;../find.aspx&#39;); return false;" id="cphPage_btnClubGo" class="button" />
+          </span>
+        </p>
+      </div>
+    
+    <div id="content">
+      
+  <div class="profileheader">
+    <img id="cphPage_cphPage_imgPlayerImage" class="photo" src="//content.tournamentsoftware.com/images/profile/player.gif" />
+    <div class="profiledata">
+      <h3 title="Jordan CORVEE"><img src="//static.tournamentsoftware.com/images/flags/16/FRA.png" class="intext flag" width="16" height="14" alt="France" title="France" /><span class="printonly flag">[FRA] </span>Jordan CORVEE</h3>
+      
+      
+        <div class="biography">
+          <span id="cphPage_cphPage_pbPlayerBiography"><fieldset id="cphPage_cphPage_VF0_fs0">
+	<ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_upload" class="captionleft readonly">Profile image:</label><label></label></li><li><label for="cphPage_cphPage_VF0_fs0_DOB" class="captionleft readonly">Date of birth:</label><label class="text readonly" id="DOB">2/13/1995</label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_POB" class="captionleft readonly">Place of birth:</label><label class="text readonly" id="POB"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Height" class="captionleft readonly">Height:</label><label class="text readonly" id="Height"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Facebook" class="captionleft readonly">Facebook Fan Page:</label><label class="text readonly" id="Facebook"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Twitter" class="captionleft readonly">Twitter:</label><label class="text readonly" id="Twitter"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Website" class="captionleft readonly">Website:</label><label class="text readonly" id="Website"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_CurrentResidence" class="captionleft readonly">Current Residence:</label><label class="text readonly" id="CurrentResidence"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Occupation" class="captionleft readonly">Occupation (if not a full-time athlete):</label><label class="text readonly" id="Occupation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Hobbies" class="captionleft readonly">Hobbies:</label><label class="text readonly" id="Hobbies"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_EducationLevel" class="captionleft readonly">Highest Level of Education:</label><label class="text readonly" id="EducationLevel"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_FamilyInformation" class="captionleft readonly">Family Information:</label><label class="text readonly" id="FamilyInformation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_StyleOfPlay" class="captionleft readonly">Style of Play:</label><label class="text readonly" id="StyleOfPlay"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Plays" class="captionleft readonly">Plays:</label><label class="text readonly"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_OtherSports" class="captionleft readonly">Other sports played at a high level:</label><label class="text readonly" id="OtherSports"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_FamousSportingRelatives" class="captionleft readonly">Famous or elite sporting relatives:</label><label class="text readonly" id="FamousSportingRelatives"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Languages" class="captionleft readonly">Language(s):</label><label class="text readonly" id="Languages"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_InternationalDebut" class="captionleft readonly">International Debut:</label><label class="text readonly" id="InternationalDebut"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Nickname" class="captionleft readonly">Nickname:</label><label class="text readonly" id="Nickname"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Club" class="captionleft readonly">Club:</label><label class="text readonly" id="Club"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_Coach" class="captionleft readonly">Coach:</label><label class="text readonly" id="Coach"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs0_MajorInjuries" class="captionleft readonly">Major Injuries:</label><label class="text readonly" id="MajorInjuries"></label></li>
+	</ol>
+</fieldset><fieldset id="cphPage_cphPage_VF0_fs1">
+	<ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_PreviousOlympics" class="captionlarge readonly">Previous Olympics Games competed and result:</label><label class="text readonly" id="PreviousOlympics"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_BeginSport" class="captionlarge readonly">When and Where begin playing this sport, and Why this sport?:</label><label class="text readonly" id="BeginSport"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_EquipmentSponsor" class="captionlarge readonly">Equipment Sponsor and Current Racket Model:</label><label class="text readonly" id="EquipmentSponsor"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_TrainingRegime" class="captionlarge readonly">Training Regime:</label><label class="text readonly" id="TrainingRegime"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MemorableAchievements" class="captionlarge readonly">Memorable Sporting Achievements:</label><label class="text readonly" id="MemorableAchievements"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MostInfluentialPerson" class="captionlarge readonly">Most Influential Person:</label><label class="text readonly" id="MostInfluentialPerson"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingHero" class="captionlarge readonly">Sporting Hero or Idol:</label><label class="text readonly" id="SportingHero"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SuperstitionsRituals" class="captionlarge readonly">Any Superstitions or Rituals?:</label><label class="text readonly" id="SuperstitionsRituals"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingPhilosophy" class="captionlarge readonly">Sporting Philosophy or Personal Slogan or Favourite Quote:</label><label class="text readonly" id="SportingPhilosophy"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingAwards" class="captionlarge readonly">Sporting Awards / Honours (so far):</label><label class="text readonly" id="SportingAwards"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_SportingAmbitions" class="captionlarge readonly">Sporting Ambitions:</label><label class="text readonly" id="SportingAmbitions"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_StartPlayingCompetitively" class="captionlarge readonly">When did you start competing or playing competitively?:</label><label class="text readonly" id="StartPlayingCompetitively"></label></li><li style="display:none !important"><label for="cphPage_cphPage_VF0_fs1_MemberNationalTeamSince" class="captionlarge readonly">Member of current national team since:</label><label class="text readonly" id="MemberNationalTeamSince"></label></li>
+	</ol>
+</fieldset></span>
+        </div>
+      
+      
+      <div class="currentrank">
+        <h4>Current Ranking (11/13/2014)</h4>
+        <table>
+	<tr>
+		<td class="caption" align="left">Men's Singles:</td><td align="left">1880 (Best: 1505, 7/24/2014)</td>
+	</tr><tr>
+		<td class="caption" align="left">Men's Doubles:</td><td align="left">304 (Best: 165, 4/4/2013)</td>
+	</tr><tr>
+		<td class="caption" align="left">Mixed Doubles:</td><td align="left">255 (Best: 176, 10/17/2013)</td>
+	</tr>
+</table>
+      </div>
+      
+    </div>
+    <div id="cphPage_cphPage_pnlChartContainer" class="chart">
+	<span id="cphPage_cphPage_ChartRankingPosition472" style="display:inline-block;"><img id="cphPage_cphPage_imgTopRanking_472_4B12FFDB-0102-4555-94FA-01B36127D8DE" usemap="#ImageMapTopRanking_472_4B12FFDB-0102-4555-94FA-01B36127D8DE" src="//content.tournamentsoftware.com/images/chart/Chart_TopRanking_472_4B12FFDB-0102-4555-94FA-01B36127D8DE_1033.png" />
+<map name="ImageMapTopRanking_472_4B12FFDB-0102-4555-94FA-01B36127D8DE" id="ImageMapTopRanking_472_4B12FFDB-0102-4555-94FA-01B36127D8DE">
+
+	<area shape="poly" coords="304,107,307,110,317,110,314,107" title="11/20/2014 : 1880" alt="11/20/2014 : 1880" />
+	<area shape="poly" coords="302,97,305,98,305,108,302,107,300,103,304,107,314,107,310,103" title="11/13/2014 : 1847" alt="11/13/2014 : 1847" />
+	<area shape="poly" coords="295,95,298,97,298,107,295,105,298,97,302,97,302,107,298,107" title="11/6/2014 : 1841" alt="11/6/2014 : 1841" />
+	<area shape="poly" coords="288,93,291,93,291,103,288,103,291,93,295,95,295,105,291,103" title="10/30/2014 : 1824" alt="10/30/2014 : 1824" />
+	<area shape="poly" coords="281,92,285,94,285,104,281,102,285,94,288,93,288,103,285,104" title="10/23/2014 : 1826" alt="10/23/2014 : 1826" />
+	<area shape="poly" coords="274,89,278,90,278,100,274,99,278,90,281,92,281,102,278,100" title="10/16/2014 : 1809" alt="10/16/2014 : 1809" />
+	<area shape="poly" coords="262,87,266,93,276,93,272,87,271,88,274,89,274,99,271,98" title="10/9/2014 : 1798" alt="10/9/2014 : 1798" />
+	<area shape="poly" coords="260,75,264,76,264,86,260,85,259,81,262,87,272,87,269,81" title="10/2/2014 : 1741" alt="10/2/2014 : 1741" />
+	<area shape="poly" coords="254,74,257,74,257,84,254,84,257,74,260,75,260,85,257,84" title="9/25/2014 : 1732" alt="9/25/2014 : 1732" />
+	<area shape="poly" coords="247,73,250,74,250,84,247,83,250,74,254,74,254,84,250,84" title="9/18/2014 : 1731" alt="9/18/2014 : 1731" />
+	<area shape="poly" coords="240,72,243,72,243,82,240,82,243,72,247,73,247,83,243,82" title="9/11/2014 : 1724" alt="9/11/2014 : 1724" />
+	<area shape="poly" coords="228,56,231,77,241,77,238,56,236,72,240,72,240,82,236,82" title="9/4/2014 : 1724" alt="9/4/2014 : 1724" />
+	<area shape="poly" coords="226,28,229,29,229,39,226,38,224,34,228,56,238,56,234,34" title="8/28/2014 : 1519" alt="8/28/2014 : 1519" />
+	<area shape="poly" coords="219,27,223,27,223,37,219,37,223,27,226,28,226,38,223,37" title="8/21/2014 : 1510" alt="8/21/2014 : 1510" />
+	<area shape="poly" coords="212,27,216,27,216,37,212,37,216,27,219,27,219,37,216,37" title="8/14/2014 : 1508" alt="8/14/2014 : 1508" />
+	<area shape="poly" coords="205,26,209,27,209,37,205,36,209,27,212,27,212,37,209,37" title="8/7/2014 : 1508" alt="8/7/2014 : 1508" />
+	<area shape="poly" coords="198,26,202,26,202,36,198,36,202,26,205,26,205,36,202,36" title="7/31/2014 : 1505" alt="7/31/2014 : 1505" />
+	<area shape="poly" coords="192,29,195,27,195,37,192,39,195,27,198,26,198,36,195,37" title="7/24/2014 : 1509" alt="7/24/2014 : 1509" />
+	<area shape="poly" coords="185,32,188,30,188,40,185,42,188,30,192,29,192,39,188,40" title="7/17/2014 : 1525" alt="7/17/2014 : 1525" />
+	<area shape="poly" coords="178,37,181,33,181,43,178,47,181,33,185,32,185,42,181,43" title="7/10/2014 : 1540" alt="7/10/2014 : 1540" />
+	<area shape="poly" coords="171,40,174,40,174,50,171,50,174,40,178,37,178,47,174,50" title="7/3/2014 : 1571" alt="7/3/2014 : 1571" />
+	<area shape="poly" coords="164,39,167,40,167,50,164,49,167,40,171,40,171,50,167,50" title="6/26/2014 : 1572" alt="6/26/2014 : 1572" />
+	<area shape="poly" coords="157,37,161,39,161,49,157,47,161,39,164,39,164,49,161,49" title="6/19/2014 : 1565" alt="6/19/2014 : 1565" />
+	<area shape="poly" coords="150,38,154,36,154,46,150,48,154,36,157,37,157,47,154,46" title="6/12/2014 : 1553" alt="6/12/2014 : 1553" />
+	<area shape="poly" coords="143,39,147,40,147,50,143,49,147,40,150,38,150,48,147,50" title="6/5/2014 : 1571" alt="6/5/2014 : 1571" />
+	<area shape="poly" coords="137,39,140,39,140,49,137,49,140,39,143,39,143,49,140,49" title="5/29/2014 : 1567" alt="5/29/2014 : 1567" />
+	<area shape="poly" coords="130,40,133,40,133,50,130,50,133,40,137,39,137,49,133,50" title="5/22/2014 : 1570" alt="5/22/2014 : 1570" />
+	<area shape="poly" coords="123,38,126,39,126,49,123,48,126,39,130,40,130,50,126,49" title="5/15/2014 : 1569" alt="5/15/2014 : 1569" />
+	<area shape="poly" coords="116,37,119,36,119,46,116,47,119,36,123,38,123,48,119,46" title="5/8/2014 : 1551" alt="5/8/2014 : 1551" />
+	<area shape="poly" coords="109,37,112,39,112,49,109,47,112,39,116,37,116,47,112,49" title="5/1/2014 : 1566" alt="5/1/2014 : 1566" />
+	<area shape="poly" coords="102,37,106,36,106,46,102,47,106,36,109,37,109,47,106,46" title="4/24/2014 : 1553" alt="4/24/2014 : 1553" />
+	<area shape="poly" coords="95,40,99,39,99,49,95,50,99,39,102,37,102,47,99,49" title="4/17/2014 : 1566" alt="4/17/2014 : 1566" />
+	<area shape="poly" coords="88,40,92,41,92,51,88,50,92,41,95,40,95,50,92,51" title="4/10/2014 : 1577" alt="4/10/2014 : 1577" />
+	<area shape="poly" coords="81,41,85,39,85,49,81,51,85,39,88,40,88,50,85,49" title="4/3/2014 : 1569" alt="4/3/2014 : 1569" />
+	<area shape="poly" coords="75,42,78,43,78,53,75,52,78,43,81,41,81,51,78,53" title="3/27/2014 : 1584" alt="3/27/2014 : 1584" />
+	<area shape="poly" coords="68,44,71,41,71,51,68,54,71,41,75,42,75,52,71,51" title="3/20/2014 : 1578" alt="3/20/2014 : 1578" />
+	<area shape="poly" coords="61,46,64,46,64,56,61,56,64,46,68,44,68,54,64,56" title="3/13/2014 : 1602" alt="3/13/2014 : 1602" />
+	<area shape="poly" coords="57,46,61,46,61,56,57,56" title="3/6/2014 : 1602" alt="3/6/2014 : 1602" />
+</map></span><span id="cphPage_cphPage_ChartRankingPosition474" style="display:inline-block;"><img id="cphPage_cphPage_imgTopRanking_474_4B12FFDB-0102-4555-94FA-01B36127D8DE" usemap="#ImageMapTopRanking_474_4B12FFDB-0102-4555-94FA-01B36127D8DE" src="//content.tournamentsoftware.com/images/chart/Chart_TopRanking_474_4B12FFDB-0102-4555-94FA-01B36127D8DE_1033.png" />
+<map name="ImageMapTopRanking_474_4B12FFDB-0102-4555-94FA-01B36127D8DE" id="ImageMapTopRanking_474_4B12FFDB-0102-4555-94FA-01B36127D8DE">
+
+	<area shape="poly" coords="309,54,312,55,312,65,309,64" title="Sylvain Ternon, 11/20/2014 : 746" alt="Sylvain Ternon, 11/20/2014 : 746" />
+	<area shape="poly" coords="302,54,305,54,305,64,302,64,305,54,309,54,309,64,305,64" title="Sylvain Ternon, 11/13/2014 : 730" alt="Sylvain Ternon, 11/13/2014 : 730" />
+	<area shape="poly" coords="295,54,298,54,298,64,295,64,298,54,302,54,302,64,298,64" title="Sylvain Ternon, 11/6/2014 : 728" alt="Sylvain Ternon, 11/6/2014 : 728" />
+	<area shape="poly" coords="288,54,291,54,291,64,288,64,291,54,295,54,295,64,291,64" title="Sylvain Ternon, 10/30/2014 : 735" alt="Sylvain Ternon, 10/30/2014 : 735" />
+	<area shape="poly" coords="281,54,285,54,285,64,281,64,285,54,288,54,288,64,285,64" title="Sylvain Ternon, 10/23/2014 : 732" alt="Sylvain Ternon, 10/23/2014 : 732" />
+	<area shape="poly" coords="278,54,281,54,281,64,278,64" title="Sylvain Ternon, 10/16/2014 : 735" alt="Sylvain Ternon, 10/16/2014 : 735" />
+	<area shape="poly" coords="309,54,312,55,312,65,309,64" title="Laurent Constantin, 11/20/2014 : 746" alt="Laurent Constantin, 11/20/2014 : 746" />
+	<area shape="poly" coords="302,54,305,54,305,64,302,64,305,54,309,54,309,64,305,64" title="Laurent Constantin, 11/13/2014 : 730" alt="Laurent Constantin, 11/13/2014 : 730" />
+	<area shape="poly" coords="295,54,298,54,298,64,295,64,298,54,302,54,302,64,298,64" title="Laurent Constantin, 11/6/2014 : 728" alt="Laurent Constantin, 11/6/2014 : 728" />
+	<area shape="poly" coords="288,54,291,54,291,64,288,64,291,54,295,54,295,64,291,64" title="Laurent Constantin, 10/30/2014 : 735" alt="Laurent Constantin, 10/30/2014 : 735" />
+	<area shape="poly" coords="281,54,285,54,285,64,281,64,285,54,288,54,288,64,285,64" title="Laurent Constantin, 10/23/2014 : 732" alt="Laurent Constantin, 10/23/2014 : 732" />
+	<area shape="poly" coords="274,54,278,54,278,64,274,64,278,54,281,54,281,64,278,64" title="Laurent Constantin, 10/16/2014 : 735" alt="Laurent Constantin, 10/16/2014 : 735" />
+	<area shape="poly" coords="271,54,274,54,274,64,271,64" title="Laurent Constantin, 10/9/2014 : 737" alt="Laurent Constantin, 10/9/2014 : 737" />
+	<area shape="poly" coords="309,54,312,55,312,65,309,64" title="William Goudallier, 11/20/2014 : 746" alt="William Goudallier, 11/20/2014 : 746" />
+	<area shape="poly" coords="302,54,305,54,305,64,302,64,305,54,309,54,309,64,305,64" title="William Goudallier, 11/13/2014 : 730" alt="William Goudallier, 11/13/2014 : 730" />
+	<area shape="poly" coords="295,54,298,54,298,64,295,64,298,54,302,54,302,64,298,64" title="William Goudallier, 11/6/2014 : 728" alt="William Goudallier, 11/6/2014 : 728" />
+	<area shape="poly" coords="288,54,291,54,291,64,288,64,291,54,295,54,295,64,291,64" title="William Goudallier, 10/30/2014 : 735" alt="William Goudallier, 10/30/2014 : 735" />
+	<area shape="poly" coords="281,54,285,54,285,64,281,64,285,54,288,54,288,64,285,64" title="William Goudallier, 10/23/2014 : 732" alt="William Goudallier, 10/23/2014 : 732" />
+	<area shape="poly" coords="274,54,278,54,278,64,274,64,278,54,281,54,281,64,278,64" title="William Goudallier, 10/16/2014 : 735" alt="William Goudallier, 10/16/2014 : 735" />
+	<area shape="poly" coords="267,53,271,54,271,64,267,63,271,54,274,54,274,64,271,64" title="William Goudallier, 10/9/2014 : 737" alt="William Goudallier, 10/9/2014 : 737" />
+	<area shape="poly" coords="260,52,264,52,264,62,260,62,264,52,267,53,267,63,264,62" title="William Goudallier, 10/2/2014 : 714" alt="William Goudallier, 10/2/2014 : 714" />
+	<area shape="poly" coords="254,51,257,51,257,61,254,61,257,51,260,52,260,62,257,61" title="William Goudallier, 9/25/2014 : 699" alt="William Goudallier, 9/25/2014 : 699" />
+	<area shape="poly" coords="247,52,250,52,250,62,247,62,250,52,254,51,254,61,250,62" title="William Goudallier, 9/18/2014 : 707" alt="William Goudallier, 9/18/2014 : 707" />
+	<area shape="poly" coords="240,52,243,52,243,62,240,62,243,52,247,52,247,62,243,62" title="William Goudallier, 9/11/2014 : 711" alt="William Goudallier, 9/11/2014 : 711" />
+	<area shape="poly" coords="233,52,236,52,236,62,233,62,236,52,240,52,240,62,236,62" title="William Goudallier, 9/4/2014 : 711" alt="William Goudallier, 9/4/2014 : 711" />
+	<area shape="poly" coords="226,51,229,51,229,61,226,61,229,51,233,52,233,62,229,61" title="William Goudallier, 8/28/2014 : 701" alt="William Goudallier, 8/28/2014 : 701" />
+	<area shape="poly" coords="219,51,223,51,223,61,219,61,223,51,226,51,226,61,223,61" title="William Goudallier, 8/21/2014 : 693" alt="William Goudallier, 8/21/2014 : 693" />
+	<area shape="poly" coords="212,51,216,51,216,61,212,61,216,51,219,51,219,61,216,61" title="William Goudallier, 8/14/2014 : 697" alt="William Goudallier, 8/14/2014 : 697" />
+	<area shape="poly" coords="205,51,209,51,209,61,205,61,209,51,212,51,212,61,209,61" title="William Goudallier, 8/7/2014 : 697" alt="William Goudallier, 8/7/2014 : 697" />
+	<area shape="poly" coords="198,51,202,51,202,61,198,61,202,51,205,51,205,61,202,61" title="William Goudallier, 7/31/2014 : 697" alt="William Goudallier, 7/31/2014 : 697" />
+	<area shape="poly" coords="192,52,195,51,195,61,192,62,195,51,198,51,198,61,195,61" title="William Goudallier, 7/24/2014 : 700" alt="William Goudallier, 7/24/2014 : 700" />
+	<area shape="poly" coords="185,52,188,52,188,62,185,62,188,52,192,52,192,62,188,62" title="William Goudallier, 7/17/2014 : 715" alt="William Goudallier, 7/17/2014 : 715" />
+	<area shape="poly" coords="178,52,181,52,181,62,178,62,181,52,185,52,185,62,181,62" title="William Goudallier, 7/10/2014 : 709" alt="William Goudallier, 7/10/2014 : 709" />
+	<area shape="poly" coords="171,52,174,52,174,62,171,62,174,52,178,52,178,62,174,62" title="William Goudallier, 7/3/2014 : 711" alt="William Goudallier, 7/3/2014 : 711" />
+	<area shape="poly" coords="164,52,167,52,167,62,164,62,167,52,171,52,171,62,167,62" title="William Goudallier, 6/26/2014 : 711" alt="William Goudallier, 6/26/2014 : 711" />
+	<area shape="poly" coords="157,52,161,51,161,61,157,62,161,51,164,52,164,62,161,61" title="William Goudallier, 6/19/2014 : 702" alt="William Goudallier, 6/19/2014 : 702" />
+	<area shape="poly" coords="150,52,154,52,154,62,150,62,154,52,157,52,157,62,154,62" title="William Goudallier, 6/12/2014 : 708" alt="William Goudallier, 6/12/2014 : 708" />
+	<area shape="poly" coords="143,53,147,52,147,62,143,63,147,52,150,52,150,62,147,62" title="William Goudallier, 6/5/2014 : 714" alt="William Goudallier, 6/5/2014 : 714" />
+	<area shape="poly" coords="137,53,140,53,140,63,137,63,140,53,143,53,143,63,140,63" title="William Goudallier, 5/29/2014 : 719" alt="William Goudallier, 5/29/2014 : 719" />
+	<area shape="poly" coords="130,53,133,53,133,63,130,63,133,53,137,53,137,63,133,63" title="William Goudallier, 5/22/2014 : 718" alt="William Goudallier, 5/22/2014 : 718" />
+	<area shape="poly" coords="126,52,130,53,130,63,126,62" title="William Goudallier, 5/15/2014 : 715" alt="William Goudallier, 5/15/2014 : 715" />
+	<area shape="poly" coords="309,18,312,18,312,28,309,28" title="Antoine Lodiot, 11/20/2014 : 304" alt="Antoine Lodiot, 11/20/2014 : 304" />
+	<area shape="poly" coords="302,19,305,19,305,29,302,29,305,19,309,18,309,28,305,29" title="Antoine Lodiot, 11/13/2014 : 306" alt="Antoine Lodiot, 11/13/2014 : 306" />
+	<area shape="poly" coords="295,19,298,19,298,29,295,29,298,19,302,19,302,29,298,29" title="Antoine Lodiot, 11/6/2014 : 308" alt="Antoine Lodiot, 11/6/2014 : 308" />
+	<area shape="poly" coords="288,18,291,19,291,29,288,28,291,19,295,19,295,29,291,29" title="Antoine Lodiot, 10/30/2014 : 307" alt="Antoine Lodiot, 10/30/2014 : 307" />
+	<area shape="poly" coords="281,18,285,18,285,28,281,28,285,18,288,18,288,28,285,28" title="Antoine Lodiot, 10/23/2014 : 302" alt="Antoine Lodiot, 10/23/2014 : 302" />
+	<area shape="poly" coords="274,18,278,18,278,28,274,28,278,18,281,18,281,28,278,28" title="Antoine Lodiot, 10/16/2014 : 299" alt="Antoine Lodiot, 10/16/2014 : 299" />
+	<area shape="poly" coords="267,18,271,18,271,28,267,28,271,18,274,18,274,28,271,28" title="Antoine Lodiot, 10/9/2014 : 298" alt="Antoine Lodiot, 10/9/2014 : 298" />
+	<area shape="poly" coords="260,17,264,17,264,27,260,27,264,17,267,18,267,28,264,27" title="Antoine Lodiot, 10/2/2014 : 292" alt="Antoine Lodiot, 10/2/2014 : 292" />
+	<area shape="poly" coords="254,17,257,17,257,27,254,27,257,17,260,17,260,27,257,27" title="Antoine Lodiot, 9/25/2014 : 288" alt="Antoine Lodiot, 9/25/2014 : 288" />
+	<area shape="poly" coords="247,18,250,18,250,28,247,28,250,18,254,17,254,27,250,28" title="Antoine Lodiot, 9/18/2014 : 298" alt="Antoine Lodiot, 9/18/2014 : 298" />
+	<area shape="poly" coords="240,18,243,18,243,28,240,28,243,18,247,18,247,28,243,28" title="Antoine Lodiot, 9/11/2014 : 302" alt="Antoine Lodiot, 9/11/2014 : 302" />
+	<area shape="poly" coords="233,18,236,18,236,28,233,28,236,18,240,18,240,28,236,28" title="Antoine Lodiot, 9/4/2014 : 302" alt="Antoine Lodiot, 9/4/2014 : 302" />
+	<area shape="poly" coords="226,18,229,18,229,28,226,28,229,18,233,18,233,28,229,28" title="Antoine Lodiot, 8/28/2014 : 302" alt="Antoine Lodiot, 8/28/2014 : 302" />
+	<area shape="poly" coords="219,18,223,18,223,28,219,28,223,18,226,18,226,28,223,28" title="Antoine Lodiot, 8/21/2014 : 295" alt="Antoine Lodiot, 8/21/2014 : 295" />
+	<area shape="poly" coords="212,18,216,18,216,28,212,28,216,18,219,18,219,28,216,28" title="Antoine Lodiot, 8/14/2014 : 298" alt="Antoine Lodiot, 8/14/2014 : 298" />
+	<area shape="poly" coords="205,18,209,18,209,28,205,28,209,18,212,18,212,28,209,28" title="Antoine Lodiot, 8/7/2014 : 298" alt="Antoine Lodiot, 8/7/2014 : 298" />
+	<area shape="poly" coords="198,18,202,18,202,28,198,28,202,18,205,18,205,28,202,28" title="Antoine Lodiot, 7/31/2014 : 302" alt="Antoine Lodiot, 7/31/2014 : 302" />
+	<area shape="poly" coords="192,18,195,18,195,28,192,28,195,18,198,18,198,28,195,28" title="Antoine Lodiot, 7/24/2014 : 302" alt="Antoine Lodiot, 7/24/2014 : 302" />
+	<area shape="poly" coords="185,19,188,18,188,28,185,29,188,18,192,18,192,28,188,28" title="Antoine Lodiot, 7/17/2014 : 301" alt="Antoine Lodiot, 7/17/2014 : 301" />
+	<area shape="poly" coords="178,19,181,19,181,29,178,29,181,19,185,19,185,29,181,29" title="Antoine Lodiot, 7/10/2014 : 310" alt="Antoine Lodiot, 7/10/2014 : 310" />
+	<area shape="poly" coords="171,19,174,19,174,29,171,29,174,19,178,19,178,29,174,29" title="Antoine Lodiot, 7/3/2014 : 308" alt="Antoine Lodiot, 7/3/2014 : 308" />
+	<area shape="poly" coords="164,18,167,18,167,28,164,28,167,18,171,19,171,29,167,28" title="Antoine Lodiot, 6/26/2014 : 303" alt="Antoine Lodiot, 6/26/2014 : 303" />
+	<area shape="poly" coords="157,19,161,19,161,29,157,29,161,19,164,18,164,28,161,29" title="Antoine Lodiot, 6/19/2014 : 307" alt="Antoine Lodiot, 6/19/2014 : 307" />
+	<area shape="poly" coords="150,19,154,19,154,29,150,29,154,19,157,19,157,29,154,29" title="Antoine Lodiot, 6/12/2014 : 309" alt="Antoine Lodiot, 6/12/2014 : 309" />
+	<area shape="poly" coords="143,19,147,19,147,29,143,29,147,19,150,19,150,29,147,29" title="Antoine Lodiot, 6/5/2014 : 309" alt="Antoine Lodiot, 6/5/2014 : 309" />
+	<area shape="poly" coords="137,19,140,19,140,29,137,29,140,19,143,19,143,29,140,29" title="Antoine Lodiot, 5/29/2014 : 310" alt="Antoine Lodiot, 5/29/2014 : 310" />
+	<area shape="poly" coords="130,19,133,19,133,29,130,29,133,19,137,19,137,29,133,29" title="Antoine Lodiot, 5/22/2014 : 312" alt="Antoine Lodiot, 5/22/2014 : 312" />
+	<area shape="poly" coords="123,19,126,19,126,29,123,29,126,19,130,19,130,29,126,29" title="Antoine Lodiot, 5/15/2014 : 313" alt="Antoine Lodiot, 5/15/2014 : 313" />
+	<area shape="poly" coords="116,19,119,19,119,29,116,29,119,19,123,19,123,29,119,29" title="Antoine Lodiot, 5/8/2014 : 314" alt="Antoine Lodiot, 5/8/2014 : 314" />
+	<area shape="poly" coords="109,19,112,19,112,29,109,29,112,19,116,19,116,29,112,29" title="Antoine Lodiot, 5/1/2014 : 312" alt="Antoine Lodiot, 5/1/2014 : 312" />
+	<area shape="poly" coords="102,19,106,19,106,29,102,29,106,19,109,19,109,29,106,29" title="Antoine Lodiot, 4/24/2014 : 309" alt="Antoine Lodiot, 4/24/2014 : 309" />
+	<area shape="poly" coords="95,19,99,19,99,29,95,29,99,19,102,19,102,29,99,29" title="Antoine Lodiot, 4/17/2014 : 316" alt="Antoine Lodiot, 4/17/2014 : 316" />
+	<area shape="poly" coords="88,21,92,20,92,30,88,31,92,20,95,19,95,29,92,30" title="Antoine Lodiot, 4/10/2014 : 319" alt="Antoine Lodiot, 4/10/2014 : 319" />
+	<area shape="poly" coords="81,22,85,22,85,32,81,32,85,22,88,21,88,31,85,32" title="Antoine Lodiot, 4/3/2014 : 353" alt="Antoine Lodiot, 4/3/2014 : 353" />
+	<area shape="poly" coords="75,22,78,22,78,32,75,32,78,22,81,22,81,32,78,32" title="Antoine Lodiot, 3/27/2014 : 351" alt="Antoine Lodiot, 3/27/2014 : 351" />
+	<area shape="poly" coords="68,22,71,22,71,32,68,32,71,22,75,22,75,32,71,32" title="Antoine Lodiot, 3/20/2014 : 351" alt="Antoine Lodiot, 3/20/2014 : 351" />
+	<area shape="poly" coords="61,23,64,23,64,33,61,33,64,23,68,22,68,32,64,33" title="Antoine Lodiot, 3/13/2014 : 355" alt="Antoine Lodiot, 3/13/2014 : 355" />
+	<area shape="poly" coords="57,23,61,23,61,33,57,33" title="Antoine Lodiot, 3/6/2014 : 354" alt="Antoine Lodiot, 3/6/2014 : 354" />
+	<area shape="poly" coords="309,54,312,54,312,64,309,64" title="Tanguy Citron, 11/20/2014 : 738" alt="Tanguy Citron, 11/20/2014 : 738" />
+	<area shape="poly" coords="302,53,305,53,305,63,302,63,305,53,309,54,309,64,305,63" title="Tanguy Citron, 11/13/2014 : 723" alt="Tanguy Citron, 11/13/2014 : 723" />
+	<area shape="poly" coords="295,54,298,54,298,64,295,64,298,54,302,53,302,63,298,64" title="Tanguy Citron, 11/6/2014 : 728" alt="Tanguy Citron, 11/6/2014 : 728" />
+	<area shape="poly" coords="288,54,291,54,291,64,288,64,291,54,295,54,295,64,291,64" title="Tanguy Citron, 10/30/2014 : 735" alt="Tanguy Citron, 10/30/2014 : 735" />
+	<area shape="poly" coords="281,54,285,54,285,64,281,64,285,54,288,54,288,64,285,64" title="Tanguy Citron, 10/23/2014 : 732" alt="Tanguy Citron, 10/23/2014 : 732" />
+	<area shape="poly" coords="274,54,278,54,278,64,274,64,278,54,281,54,281,64,278,64" title="Tanguy Citron, 10/16/2014 : 735" alt="Tanguy Citron, 10/16/2014 : 735" />
+	<area shape="poly" coords="267,53,271,54,271,64,267,63,271,54,274,54,274,64,271,64" title="Tanguy Citron, 10/9/2014 : 737" alt="Tanguy Citron, 10/9/2014 : 737" />
+	<area shape="poly" coords="260,52,264,52,264,62,260,62,264,52,267,53,267,63,264,62" title="Tanguy Citron, 10/2/2014 : 714" alt="Tanguy Citron, 10/2/2014 : 714" />
+	<area shape="poly" coords="254,51,257,51,257,61,254,61,257,51,260,52,260,62,257,61" title="Tanguy Citron, 9/25/2014 : 699" alt="Tanguy Citron, 9/25/2014 : 699" />
+	<area shape="poly" coords="247,51,250,51,250,61,247,61,250,51,254,51,254,61,250,61" title="Tanguy Citron, 9/18/2014 : 694" alt="Tanguy Citron, 9/18/2014 : 694" />
+	<area shape="poly" coords="240,51,243,51,243,61,240,61,243,51,247,51,247,61,243,61" title="Tanguy Citron, 9/11/2014 : 698" alt="Tanguy Citron, 9/11/2014 : 698" />
+	<area shape="poly" coords="233,51,236,51,236,61,233,61,236,51,240,51,240,61,236,61" title="Tanguy Citron, 9/4/2014 : 698" alt="Tanguy Citron, 9/4/2014 : 698" />
+	<area shape="poly" coords="226,50,229,50,229,60,226,60,229,50,233,51,233,61,229,60" title="Tanguy Citron, 8/28/2014 : 690" alt="Tanguy Citron, 8/28/2014 : 690" />
+	<area shape="poly" coords="219,50,223,50,223,60,219,60,223,50,226,50,226,60,223,60" title="Tanguy Citron, 8/21/2014 : 682" alt="Tanguy Citron, 8/21/2014 : 682" />
+	<area shape="poly" coords="212,50,216,50,216,60,212,60,216,50,219,50,219,60,216,60" title="Tanguy Citron, 8/14/2014 : 686" alt="Tanguy Citron, 8/14/2014 : 686" />
+	<area shape="poly" coords="205,50,209,50,209,60,205,60,209,50,212,50,212,60,209,60" title="Tanguy Citron, 8/7/2014 : 686" alt="Tanguy Citron, 8/7/2014 : 686" />
+	<area shape="poly" coords="198,50,202,50,202,60,198,60,202,50,205,50,205,60,202,60" title="Tanguy Citron, 7/31/2014 : 686" alt="Tanguy Citron, 7/31/2014 : 686" />
+	<area shape="poly" coords="192,51,195,50,195,60,192,61,195,50,198,50,198,60,195,60" title="Tanguy Citron, 7/24/2014 : 689" alt="Tanguy Citron, 7/24/2014 : 689" />
+	<area shape="poly" coords="185,51,188,52,188,62,185,61,188,52,192,51,192,61,188,62" title="Tanguy Citron, 7/17/2014 : 704" alt="Tanguy Citron, 7/17/2014 : 704" />
+	<area shape="poly" coords="178,51,181,51,181,61,178,61,181,51,185,51,185,61,181,61" title="Tanguy Citron, 7/10/2014 : 698" alt="Tanguy Citron, 7/10/2014 : 698" />
+	<area shape="poly" coords="171,51,174,51,174,61,171,61,174,51,178,51,178,61,174,61" title="Tanguy Citron, 7/3/2014 : 700" alt="Tanguy Citron, 7/3/2014 : 700" />
+	<area shape="poly" coords="164,51,167,51,167,61,164,61,167,51,171,51,171,61,167,61" title="Tanguy Citron, 6/26/2014 : 699" alt="Tanguy Citron, 6/26/2014 : 699" />
+	<area shape="poly" coords="157,51,161,51,161,61,157,61,161,51,164,51,164,61,161,61" title="Tanguy Citron, 6/19/2014 : 692" alt="Tanguy Citron, 6/19/2014 : 692" />
+	<area shape="poly" coords="150,51,154,51,154,61,150,61,154,51,157,51,157,61,154,61" title="Tanguy Citron, 6/12/2014 : 697" alt="Tanguy Citron, 6/12/2014 : 697" />
+	<area shape="poly" coords="138,79,142,56,152,56,148,79,147,51,150,51,150,61,147,61" title="Tanguy Citron, 6/5/2014 : 703" alt="Tanguy Citron, 6/5/2014 : 703" />
+	<area shape="poly" coords="137,96,140,96,140,106,137,106,135,101,138,79,148,79,145,101" title="Tanguy Citron, 5/29/2014 : 1241" alt="Tanguy Citron, 5/29/2014 : 1241" />
+	<area shape="poly" coords="130,95,133,96,133,106,130,105,133,96,137,96,137,106,133,106" title="Tanguy Citron, 5/22/2014 : 1236" alt="Tanguy Citron, 5/22/2014 : 1236" />
+	<area shape="poly" coords="123,95,126,95,126,105,123,105,126,95,130,95,130,105,126,105" title="Tanguy Citron, 5/15/2014 : 1230" alt="Tanguy Citron, 5/15/2014 : 1230" />
+	<area shape="poly" coords="116,96,119,95,119,105,116,106,119,95,123,95,123,105,119,105" title="Tanguy Citron, 5/8/2014 : 1230" alt="Tanguy Citron, 5/8/2014 : 1230" />
+	<area shape="poly" coords="109,95,112,96,112,106,109,105,112,96,116,96,116,106,112,106" title="Tanguy Citron, 5/1/2014 : 1241" alt="Tanguy Citron, 5/1/2014 : 1241" />
+	<area shape="poly" coords="102,95,106,95,106,105,102,105,106,95,109,95,109,105,106,105" title="Tanguy Citron, 4/24/2014 : 1226" alt="Tanguy Citron, 4/24/2014 : 1226" />
+	<area shape="poly" coords="95,96,99,96,99,106,95,106,99,96,102,95,102,105,99,106" title="Tanguy Citron, 4/17/2014 : 1235" alt="Tanguy Citron, 4/17/2014 : 1235" />
+	<area shape="poly" coords="88,95,92,96,92,106,88,105,92,96,95,96,95,106,92,106" title="Tanguy Citron, 4/10/2014 : 1238" alt="Tanguy Citron, 4/10/2014 : 1238" />
+	<area shape="poly" coords="81,95,85,95,85,105,81,105,85,95,88,95,88,105,85,105" title="Tanguy Citron, 4/3/2014 : 1226" alt="Tanguy Citron, 4/3/2014 : 1226" />
+	<area shape="poly" coords="75,96,78,95,78,105,75,106,78,95,81,95,81,105,78,105" title="Tanguy Citron, 3/27/2014 : 1232" alt="Tanguy Citron, 3/27/2014 : 1232" />
+	<area shape="poly" coords="68,96,71,96,71,106,68,106,71,96,75,96,75,106,71,106" title="Tanguy Citron, 3/20/2014 : 1238" alt="Tanguy Citron, 3/20/2014 : 1238" />
+	<area shape="poly" coords="61,97,64,97,64,107,61,107,64,97,68,96,68,106,64,107" title="Tanguy Citron, 3/13/2014 : 1250" alt="Tanguy Citron, 3/13/2014 : 1250" />
+	<area shape="poly" coords="57,97,61,97,61,107,57,107" title="Tanguy Citron, 3/6/2014 : 1251" alt="Tanguy Citron, 3/6/2014 : 1251" />
+</map></span><span id="cphPage_cphPage_ChartRankingPosition476" style="display:inline-block;"><img id="cphPage_cphPage_imgTopRanking_476_4B12FFDB-0102-4555-94FA-01B36127D8DE" usemap="#ImageMapTopRanking_476_4B12FFDB-0102-4555-94FA-01B36127D8DE" src="//content.tournamentsoftware.com/images/chart/Chart_TopRanking_476_4B12FFDB-0102-4555-94FA-01B36127D8DE_1033.png" />
+<map name="ImageMapTopRanking_476_4B12FFDB-0102-4555-94FA-01B36127D8DE" id="ImageMapTopRanking_476_4B12FFDB-0102-4555-94FA-01B36127D8DE">
+
+	<area shape="poly" coords="309,57,312,58,312,68,309,67" title="Delphine Delrue, 11/20/2014 : 765" alt="Delphine Delrue, 11/20/2014 : 765" />
+	<area shape="poly" coords="302,56,305,56,305,66,302,66,305,56,309,57,309,67,305,66" title="Delphine Delrue, 11/13/2014 : 745" alt="Delphine Delrue, 11/13/2014 : 745" />
+	<area shape="poly" coords="295,57,298,56,298,66,295,67,298,56,302,56,302,66,298,66" title="Delphine Delrue, 11/6/2014 : 745" alt="Delphine Delrue, 11/6/2014 : 745" />
+	<area shape="poly" coords="288,57,291,57,291,67,288,67,291,57,295,57,295,67,291,67" title="Delphine Delrue, 10/30/2014 : 748" alt="Delphine Delrue, 10/30/2014 : 748" />
+	<area shape="poly" coords="281,57,285,57,285,67,281,67,285,57,288,57,288,67,285,67" title="Delphine Delrue, 10/23/2014 : 749" alt="Delphine Delrue, 10/23/2014 : 749" />
+	<area shape="poly" coords="274,57,278,58,278,68,274,67,278,58,281,57,281,67,278,68" title="Delphine Delrue, 10/16/2014 : 759" alt="Delphine Delrue, 10/16/2014 : 759" />
+	<area shape="poly" coords="267,57,271,57,271,67,267,67,271,57,274,57,274,67,271,67" title="Delphine Delrue, 10/9/2014 : 756" alt="Delphine Delrue, 10/9/2014 : 756" />
+	<area shape="poly" coords="260,56,264,56,264,66,260,66,264,56,267,57,267,67,264,66" title="Delphine Delrue, 10/2/2014 : 742" alt="Delphine Delrue, 10/2/2014 : 742" />
+	<area shape="poly" coords="254,56,257,56,257,66,254,66,257,56,260,56,260,66,257,66" title="Delphine Delrue, 9/25/2014 : 737" alt="Delphine Delrue, 9/25/2014 : 737" />
+	<area shape="poly" coords="247,56,250,56,250,66,247,66,250,56,254,56,254,66,250,66" title="Delphine Delrue, 9/18/2014 : 743" alt="Delphine Delrue, 9/18/2014 : 743" />
+	<area shape="poly" coords="240,56,243,56,243,66,240,66,243,56,247,56,247,66,243,66" title="Delphine Delrue, 9/11/2014 : 742" alt="Delphine Delrue, 9/11/2014 : 742" />
+	<area shape="poly" coords="233,56,236,56,236,66,233,66,236,56,240,56,240,66,236,66" title="Delphine Delrue, 9/4/2014 : 742" alt="Delphine Delrue, 9/4/2014 : 742" />
+	<area shape="poly" coords="226,55,229,56,229,66,226,65,229,56,233,56,233,66,229,66" title="Delphine Delrue, 8/28/2014 : 734" alt="Delphine Delrue, 8/28/2014 : 734" />
+	<area shape="poly" coords="219,54,223,54,223,64,219,64,223,54,226,55,226,65,223,64" title="Delphine Delrue, 8/21/2014 : 715" alt="Delphine Delrue, 8/21/2014 : 715" />
+	<area shape="poly" coords="212,54,216,54,216,64,212,64,216,54,219,54,219,64,216,64" title="Delphine Delrue, 8/14/2014 : 719" alt="Delphine Delrue, 8/14/2014 : 719" />
+	<area shape="poly" coords="205,54,209,54,209,64,205,64,209,54,212,54,212,64,209,64" title="Delphine Delrue, 8/7/2014 : 719" alt="Delphine Delrue, 8/7/2014 : 719" />
+	<area shape="poly" coords="198,53,202,53,202,63,198,63,202,53,205,54,205,64,202,63" title="Delphine Delrue, 7/31/2014 : 706" alt="Delphine Delrue, 7/31/2014 : 706" />
+	<area shape="poly" coords="192,54,195,53,195,63,192,64,195,53,198,53,198,63,195,63" title="Delphine Delrue, 7/24/2014 : 705" alt="Delphine Delrue, 7/24/2014 : 705" />
+	<area shape="poly" coords="185,54,188,54,188,64,185,64,188,54,192,54,192,64,188,64" title="Delphine Delrue, 7/17/2014 : 714" alt="Delphine Delrue, 7/17/2014 : 714" />
+	<area shape="poly" coords="178,54,181,54,181,64,178,64,181,54,185,54,185,64,181,64" title="Delphine Delrue, 7/10/2014 : 716" alt="Delphine Delrue, 7/10/2014 : 716" />
+	<area shape="poly" coords="171,55,174,55,174,65,171,65,174,55,178,54,178,64,174,65" title="Delphine Delrue, 7/3/2014 : 721" alt="Delphine Delrue, 7/3/2014 : 721" />
+	<area shape="poly" coords="164,55,167,55,167,65,164,65,167,55,171,55,171,65,167,65" title="Delphine Delrue, 6/26/2014 : 725" alt="Delphine Delrue, 6/26/2014 : 725" />
+	<area shape="poly" coords="157,55,161,55,161,65,157,65,161,55,164,55,164,65,161,65" title="Delphine Delrue, 6/19/2014 : 727" alt="Delphine Delrue, 6/19/2014 : 727" />
+	<area shape="poly" coords="150,55,154,55,154,65,150,65,154,55,157,55,157,65,154,65" title="Delphine Delrue, 6/12/2014 : 726" alt="Delphine Delrue, 6/12/2014 : 726" />
+	<area shape="poly" coords="147,55,150,55,150,65,147,65" title="Delphine Delrue, 6/5/2014 : 728" alt="Delphine Delrue, 6/5/2014 : 728" />
+	<area shape="poly" coords="309,102,312,103,312,113,309,112" title="Ieva Pope, 11/20/2014 : 1321" alt="Ieva Pope, 11/20/2014 : 1321" />
+	<area shape="poly" coords="302,101,305,101,305,111,302,111,305,101,309,102,309,112,305,111" title="Ieva Pope, 11/13/2014 : 1302" alt="Ieva Pope, 11/13/2014 : 1302" />
+	<area shape="poly" coords="295,100,298,100,298,110,295,110,298,100,302,101,302,111,298,110" title="Ieva Pope, 11/6/2014 : 1291" alt="Ieva Pope, 11/6/2014 : 1291" />
+	<area shape="poly" coords="288,99,291,100,291,110,288,109,291,100,295,100,295,110,291,110" title="Ieva Pope, 10/30/2014 : 1281" alt="Ieva Pope, 10/30/2014 : 1281" />
+	<area shape="poly" coords="281,99,285,99,285,109,281,109,285,99,288,99,288,109,285,109" title="Ieva Pope, 10/23/2014 : 1274" alt="Ieva Pope, 10/23/2014 : 1274" />
+	<area shape="poly" coords="274,99,278,100,278,110,274,109,278,100,281,99,281,109,278,110" title="Ieva Pope, 10/16/2014 : 1283" alt="Ieva Pope, 10/16/2014 : 1283" />
+	<area shape="poly" coords="267,97,271,99,271,109,267,107,271,99,274,99,274,109,271,109" title="Ieva Pope, 10/9/2014 : 1274" alt="Ieva Pope, 10/9/2014 : 1274" />
+	<area shape="poly" coords="260,95,264,96,264,106,260,105,264,96,267,97,267,107,264,106" title="Ieva Pope, 10/2/2014 : 1233" alt="Ieva Pope, 10/2/2014 : 1233" />
+	<area shape="poly" coords="254,94,257,93,257,103,254,104,257,93,260,95,260,105,257,103" title="Ieva Pope, 9/25/2014 : 1203" alt="Ieva Pope, 9/25/2014 : 1203" />
+	<area shape="poly" coords="247,94,250,94,250,104,247,104,250,94,254,94,254,104,250,104" title="Ieva Pope, 9/18/2014 : 1215" alt="Ieva Pope, 9/18/2014 : 1215" />
+	<area shape="poly" coords="240,94,243,94,243,104,240,104,243,94,247,94,247,104,243,104" title="Ieva Pope, 9/11/2014 : 1208" alt="Ieva Pope, 9/11/2014 : 1208" />
+	<area shape="poly" coords="233,94,236,94,236,104,233,104,236,94,240,94,240,104,236,104" title="Ieva Pope, 9/4/2014 : 1208" alt="Ieva Pope, 9/4/2014 : 1208" />
+	<area shape="poly" coords="226,93,229,94,229,104,226,103,229,94,233,94,233,104,229,104" title="Ieva Pope, 8/28/2014 : 1210" alt="Ieva Pope, 8/28/2014 : 1210" />
+	<area shape="poly" coords="219,91,223,91,223,101,219,101,223,91,226,93,226,103,223,101" title="Ieva Pope, 8/21/2014 : 1176" alt="Ieva Pope, 8/21/2014 : 1176" />
+	<area shape="poly" coords="212,92,216,92,216,102,212,102,216,92,219,91,219,101,216,102" title="Ieva Pope, 8/14/2014 : 1180" alt="Ieva Pope, 8/14/2014 : 1180" />
+	<area shape="poly" coords="205,91,209,92,209,102,205,101,209,92,212,92,212,102,209,102" title="Ieva Pope, 8/7/2014 : 1180" alt="Ieva Pope, 8/7/2014 : 1180" />
+	<area shape="poly" coords="198,90,202,90,202,100,198,100,202,90,205,91,205,101,202,100" title="Ieva Pope, 7/31/2014 : 1167" alt="Ieva Pope, 7/31/2014 : 1167" />
+	<area shape="poly" coords="192,91,195,90,195,100,192,101,195,90,198,90,198,100,195,100" title="Ieva Pope, 7/24/2014 : 1165" alt="Ieva Pope, 7/24/2014 : 1165" />
+	<area shape="poly" coords="185,92,188,91,188,101,185,102,188,91,192,91,192,101,188,101" title="Ieva Pope, 7/17/2014 : 1178" alt="Ieva Pope, 7/17/2014 : 1178" />
+	<area shape="poly" coords="178,93,181,92,181,102,178,103,181,92,185,92,185,102,181,102" title="Ieva Pope, 7/10/2014 : 1191" alt="Ieva Pope, 7/10/2014 : 1191" />
+	<area shape="poly" coords="171,93,174,93,174,103,171,103,174,93,178,93,178,103,174,103" title="Ieva Pope, 7/3/2014 : 1201" alt="Ieva Pope, 7/3/2014 : 1201" />
+	<area shape="poly" coords="164,93,167,93,167,103,164,103,167,93,171,93,171,103,167,103" title="Ieva Pope, 6/26/2014 : 1197" alt="Ieva Pope, 6/26/2014 : 1197" />
+	<area shape="poly" coords="157,92,161,93,161,103,157,102,161,93,164,93,164,103,161,103" title="Ieva Pope, 6/19/2014 : 1196" alt="Ieva Pope, 6/19/2014 : 1196" />
+	<area shape="poly" coords="150,92,154,92,154,102,150,102,154,92,157,92,157,102,154,102" title="Ieva Pope, 6/12/2014 : 1181" alt="Ieva Pope, 6/12/2014 : 1181" />
+	<area shape="poly" coords="143,93,147,92,147,102,143,103,147,92,150,92,150,102,147,102" title="Ieva Pope, 6/5/2014 : 1188" alt="Ieva Pope, 6/5/2014 : 1188" />
+	<area shape="poly" coords="137,93,140,93,140,103,137,103,140,93,143,93,143,103,140,103" title="Ieva Pope, 5/29/2014 : 1199" alt="Ieva Pope, 5/29/2014 : 1199" />
+	<area shape="poly" coords="130,93,133,93,133,103,130,103,133,93,137,93,137,103,133,103" title="Ieva Pope, 5/22/2014 : 1198" alt="Ieva Pope, 5/22/2014 : 1198" />
+	<area shape="poly" coords="126,93,130,93,130,103,126,103" title="Ieva Pope, 5/15/2014 : 1198" alt="Ieva Pope, 5/15/2014 : 1198" />
+	<area shape="poly" coords="309,107,312,108,312,118,309,117" title="Stephanie Cloarec, 11/20/2014 : 1379" alt="Stephanie Cloarec, 11/20/2014 : 1379" />
+	<area shape="poly" coords="302,105,305,106,305,116,302,115,305,106,309,107,309,117,305,116" title="Stephanie Cloarec, 11/13/2014 : 1356" alt="Stephanie Cloarec, 11/13/2014 : 1356" />
+	<area shape="poly" coords="295,105,298,105,298,115,295,115,298,105,302,105,302,115,298,115" title="Stephanie Cloarec, 11/6/2014 : 1350" alt="Stephanie Cloarec, 11/6/2014 : 1350" />
+	<area shape="poly" coords="288,104,291,104,291,114,288,114,291,104,295,105,295,115,291,114" title="Stephanie Cloarec, 10/30/2014 : 1338" alt="Stephanie Cloarec, 10/30/2014 : 1338" />
+	<area shape="poly" coords="281,104,285,104,285,114,281,114,285,104,288,104,288,114,285,114" title="Stephanie Cloarec, 10/23/2014 : 1329" alt="Stephanie Cloarec, 10/23/2014 : 1329" />
+	<area shape="poly" coords="274,104,278,104,278,114,274,114,278,104,281,104,281,114,278,114" title="Stephanie Cloarec, 10/16/2014 : 1339" alt="Stephanie Cloarec, 10/16/2014 : 1339" />
+	<area shape="poly" coords="267,102,271,104,271,114,267,112,271,104,274,104,274,114,271,114" title="Stephanie Cloarec, 10/9/2014 : 1330" alt="Stephanie Cloarec, 10/9/2014 : 1330" />
+	<area shape="poly" coords="260,99,264,100,264,110,260,109,264,100,267,102,267,112,264,110" title="Stephanie Cloarec, 10/2/2014 : 1291" alt="Stephanie Cloarec, 10/2/2014 : 1291" />
+	<area shape="poly" coords="254,99,257,98,257,108,254,109,257,98,260,99,260,109,257,108" title="Stephanie Cloarec, 9/25/2014 : 1266" alt="Stephanie Cloarec, 9/25/2014 : 1266" />
+	<area shape="poly" coords="247,100,250,100,250,110,247,110,250,100,254,99,254,109,250,110" title="Stephanie Cloarec, 9/18/2014 : 1287" alt="Stephanie Cloarec, 9/18/2014 : 1287" />
+	<area shape="poly" coords="240,99,243,99,243,109,240,109,243,99,247,100,247,110,243,109" title="Stephanie Cloarec, 9/11/2014 : 1274" alt="Stephanie Cloarec, 9/11/2014 : 1274" />
+	<area shape="poly" coords="233,100,236,99,236,109,233,110,236,99,240,99,240,109,236,109" title="Stephanie Cloarec, 9/4/2014 : 1274" alt="Stephanie Cloarec, 9/4/2014 : 1274" />
+	<area shape="poly" coords="226,99,229,100,229,110,226,109,229,100,233,100,233,110,229,110" title="Stephanie Cloarec, 8/28/2014 : 1289" alt="Stephanie Cloarec, 8/28/2014 : 1289" />
+	<area shape="poly" coords="219,98,223,98,223,108,219,108,223,98,226,99,226,109,223,108" title="Stephanie Cloarec, 8/21/2014 : 1256" alt="Stephanie Cloarec, 8/21/2014 : 1256" />
+	<area shape="poly" coords="212,98,216,98,216,108,212,108,216,98,219,98,219,108,216,108" title="Stephanie Cloarec, 8/14/2014 : 1259" alt="Stephanie Cloarec, 8/14/2014 : 1259" />
+	<area shape="poly" coords="205,97,209,98,209,108,205,107,209,98,212,98,212,108,209,108" title="Stephanie Cloarec, 8/7/2014 : 1259" alt="Stephanie Cloarec, 8/7/2014 : 1259" />
+	<area shape="poly" coords="198,97,202,97,202,107,198,107,202,97,205,97,205,107,202,107" title="Stephanie Cloarec, 7/31/2014 : 1246" alt="Stephanie Cloarec, 7/31/2014 : 1246" />
+	<area shape="poly" coords="192,97,195,97,195,107,192,107,195,97,198,97,198,107,195,107" title="Stephanie Cloarec, 7/24/2014 : 1242" alt="Stephanie Cloarec, 7/24/2014 : 1242" />
+	<area shape="poly" coords="185,98,188,98,188,108,185,108,188,98,192,97,192,107,188,108" title="Stephanie Cloarec, 7/17/2014 : 1255" alt="Stephanie Cloarec, 7/17/2014 : 1255" />
+	<area shape="poly" coords="178,99,181,99,181,109,178,109,181,99,185,98,185,108,181,109" title="Stephanie Cloarec, 7/10/2014 : 1268" alt="Stephanie Cloarec, 7/10/2014 : 1268" />
+	<area shape="poly" coords="171,99,174,99,174,109,171,109,174,99,178,99,178,109,174,109" title="Stephanie Cloarec, 7/3/2014 : 1278" alt="Stephanie Cloarec, 7/3/2014 : 1278" />
+	<area shape="poly" coords="164,99,167,99,167,109,164,109,167,99,171,99,171,109,167,109" title="Stephanie Cloarec, 6/26/2014 : 1273" alt="Stephanie Cloarec, 6/26/2014 : 1273" />
+	<area shape="poly" coords="157,99,161,99,161,109,157,109,161,99,164,99,164,109,161,109" title="Stephanie Cloarec, 6/19/2014 : 1271" alt="Stephanie Cloarec, 6/19/2014 : 1271" />
+	<area shape="poly" coords="150,99,154,99,154,109,150,109,154,99,157,99,157,109,154,109" title="Stephanie Cloarec, 6/12/2014 : 1267" alt="Stephanie Cloarec, 6/12/2014 : 1267" />
+	<area shape="poly" coords="143,100,147,99,147,109,143,110,147,99,150,99,150,109,147,109" title="Stephanie Cloarec, 6/5/2014 : 1274" alt="Stephanie Cloarec, 6/5/2014 : 1274" />
+	<area shape="poly" coords="137,100,140,100,140,110,137,110,140,100,143,100,143,110,140,110" title="Stephanie Cloarec, 5/29/2014 : 1286" alt="Stephanie Cloarec, 5/29/2014 : 1286" />
+	<area shape="poly" coords="130,100,133,100,133,110,130,110,133,100,137,100,137,110,133,110" title="Stephanie Cloarec, 5/22/2014 : 1285" alt="Stephanie Cloarec, 5/22/2014 : 1285" />
+	<area shape="poly" coords="123,100,126,100,126,110,123,110,126,100,130,100,130,110,126,110" title="Stephanie Cloarec, 5/15/2014 : 1282" alt="Stephanie Cloarec, 5/15/2014 : 1282" />
+	<area shape="poly" coords="116,100,119,99,119,109,116,110,119,99,123,100,123,110,119,109" title="Stephanie Cloarec, 5/8/2014 : 1279" alt="Stephanie Cloarec, 5/8/2014 : 1279" />
+	<area shape="poly" coords="109,99,112,100,112,110,109,109,112,100,116,100,116,110,112,110" title="Stephanie Cloarec, 5/1/2014 : 1288" alt="Stephanie Cloarec, 5/1/2014 : 1288" />
+	<area shape="poly" coords="102,99,106,98,106,108,102,109,106,98,109,99,109,109,106,108" title="Stephanie Cloarec, 4/24/2014 : 1262" alt="Stephanie Cloarec, 4/24/2014 : 1262" />
+	<area shape="poly" coords="95,99,99,99,99,109,95,109,99,99,102,99,102,109,99,109" title="Stephanie Cloarec, 4/17/2014 : 1273" alt="Stephanie Cloarec, 4/17/2014 : 1273" />
+	<area shape="poly" coords="92,99,95,99,95,109,92,109" title="Stephanie Cloarec, 4/10/2014 : 1271" alt="Stephanie Cloarec, 4/10/2014 : 1271" />
+	<area shape="poly" coords="309,17,312,17,312,27,309,27" title="Stacey Guerin, 11/20/2014 : 255" alt="Stacey Guerin, 11/20/2014 : 255" />
+	<area shape="poly" coords="302,19,305,17,305,27,302,29,305,17,309,17,309,27,305,27" title="Stacey Guerin, 11/13/2014 : 254" alt="Stacey Guerin, 11/13/2014 : 254" />
+	<area shape="poly" coords="295,20,298,20,298,30,295,30,298,20,302,19,302,29,298,30" title="Stacey Guerin, 11/6/2014 : 295" alt="Stacey Guerin, 11/6/2014 : 295" />
+	<area shape="poly" coords="288,20,291,20,291,30,288,30,291,20,295,20,295,30,291,30" title="Stacey Guerin, 10/30/2014 : 296" alt="Stacey Guerin, 10/30/2014 : 296" />
+	<area shape="poly" coords="281,20,285,20,285,30,281,30,285,20,288,20,288,30,285,30" title="Stacey Guerin, 10/23/2014 : 296" alt="Stacey Guerin, 10/23/2014 : 296" />
+	<area shape="poly" coords="269,34,273,25,283,25,279,34,278,20,281,20,281,30,278,30" title="Stacey Guerin, 10/16/2014 : 298" alt="Stacey Guerin, 10/16/2014 : 298" />
+	<area shape="poly" coords="262,46,266,42,276,42,272,46,266,42,269,34,279,34,276,42" title="Stacey Guerin, 10/9/2014 : 498" alt="Stacey Guerin, 10/9/2014 : 498" />
+	<area shape="poly" coords="260,45,264,46,264,56,260,55,259,51,262,46,272,46,269,51" title="Stacey Guerin, 10/2/2014 : 610" alt="Stacey Guerin, 10/2/2014 : 610" />
+	<area shape="poly" coords="249,67,252,50,262,50,259,67,257,45,260,45,260,55,257,55" title="Stacey Guerin, 9/25/2014 : 606" alt="Stacey Guerin, 9/25/2014 : 606" />
+	<area shape="poly" coords="247,78,250,78,250,88,247,88,245,83,249,67,259,67,255,83" title="Stacey Guerin, 9/18/2014 : 1013" alt="Stacey Guerin, 9/18/2014 : 1013" />
+	<area shape="poly" coords="240,78,243,78,243,88,240,88,243,78,247,78,247,88,243,88" title="Stacey Guerin, 9/11/2014 : 1006" alt="Stacey Guerin, 9/11/2014 : 1006" />
+	<area shape="poly" coords="233,77,236,78,236,88,233,87,236,78,240,78,240,88,236,88" title="Stacey Guerin, 9/4/2014 : 1006" alt="Stacey Guerin, 9/4/2014 : 1006" />
+	<area shape="poly" coords="226,76,229,77,229,87,226,86,229,77,233,77,233,87,229,87" title="Stacey Guerin, 8/28/2014 : 1003" alt="Stacey Guerin, 8/28/2014 : 1003" />
+	<area shape="poly" coords="219,75,223,75,223,85,219,85,223,75,226,76,226,86,223,85" title="Stacey Guerin, 8/21/2014 : 976" alt="Stacey Guerin, 8/21/2014 : 976" />
+	<area shape="poly" coords="212,75,216,75,216,85,212,85,216,75,219,75,219,85,216,85" title="Stacey Guerin, 8/14/2014 : 980" alt="Stacey Guerin, 8/14/2014 : 980" />
+	<area shape="poly" coords="205,75,209,75,209,85,205,85,209,75,212,75,212,85,209,85" title="Stacey Guerin, 8/7/2014 : 980" alt="Stacey Guerin, 8/7/2014 : 980" />
+	<area shape="poly" coords="198,74,202,74,202,84,198,84,202,74,205,75,205,85,202,84" title="Stacey Guerin, 7/31/2014 : 967" alt="Stacey Guerin, 7/31/2014 : 967" />
+	<area shape="poly" coords="192,75,195,74,195,84,192,85,195,74,198,74,198,84,195,84" title="Stacey Guerin, 7/24/2014 : 965" alt="Stacey Guerin, 7/24/2014 : 965" />
+	<area shape="poly" coords="185,76,188,75,188,85,185,86,188,75,192,75,192,85,188,85" title="Stacey Guerin, 7/17/2014 : 978" alt="Stacey Guerin, 7/17/2014 : 978" />
+	<area shape="poly" coords="178,77,181,76,181,86,178,87,181,76,185,76,185,86,181,86" title="Stacey Guerin, 7/10/2014 : 992" alt="Stacey Guerin, 7/10/2014 : 992" />
+	<area shape="poly" coords="171,77,174,77,174,87,171,87,174,77,178,77,178,87,174,87" title="Stacey Guerin, 7/3/2014 : 1003" alt="Stacey Guerin, 7/3/2014 : 1003" />
+	<area shape="poly" coords="164,76,167,76,167,86,164,86,167,76,171,77,171,87,167,86" title="Stacey Guerin, 6/26/2014 : 991" alt="Stacey Guerin, 6/26/2014 : 991" />
+	<area shape="poly" coords="157,76,161,76,161,86,157,86,161,76,164,76,164,86,161,86" title="Stacey Guerin, 6/19/2014 : 991" alt="Stacey Guerin, 6/19/2014 : 991" />
+	<area shape="poly" coords="150,76,154,76,154,86,150,86,154,76,157,76,157,86,154,86" title="Stacey Guerin, 6/12/2014 : 989" alt="Stacey Guerin, 6/12/2014 : 989" />
+	<area shape="poly" coords="143,76,147,76,147,86,143,86,147,76,150,76,150,86,147,86" title="Stacey Guerin, 6/5/2014 : 989" alt="Stacey Guerin, 6/5/2014 : 989" />
+	<area shape="poly" coords="137,77,140,77,140,87,137,87,140,77,143,76,143,86,140,87" title="Stacey Guerin, 5/29/2014 : 996" alt="Stacey Guerin, 5/29/2014 : 996" />
+	<area shape="poly" coords="130,77,133,77,133,87,130,87,133,77,137,77,137,87,133,87" title="Stacey Guerin, 5/22/2014 : 998" alt="Stacey Guerin, 5/22/2014 : 998" />
+	<area shape="poly" coords="123,77,126,77,126,87,123,87,126,77,130,77,130,87,126,87" title="Stacey Guerin, 5/15/2014 : 999" alt="Stacey Guerin, 5/15/2014 : 999" />
+	<area shape="poly" coords="116,77,119,77,119,87,116,87,119,77,123,77,123,87,119,87" title="Stacey Guerin, 5/8/2014 : 1002" alt="Stacey Guerin, 5/8/2014 : 1002" />
+	<area shape="poly" coords="109,77,112,77,112,87,109,87,112,77,116,77,116,87,112,87" title="Stacey Guerin, 5/1/2014 : 1005" alt="Stacey Guerin, 5/1/2014 : 1005" />
+	<area shape="poly" coords="102,77,106,77,106,87,102,87,106,77,109,77,109,87,106,87" title="Stacey Guerin, 4/24/2014 : 1002" alt="Stacey Guerin, 4/24/2014 : 1002" />
+	<area shape="poly" coords="95,78,99,78,99,88,95,88,99,78,102,77,102,87,99,88" title="Stacey Guerin, 4/17/2014 : 1007" alt="Stacey Guerin, 4/17/2014 : 1007" />
+	<area shape="poly" coords="88,77,92,77,92,87,88,87,92,77,95,78,95,88,92,87" title="Stacey Guerin, 4/10/2014 : 1005" alt="Stacey Guerin, 4/10/2014 : 1005" />
+	<area shape="poly" coords="81,76,85,76,85,86,81,86,85,76,88,77,88,87,85,86" title="Stacey Guerin, 4/3/2014 : 990" alt="Stacey Guerin, 4/3/2014 : 990" />
+	<area shape="poly" coords="78,77,81,76,81,86,78,87" title="Stacey Guerin, 3/27/2014 : 995" alt="Stacey Guerin, 3/27/2014 : 995" />
+	<area shape="poly" coords="309,83,312,83,312,93,309,93" title="Kati-Kreet Marran, 11/20/2014 : 1080" alt="Kati-Kreet Marran, 11/20/2014 : 1080" />
+	<area shape="poly" coords="302,82,305,82,305,92,302,92,305,82,309,83,309,93,305,92" title="Kati-Kreet Marran, 11/13/2014 : 1060" alt="Kati-Kreet Marran, 11/13/2014 : 1060" />
+	<area shape="poly" coords="295,81,298,81,298,91,295,91,298,81,302,82,302,92,298,91" title="Kati-Kreet Marran, 11/6/2014 : 1053" alt="Kati-Kreet Marran, 11/6/2014 : 1053" />
+	<area shape="poly" coords="288,81,291,81,291,91,288,91,291,81,295,81,295,91,291,91" title="Kati-Kreet Marran, 10/30/2014 : 1045" alt="Kati-Kreet Marran, 10/30/2014 : 1045" />
+	<area shape="poly" coords="281,81,285,80,285,90,281,91,285,80,288,81,288,91,285,90" title="Kati-Kreet Marran, 10/23/2014 : 1043" alt="Kati-Kreet Marran, 10/23/2014 : 1043" />
+	<area shape="poly" coords="274,81,278,81,278,91,274,91,278,81,281,81,281,91,278,91" title="Kati-Kreet Marran, 10/16/2014 : 1052" alt="Kati-Kreet Marran, 10/16/2014 : 1052" />
+	<area shape="poly" coords="267,80,271,81,271,91,267,90,271,81,274,81,274,91,271,91" title="Kati-Kreet Marran, 10/9/2014 : 1052" alt="Kati-Kreet Marran, 10/9/2014 : 1052" />
+	<area shape="poly" coords="260,78,264,79,264,89,260,88,264,79,267,80,267,90,264,89" title="Kati-Kreet Marran, 10/2/2014 : 1021" alt="Kati-Kreet Marran, 10/2/2014 : 1021" />
+	<area shape="poly" coords="254,78,257,77,257,87,254,88,257,77,260,78,260,88,257,87" title="Kati-Kreet Marran, 9/25/2014 : 1005" alt="Kati-Kreet Marran, 9/25/2014 : 1005" />
+	<area shape="poly" coords="247,78,250,78,250,88,247,88,250,78,254,78,254,88,250,88" title="Kati-Kreet Marran, 9/18/2014 : 1013" alt="Kati-Kreet Marran, 9/18/2014 : 1013" />
+	<area shape="poly" coords="240,78,243,78,243,88,240,88,243,78,247,78,247,88,243,88" title="Kati-Kreet Marran, 9/11/2014 : 1006" alt="Kati-Kreet Marran, 9/11/2014 : 1006" />
+	<area shape="poly" coords="233,77,236,78,236,88,233,87,236,78,240,78,240,88,236,88" title="Kati-Kreet Marran, 9/4/2014 : 1006" alt="Kati-Kreet Marran, 9/4/2014 : 1006" />
+	<area shape="poly" coords="226,76,229,77,229,87,226,86,229,77,233,77,233,87,229,87" title="Kati-Kreet Marran, 8/28/2014 : 1003" alt="Kati-Kreet Marran, 8/28/2014 : 1003" />
+	<area shape="poly" coords="219,75,223,75,223,85,219,85,223,75,226,76,226,86,223,85" title="Kati-Kreet Marran, 8/21/2014 : 976" alt="Kati-Kreet Marran, 8/21/2014 : 976" />
+	<area shape="poly" coords="212,75,216,75,216,85,212,85,216,75,219,75,219,85,216,85" title="Kati-Kreet Marran, 8/14/2014 : 980" alt="Kati-Kreet Marran, 8/14/2014 : 980" />
+	<area shape="poly" coords="205,75,209,75,209,85,205,85,209,75,212,75,212,85,209,85" title="Kati-Kreet Marran, 8/7/2014 : 980" alt="Kati-Kreet Marran, 8/7/2014 : 980" />
+	<area shape="poly" coords="198,74,202,74,202,84,198,84,202,74,205,75,205,85,202,84" title="Kati-Kreet Marran, 7/31/2014 : 967" alt="Kati-Kreet Marran, 7/31/2014 : 967" />
+	<area shape="poly" coords="192,75,195,74,195,84,192,85,195,74,198,74,198,84,195,84" title="Kati-Kreet Marran, 7/24/2014 : 965" alt="Kati-Kreet Marran, 7/24/2014 : 965" />
+	<area shape="poly" coords="185,76,188,75,188,85,185,86,188,75,192,75,192,85,188,85" title="Kati-Kreet Marran, 7/17/2014 : 978" alt="Kati-Kreet Marran, 7/17/2014 : 978" />
+	<area shape="poly" coords="178,77,181,76,181,86,178,87,181,76,185,76,185,86,181,86" title="Kati-Kreet Marran, 7/10/2014 : 992" alt="Kati-Kreet Marran, 7/10/2014 : 992" />
+	<area shape="poly" coords="171,77,174,77,174,87,171,87,174,77,178,77,178,87,174,87" title="Kati-Kreet Marran, 7/3/2014 : 1003" alt="Kati-Kreet Marran, 7/3/2014 : 1003" />
+	<area shape="poly" coords="164,76,167,76,167,86,164,86,167,76,171,77,171,87,167,86" title="Kati-Kreet Marran, 6/26/2014 : 991" alt="Kati-Kreet Marran, 6/26/2014 : 991" />
+	<area shape="poly" coords="157,76,161,76,161,86,157,86,161,76,164,76,164,86,161,86" title="Kati-Kreet Marran, 6/19/2014 : 991" alt="Kati-Kreet Marran, 6/19/2014 : 991" />
+	<area shape="poly" coords="150,76,154,76,154,86,150,86,154,76,157,76,157,86,154,86" title="Kati-Kreet Marran, 6/12/2014 : 989" alt="Kati-Kreet Marran, 6/12/2014 : 989" />
+	<area shape="poly" coords="143,76,147,76,147,86,143,86,147,76,150,76,150,86,147,86" title="Kati-Kreet Marran, 6/5/2014 : 989" alt="Kati-Kreet Marran, 6/5/2014 : 989" />
+	<area shape="poly" coords="137,77,140,77,140,87,137,87,140,77,143,76,143,86,140,87" title="Kati-Kreet Marran, 5/29/2014 : 996" alt="Kati-Kreet Marran, 5/29/2014 : 996" />
+	<area shape="poly" coords="130,77,133,77,133,87,130,87,133,77,137,77,137,87,133,87" title="Kati-Kreet Marran, 5/22/2014 : 998" alt="Kati-Kreet Marran, 5/22/2014 : 998" />
+	<area shape="poly" coords="123,77,126,77,126,87,123,87,126,77,130,77,130,87,126,87" title="Kati-Kreet Marran, 5/15/2014 : 999" alt="Kati-Kreet Marran, 5/15/2014 : 999" />
+	<area shape="poly" coords="116,77,119,77,119,87,116,87,119,77,123,77,123,87,119,87" title="Kati-Kreet Marran, 5/8/2014 : 1002" alt="Kati-Kreet Marran, 5/8/2014 : 1002" />
+	<area shape="poly" coords="109,77,112,77,112,87,109,87,112,77,116,77,116,87,112,87" title="Kati-Kreet Marran, 5/1/2014 : 1005" alt="Kati-Kreet Marran, 5/1/2014 : 1005" />
+	<area shape="poly" coords="102,77,106,77,106,87,102,87,106,77,109,77,109,87,106,87" title="Kati-Kreet Marran, 4/24/2014 : 1002" alt="Kati-Kreet Marran, 4/24/2014 : 1002" />
+	<area shape="poly" coords="95,78,99,78,99,88,95,88,99,78,102,77,102,87,99,88" title="Kati-Kreet Marran, 4/17/2014 : 1007" alt="Kati-Kreet Marran, 4/17/2014 : 1007" />
+	<area shape="poly" coords="88,77,92,77,92,87,88,87,92,77,95,78,95,88,92,87" title="Kati-Kreet Marran, 4/10/2014 : 1005" alt="Kati-Kreet Marran, 4/10/2014 : 1005" />
+	<area shape="poly" coords="81,76,85,76,85,86,81,86,85,76,88,77,88,87,85,86" title="Kati-Kreet Marran, 4/3/2014 : 990" alt="Kati-Kreet Marran, 4/3/2014 : 990" />
+	<area shape="poly" coords="75,77,78,77,78,87,75,87,78,77,81,76,81,86,78,87" title="Kati-Kreet Marran, 3/27/2014 : 995" alt="Kati-Kreet Marran, 3/27/2014 : 995" />
+	<area shape="poly" coords="68,78,71,77,71,87,68,88,71,77,75,77,75,87,71,87" title="Kati-Kreet Marran, 3/20/2014 : 1005" alt="Kati-Kreet Marran, 3/20/2014 : 1005" />
+	<area shape="poly" coords="61,79,64,79,64,89,61,89,64,79,68,78,68,88,64,89" title="Kati-Kreet Marran, 3/13/2014 : 1021" alt="Kati-Kreet Marran, 3/13/2014 : 1021" />
+	<area shape="poly" coords="57,79,61,79,61,89,57,89" title="Kati-Kreet Marran, 3/6/2014 : 1025" alt="Kati-Kreet Marran, 3/6/2014 : 1025" />
+	<area shape="poly" coords="226,76,229,77,229,87,226,86" title="Verlaine Faulmann, 8/28/2014 : 1003" alt="Verlaine Faulmann, 8/28/2014 : 1003" />
+	<area shape="poly" coords="219,75,223,75,223,85,219,85,223,75,226,76,226,86,223,85" title="Verlaine Faulmann, 8/21/2014 : 976" alt="Verlaine Faulmann, 8/21/2014 : 976" />
+	<area shape="poly" coords="212,75,216,75,216,85,212,85,216,75,219,75,219,85,216,85" title="Verlaine Faulmann, 8/14/2014 : 980" alt="Verlaine Faulmann, 8/14/2014 : 980" />
+	<area shape="poly" coords="205,75,209,75,209,85,205,85,209,75,212,75,212,85,209,85" title="Verlaine Faulmann, 8/7/2014 : 980" alt="Verlaine Faulmann, 8/7/2014 : 980" />
+	<area shape="poly" coords="198,74,202,74,202,84,198,84,202,74,205,75,205,85,202,84" title="Verlaine Faulmann, 7/31/2014 : 967" alt="Verlaine Faulmann, 7/31/2014 : 967" />
+	<area shape="poly" coords="192,75,195,74,195,84,192,85,195,74,198,74,198,84,195,84" title="Verlaine Faulmann, 7/24/2014 : 965" alt="Verlaine Faulmann, 7/24/2014 : 965" />
+	<area shape="poly" coords="185,76,188,75,188,85,185,86,188,75,192,75,192,85,188,85" title="Verlaine Faulmann, 7/17/2014 : 978" alt="Verlaine Faulmann, 7/17/2014 : 978" />
+	<area shape="poly" coords="178,77,181,76,181,86,178,87,181,76,185,76,185,86,181,86" title="Verlaine Faulmann, 7/10/2014 : 992" alt="Verlaine Faulmann, 7/10/2014 : 992" />
+	<area shape="poly" coords="171,77,174,77,174,87,171,87,174,77,178,77,178,87,174,87" title="Verlaine Faulmann, 7/3/2014 : 1003" alt="Verlaine Faulmann, 7/3/2014 : 1003" />
+	<area shape="poly" coords="164,76,167,76,167,86,164,86,167,76,171,77,171,87,167,86" title="Verlaine Faulmann, 6/26/2014 : 991" alt="Verlaine Faulmann, 6/26/2014 : 991" />
+	<area shape="poly" coords="157,76,161,76,161,86,157,86,161,76,164,76,164,86,161,86" title="Verlaine Faulmann, 6/19/2014 : 991" alt="Verlaine Faulmann, 6/19/2014 : 991" />
+	<area shape="poly" coords="150,76,154,76,154,86,150,86,154,76,157,76,157,86,154,86" title="Verlaine Faulmann, 6/12/2014 : 989" alt="Verlaine Faulmann, 6/12/2014 : 989" />
+	<area shape="poly" coords="143,76,147,76,147,86,143,86,147,76,150,76,150,86,147,86" title="Verlaine Faulmann, 6/5/2014 : 989" alt="Verlaine Faulmann, 6/5/2014 : 989" />
+	<area shape="poly" coords="137,77,140,77,140,87,137,87,140,77,143,76,143,86,140,87" title="Verlaine Faulmann, 5/29/2014 : 996" alt="Verlaine Faulmann, 5/29/2014 : 996" />
+	<area shape="poly" coords="130,77,133,77,133,87,130,87,133,77,137,77,137,87,133,87" title="Verlaine Faulmann, 5/22/2014 : 998" alt="Verlaine Faulmann, 5/22/2014 : 998" />
+	<area shape="poly" coords="123,77,126,77,126,87,123,87,126,77,130,77,130,87,126,87" title="Verlaine Faulmann, 5/15/2014 : 999" alt="Verlaine Faulmann, 5/15/2014 : 999" />
+	<area shape="poly" coords="116,77,119,77,119,87,116,87,119,77,123,77,123,87,119,87" title="Verlaine Faulmann, 5/8/2014 : 1002" alt="Verlaine Faulmann, 5/8/2014 : 1002" />
+	<area shape="poly" coords="109,77,112,77,112,87,109,87,112,77,116,77,116,87,112,87" title="Verlaine Faulmann, 5/1/2014 : 1005" alt="Verlaine Faulmann, 5/1/2014 : 1005" />
+	<area shape="poly" coords="102,77,106,77,106,87,102,87,106,77,109,77,109,87,106,87" title="Verlaine Faulmann, 4/24/2014 : 1002" alt="Verlaine Faulmann, 4/24/2014 : 1002" />
+	<area shape="poly" coords="95,78,99,78,99,88,95,88,99,78,102,77,102,87,99,88" title="Verlaine Faulmann, 4/17/2014 : 1007" alt="Verlaine Faulmann, 4/17/2014 : 1007" />
+	<area shape="poly" coords="88,77,92,77,92,87,88,87,92,77,95,78,95,88,92,87" title="Verlaine Faulmann, 4/10/2014 : 1005" alt="Verlaine Faulmann, 4/10/2014 : 1005" />
+	<area shape="poly" coords="81,76,85,76,85,86,81,86,85,76,88,77,88,87,85,86" title="Verlaine Faulmann, 4/3/2014 : 990" alt="Verlaine Faulmann, 4/3/2014 : 990" />
+	<area shape="poly" coords="75,77,78,77,78,87,75,87,78,77,81,76,81,86,78,87" title="Verlaine Faulmann, 3/27/2014 : 995" alt="Verlaine Faulmann, 3/27/2014 : 995" />
+	<area shape="poly" coords="68,78,71,77,71,87,68,88,71,77,75,77,75,87,71,87" title="Verlaine Faulmann, 3/20/2014 : 1005" alt="Verlaine Faulmann, 3/20/2014 : 1005" />
+	<area shape="poly" coords="61,79,64,79,64,89,61,89,64,79,68,78,68,88,64,89" title="Verlaine Faulmann, 3/13/2014 : 1021" alt="Verlaine Faulmann, 3/13/2014 : 1021" />
+	<area shape="poly" coords="57,79,61,79,61,89,57,89" title="Verlaine Faulmann, 3/6/2014 : 1025" alt="Verlaine Faulmann, 3/6/2014 : 1025" />
+	<area shape="poly" coords="309,57,312,58,312,68,309,67" title="Marie Batomene, 11/20/2014 : 765" alt="Marie Batomene, 11/20/2014 : 765" />
+	<area shape="poly" coords="302,56,305,56,305,66,302,66,305,56,309,57,309,67,305,66" title="Marie Batomene, 11/13/2014 : 745" alt="Marie Batomene, 11/13/2014 : 745" />
+	<area shape="poly" coords="295,57,298,56,298,66,295,67,298,56,302,56,302,66,298,66" title="Marie Batomene, 11/6/2014 : 745" alt="Marie Batomene, 11/6/2014 : 745" />
+	<area shape="poly" coords="288,57,291,57,291,67,288,67,291,57,295,57,295,67,291,67" title="Marie Batomene, 10/30/2014 : 748" alt="Marie Batomene, 10/30/2014 : 748" />
+	<area shape="poly" coords="276,47,280,62,290,62,286,47,285,57,288,57,288,67,285,67" title="Marie Batomene, 10/23/2014 : 749" alt="Marie Batomene, 10/23/2014 : 749" />
+	<area shape="poly" coords="274,28,278,28,278,38,274,38,273,33,276,47,286,47,283,33" title="Marie Batomene, 10/16/2014 : 389" alt="Marie Batomene, 10/16/2014 : 389" />
+	<area shape="poly" coords="267,27,271,28,271,38,267,37,271,28,274,28,274,38,271,38" title="Marie Batomene, 10/9/2014 : 386" alt="Marie Batomene, 10/9/2014 : 386" />
+	<area shape="poly" coords="260,27,264,27,264,37,260,37,264,27,267,27,267,37,264,37" title="Marie Batomene, 10/2/2014 : 382" alt="Marie Batomene, 10/2/2014 : 382" />
+	<area shape="poly" coords="254,27,257,27,257,37,254,37,257,27,260,27,260,37,257,37" title="Marie Batomene, 9/25/2014 : 382" alt="Marie Batomene, 9/25/2014 : 382" />
+	<area shape="poly" coords="247,28,250,27,250,37,247,38,250,27,254,27,254,37,250,37" title="Marie Batomene, 9/18/2014 : 385" alt="Marie Batomene, 9/18/2014 : 385" />
+	<area shape="poly" coords="240,28,243,28,243,38,240,38,243,28,247,28,247,38,243,38" title="Marie Batomene, 9/11/2014 : 390" alt="Marie Batomene, 9/11/2014 : 390" />
+	<area shape="poly" coords="233,28,236,28,236,38,233,38,236,28,240,28,240,38,236,38" title="Marie Batomene, 9/4/2014 : 390" alt="Marie Batomene, 9/4/2014 : 390" />
+	<area shape="poly" coords="226,28,229,28,229,38,226,38,229,28,233,28,233,38,229,38" title="Marie Batomene, 8/28/2014 : 391" alt="Marie Batomene, 8/28/2014 : 391" />
+	<area shape="poly" coords="219,28,223,28,223,38,219,38,223,28,226,28,226,38,223,38" title="Marie Batomene, 8/21/2014 : 387" alt="Marie Batomene, 8/21/2014 : 387" />
+	<area shape="poly" coords="212,28,216,28,216,38,212,38,216,28,219,28,219,38,216,38" title="Marie Batomene, 8/14/2014 : 387" alt="Marie Batomene, 8/14/2014 : 387" />
+	<area shape="poly" coords="205,27,209,28,209,38,205,37,209,28,212,28,212,38,209,38" title="Marie Batomene, 8/7/2014 : 387" alt="Marie Batomene, 8/7/2014 : 387" />
+	<area shape="poly" coords="198,27,202,27,202,37,198,37,202,27,205,27,205,37,202,37" title="Marie Batomene, 7/31/2014 : 383" alt="Marie Batomene, 7/31/2014 : 383" />
+	<area shape="poly" coords="192,27,195,27,195,37,192,37,195,27,198,27,198,37,195,37" title="Marie Batomene, 7/24/2014 : 379" alt="Marie Batomene, 7/24/2014 : 379" />
+	<area shape="poly" coords="185,27,188,27,188,37,185,37,188,27,192,27,192,37,188,37" title="Marie Batomene, 7/17/2014 : 382" alt="Marie Batomene, 7/17/2014 : 382" />
+	<area shape="poly" coords="178,27,181,27,181,37,178,37,181,27,185,27,185,37,181,37" title="Marie Batomene, 7/10/2014 : 381" alt="Marie Batomene, 7/10/2014 : 381" />
+	<area shape="poly" coords="171,27,174,27,174,37,171,37,174,27,178,27,178,37,174,37" title="Marie Batomene, 7/3/2014 : 384" alt="Marie Batomene, 7/3/2014 : 384" />
+	<area shape="poly" coords="164,27,167,27,167,37,164,37,167,27,171,27,171,37,167,37" title="Marie Batomene, 6/26/2014 : 379" alt="Marie Batomene, 6/26/2014 : 379" />
+	<area shape="poly" coords="157,27,161,27,161,37,157,37,161,27,164,27,164,37,161,37" title="Marie Batomene, 6/19/2014 : 377" alt="Marie Batomene, 6/19/2014 : 377" />
+	<area shape="poly" coords="150,27,154,27,154,37,150,37,154,27,157,27,157,37,154,37" title="Marie Batomene, 6/12/2014 : 383" alt="Marie Batomene, 6/12/2014 : 383" />
+	<area shape="poly" coords="143,28,147,28,147,38,143,38,147,28,150,27,150,37,147,38" title="Marie Batomene, 6/5/2014 : 386" alt="Marie Batomene, 6/5/2014 : 386" />
+	<area shape="poly" coords="137,28,140,28,140,38,137,38,140,28,143,28,143,38,140,38" title="Marie Batomene, 5/29/2014 : 393" alt="Marie Batomene, 5/29/2014 : 393" />
+	<area shape="poly" coords="130,28,133,28,133,38,130,38,133,28,137,28,137,38,133,38" title="Marie Batomene, 5/22/2014 : 391" alt="Marie Batomene, 5/22/2014 : 391" />
+	<area shape="poly" coords="123,28,126,28,126,38,123,38,126,28,130,28,130,38,126,38" title="Marie Batomene, 5/15/2014 : 391" alt="Marie Batomene, 5/15/2014 : 391" />
+	<area shape="poly" coords="116,28,119,28,119,38,116,38,119,28,123,28,123,38,119,38" title="Marie Batomene, 5/8/2014 : 395" alt="Marie Batomene, 5/8/2014 : 395" />
+	<area shape="poly" coords="109,28,112,28,112,38,109,38,112,28,116,28,116,38,112,38" title="Marie Batomene, 5/1/2014 : 394" alt="Marie Batomene, 5/1/2014 : 394" />
+	<area shape="poly" coords="102,28,106,28,106,38,102,38,106,28,109,28,109,38,106,38" title="Marie Batomene, 4/24/2014 : 389" alt="Marie Batomene, 4/24/2014 : 389" />
+	<area shape="poly" coords="95,28,99,28,99,38,95,38,99,28,102,28,102,38,99,38" title="Marie Batomene, 4/17/2014 : 394" alt="Marie Batomene, 4/17/2014 : 394" />
+	<area shape="poly" coords="88,28,92,29,92,39,88,38,92,29,95,28,95,38,92,39" title="Marie Batomene, 4/10/2014 : 400" alt="Marie Batomene, 4/10/2014 : 400" />
+	<area shape="poly" coords="81,28,85,28,85,38,81,38,85,28,88,28,88,38,85,38" title="Marie Batomene, 4/3/2014 : 394" alt="Marie Batomene, 4/3/2014 : 394" />
+	<area shape="poly" coords="75,29,78,28,78,38,75,39,78,28,81,28,81,38,78,38" title="Marie Batomene, 3/27/2014 : 397" alt="Marie Batomene, 3/27/2014 : 397" />
+	<area shape="poly" coords="68,29,71,29,71,39,68,39,71,29,75,29,75,39,71,39" title="Marie Batomene, 3/20/2014 : 399" alt="Marie Batomene, 3/20/2014 : 399" />
+	<area shape="poly" coords="61,29,64,29,64,39,61,39,64,29,68,29,68,39,64,39" title="Marie Batomene, 3/13/2014 : 405" alt="Marie Batomene, 3/13/2014 : 405" />
+	<area shape="poly" coords="57,29,61,29,61,39,57,39" title="Marie Batomene, 3/6/2014 : 405" alt="Marie Batomene, 3/6/2014 : 405" />
+</map></span>
+</div>
+  </div>
+  <div id="tournamentsubmenu" class="profile">
+    <ul id="cphPage_cphPage_tmProfileMenu">
+	<li><a href="overview.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE">Career Overview</a></li><li class="active"><a class="active" href="biography.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE">Full Profile</a></li><li><a href="matches.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE">Matches</a></li><li><a href="history.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE">Ranking History</a></li><li><a href="selectheadtohead.aspx?id=4B12FFDB-0102-4555-94FA-01B36127D8DE">Head To Head</a></li>
+</ul>
+  </div>
+  <div class="clear"></div>
+  
+  
+  <div>
+    <div style="float:left;"><h2>Full Profile</h2></div>
+    <div style="float:right;"></div>
+  </div><br />
+  <br />
+  <br />
+  <span id="cphPage_cphPage_cphPage_pbPlayerBiography"><fieldset id="cphPage_cphPage_cphPage_VF0_fs0">
+	<legend>
+		Biodata
+	</legend><ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_upload" class="captionleft readonly">Profile image:</label><label></label></li><li><label for="cphPage_cphPage_cphPage_VF0_fs0_DOB" class="captionleft readonly">Date of birth:</label><label class="text readonly" id="DOB">2/13/1995</label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_POB" class="captionleft readonly">Place of birth:</label><label class="text readonly" id="POB"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Height" class="captionleft readonly">Height:</label><label class="text readonly" id="Height"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Facebook" class="captionleft readonly">Facebook Fan Page:</label><label class="text readonly" id="Facebook"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Twitter" class="captionleft readonly">Twitter:</label><label class="text readonly" id="Twitter"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Website" class="captionleft readonly">Website:</label><label class="text readonly" id="Website"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_CurrentResidence" class="captionleft readonly">Current Residence:</label><label class="text readonly" id="CurrentResidence"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Occupation" class="captionleft readonly">Occupation (if not a full-time athlete):</label><label class="text readonly" id="Occupation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Hobbies" class="captionleft readonly">Hobbies:</label><label class="text readonly" id="Hobbies"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_EducationLevel" class="captionleft readonly">Highest Level of Education:</label><label class="text readonly" id="EducationLevel"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_FamilyInformation" class="captionleft readonly">Family Information:</label><label class="text readonly" id="FamilyInformation"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_StyleOfPlay" class="captionleft readonly">Style of Play:</label><label class="text readonly" id="StyleOfPlay"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Plays" class="captionleft readonly">Plays:</label><label class="text readonly"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_OtherSports" class="captionleft readonly">Other sports played at a high level:</label><label class="text readonly" id="OtherSports"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_FamousSportingRelatives" class="captionleft readonly">Famous or elite sporting relatives:</label><label class="text readonly" id="FamousSportingRelatives"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Languages" class="captionleft readonly">Language(s):</label><label class="text readonly" id="Languages"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_InternationalDebut" class="captionleft readonly">International Debut:</label><label class="text readonly" id="InternationalDebut"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Nickname" class="captionleft readonly">Nickname:</label><label class="text readonly" id="Nickname"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Club" class="captionleft readonly">Club:</label><label class="text readonly" id="Club"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_Coach" class="captionleft readonly">Coach:</label><label class="text readonly" id="Coach"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs0_MajorInjuries" class="captionleft readonly">Major Injuries:</label><label class="text readonly" id="MajorInjuries"></label></li>
+	</ol>
+</fieldset><fieldset id="cphPage_cphPage_cphPage_VF0_fs1">
+	<legend>
+		Athlete Profile
+	</legend><ol>
+		<li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_PreviousOlympics" class="captionlarge readonly">Previous Olympics Games competed and result:</label><label class="text readonly" id="PreviousOlympics"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_BeginSport" class="captionlarge readonly">When and Where begin playing this sport, and Why this sport?:</label><label class="text readonly" id="BeginSport"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_EquipmentSponsor" class="captionlarge readonly">Equipment Sponsor and Current Racket Model:</label><label class="text readonly" id="EquipmentSponsor"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_TrainingRegime" class="captionlarge readonly">Training Regime:</label><label class="text readonly" id="TrainingRegime"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MemorableAchievements" class="captionlarge readonly">Memorable Sporting Achievements:</label><label class="text readonly" id="MemorableAchievements"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MostInfluentialPerson" class="captionlarge readonly">Most Influential Person:</label><label class="text readonly" id="MostInfluentialPerson"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingHero" class="captionlarge readonly">Sporting Hero or Idol:</label><label class="text readonly" id="SportingHero"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SuperstitionsRituals" class="captionlarge readonly">Any Superstitions or Rituals?:</label><label class="text readonly" id="SuperstitionsRituals"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingPhilosophy" class="captionlarge readonly">Sporting Philosophy or Personal Slogan or Favourite Quote:</label><label class="text readonly" id="SportingPhilosophy"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingAwards" class="captionlarge readonly">Sporting Awards / Honours (so far):</label><label class="text readonly" id="SportingAwards"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_SportingAmbitions" class="captionlarge readonly">Sporting Ambitions:</label><label class="text readonly" id="SportingAmbitions"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_StartPlayingCompetitively" class="captionlarge readonly">When did you start competing or playing competitively?:</label><label class="text readonly" id="StartPlayingCompetitively"></label></li><li style="display:none !important"><label for="cphPage_cphPage_cphPage_VF0_fs1_MemberNationalTeamSince" class="captionlarge readonly">Member of current national team since:</label><label class="text readonly" id="MemberNationalTeamSince"></label></li>
+	</ol>
+</fieldset></span>
+
+
+    </div>
+  </div>
+  
+
+  
+    <div id="endnote"><a href="http://www.tournamentsoftware.com" target="_blank">provided by tournamentsoftware.com</a></div>
+  
+  
+
+<script type="text/javascript">
+//<![CDATA[
+var FindClubFX;
+var FindTournamentFX;
+var FindPlayerFX;
+var FindTeamFX;
+function CreateTextBoxFXObjects() {
+  FindClubFX = new TextBoxFXObject('FindClubFX','tbxClub','cphPage_spnFindClub','../find.aspx');
+  FindTournamentFX = new TextBoxFXObject('FindTournamentFX','tbxTournament','cphPage_spnFindTournament','../findtournament.aspx');
+  FindPlayerFX = new TextBoxFXObject('FindPlayerFX','tbxPlayer','cphPage_spnFindPlayer','../find.aspx');
+  FindTeamFX = new TextBoxFXObject('FindTeamFX','tbxTeam','cphPage_spnFindTeam','../find.aspx');
+}
+AddEvent(window,'load',CreateTextBoxFXObjects);
+function IEHEvents(AID){if (document.getElementById && document.getElementsByTagName){if(document.getElementById(AID)!=null){var LIE=document.getElementById(AID).getElementsByTagName('LI');for (var i=0; i<LIE.length; i++){if(LIE[i].className=='parent'){LIE[i].onmouseover=function(){this.className+=' over';};LIE[i].onmouseout=function(){this.className='parent';};}}}}}
+if (window.attachEvent) IEHEvents('cphPage_tmFlagMenu');
+//]]>
+</script>
+</form>
+</body>
+</html>

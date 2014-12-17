@@ -56,7 +56,7 @@ sub extractBiodata {
     $hash{cur_residence_state} = (split ', ', $hash{cur_residence_state})[1];
     $hash{languages}           = [split ', |,| and ', $hash{languages}];
     #$hash{debut_event}         = (split ' ', $hash{debut_event}, 2)[1];
-    $hash{debut_year}          = ($hash{debut_year} =~ /\d\d\d\d/g)[0];
+    $hash{debut_year}          = extractYear($hash{debut_year}, $hash{birthdate});
     return %hash;
 }
 

@@ -81,6 +81,11 @@ sub getName {
 	push @name, $_ if (($switch || $_ eq uc $_) && $part == 2);
 	push @firstname, $_ if (($switch || $_ ne uc $_) && $part == 1);
     }
+
+    if (!@name || !@firstname) {
+	@firstname = @names[0 .. ($#names-1)];
+	@name      = @names[-1];
+    }
     return ((join ' ', @firstname), (join ' ', @name));
 }
 
