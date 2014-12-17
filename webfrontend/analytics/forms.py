@@ -45,3 +45,15 @@ class SearchForm(forms.Form):
         , widget   = forms.Select(attrs={'class':'selector'})
         , required = False
     )
+
+class GroupCountForm(forms.Form):
+    group_count = forms.ChoiceField(
+        choices = (
+            ('hand', 'Hand')
+            , ('club', 'Club')
+            , ('coach', 'Coach')
+            , ('nationality', 'Nationality')
+            , ('gender', 'Gender')
+        )
+        , required = True
+    )

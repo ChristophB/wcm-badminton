@@ -1,19 +1,26 @@
-{% if player %}
-<ul>
-  <!-- {% for field in fields %} -->
-  <!-- {{ field.name }}{{ field. }}<br /> -->
-  <!-- {% endfor %} -->
-  <li>ID: {{ player.id }}</li>
-  <li>Name: {{ player.name }}</li>
-  <li>Firstname: {{ player.firstname }}</li>
-  <li>Birthdate: {{ player.birthdate }}</li>
-  <li>Gender: {{ player.gender }}</li>
-  <li>Hand: {{ player.hand }}</li>
-  <li>Height: {{ player.height }}</li>
-  <li>Nationality: {{ player.nationality }}</li>
-  <li>Club: {{ player.club }}</li>
-  <li>Coach: {{ player.coach }}</li>
-</ul> 
-{% else %}
-<p>Invalid Player selected.</p>
-{% endif %} 
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" 
+	href="{% static 'analytics/style.css' %}" />
+    <title>Player Profile</title>
+  </head>
+  <body>
+    {% if player %}
+    <ul>
+      <li>ID: {{ player.id }}</li>
+      <li>Name: {{ player.name }}</li>
+      <li>Firstname: {{ player.firstname }}</li>
+      <li>Birthdate: {{ player.birthdate }}</li>
+      <li>Gender: {{ player.gender }}</li>
+      <li>Hand: {{ player.hand }}</li>
+      <li>Height: {{ player.height }}</li>
+      <li>Nationality: {{ player.nationality }}</li>
+      <li>Club: {{ player.club }}</li>
+      <li>Coach: {{ player.coach }}</li>
+    </ul> 
+    {% else %}
+    <p>Invalid Player selected.</p>
+    {% endif %}
+  </body> 
+</html>

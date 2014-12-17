@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Query</title>
+  </head>
+  <body>
+    <form action="/analytics/result/" method="get">
+      {% csrf_token %}
+      {{ group_count_form }}
+      <input type="submit" name="submit_group_count" value="Show" />
+    </form>
+  </body>
+</html>

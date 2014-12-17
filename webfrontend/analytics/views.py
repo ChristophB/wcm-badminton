@@ -1,15 +1,16 @@
 import re
-#import django_filters
 
 from django.shortcuts import render
 from django.views import generic
+from django.views.generic import TemplateView
 from django.views.generic.base import View
 from django.http import HttpResponse
-from django.db.models import Q, FieldDoesNotExist
+from django.db.models import Count
 from django_tables2 import RequestConfig, SingleTableView
+from django.core import serializers
 
 from analytics.models import Player, PlayerLanguage
-from analytics.forms import SearchForm
+from analytics.forms import GroupCountForm
 from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
 
@@ -19,16 +20,6 @@ class PlayerView(generic.DetailView):
     template_name       = 'analytics/player.html'
     context_object_name = 'player'
 
-    # def get_context_data(self, **kwargs):
-    #     context = super(PlayerView, self).get_context_data()
-    #     template_fields = []
-    #     for field in context['player']._meta.fields:
-    #         template_fields += [
-    #             field.name
-    #             , getattr(context['player'], field.name)
-    #         ] 
-    #     context['fields'] = template_fields
-    #     return context
     
 class SearchView(SingleTableView):
     model = Player
@@ -59,3 +50,39 @@ class SearchView(SingleTableView):
         return self.filter.qs
  
         
+class ResultView(TemplateView):
+    template_name = 'analytics/result.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ResultView, self).get_context_data()
+        if self.request.GET.get('group_count'):
+            group_count = self.request.GET.get('group_count')
+            if group_count in ('nationality'):
+                group_count += '__nationality'
+            if group_count in ('club', 'coach'):
+                group_count += '__name'
+
+            xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
+            ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count') 
+            chartdata      = {'x': xdata, 'y': ydata}
+            charttype      = "pieChart"
+            chartcontainer = 'piechart_container'
+            context['charttype']      = charttype
+            context['chartdata']      = chartdata
+            context['chartcontainer'] = chartcontainer
+            context['extra'] = {
+                'x_is_date'      : False,
+                'x_axis_format'  : '',
+                'tag_script_js'  : True,
+                'jquery_on_ready': False,
+            }
+        return context
+
+
+class QueryView(TemplateView):
+    template_name = 'analytics/query.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(QueryView, self).get_context_data()
+        context['group_count_form'] = GroupCountForm()
+        return context

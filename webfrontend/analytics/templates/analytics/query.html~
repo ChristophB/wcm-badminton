@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Query</title>
+  </head>
+  <body>
+    {% group_count_form %}
+  </body>
+</html>

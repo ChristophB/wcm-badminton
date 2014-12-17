@@ -13,6 +13,8 @@ import os
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')] 
+PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..")
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -39,6 +41,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django_tables2',
     'django_filters',
+    'django_nvd3',
+    'djangobower',
     'analytics',
 )
 
@@ -91,4 +95,24 @@ STATIC_URL = '/static/'
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django.core.context_processors.request',
+)
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.eggs.Loader',
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'djangobower.finders.BowerFinder',
+)
+
+BOWER_COMPONENTS_ROOT = os.path.join(PROJECT_ROOT, 'components')
+
+BOWER_INSTALLED_APPS = (
+    'd3#3.3.6',
+    'nvd3#1.1.12-beta',
 )

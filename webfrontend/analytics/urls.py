@@ -11,4 +11,10 @@ urlpatterns = patterns(
     , url(r'^search/$'
           , views.SearchView.as_view()
           , name='search')
+    , url(r'^query/$'
+          , views.QueryView.as_view()
+          , name='query')
+    , url(r'^result/$'
+          , views.ResultView.as_view()
+          , name='result')
 )                   
