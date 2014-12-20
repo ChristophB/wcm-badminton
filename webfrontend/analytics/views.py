@@ -14,7 +14,6 @@ from analytics.forms import GroupCountForm
 from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
 
-
 class PlayerView(generic.DetailView):
     model               = Player
     template_name       = 'analytics/player.html'
@@ -65,6 +64,7 @@ class ResultView(TemplateView):
             xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
             ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count') 
             chartdata      = {'x': xdata, 'y': ydata}
+            
             charttype      = "pieChart"
             chartcontainer = 'piechart_container'
             context['charttype']      = charttype
@@ -86,3 +86,9 @@ class QueryView(TemplateView):
         context = super(QueryView, self).get_context_data()
         context['group_count_form'] = GroupCountForm()
         return context
+
+class IndexView(TemplateView):
+    template_name = 'analytics/index.html'
+    
+class EditorView(TemplateView):
+    template_name = 'analytics/editor.html'

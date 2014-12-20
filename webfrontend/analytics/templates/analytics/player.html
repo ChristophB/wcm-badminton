@@ -1,8 +1,8 @@
+{% extends "analytics/base.html" %}
 <!DOCTYPE html>
 <html>
+{% block content %}
   <head>
-    <link rel="stylesheet" type="text/css" 
-	href="{% static 'analytics/style.css' %}" />
     <title>Player Profile</title>
   </head>
   <body>
@@ -23,4 +23,5 @@
     <p>Invalid Player selected.</p>
     {% endif %}
   </body> 
+{% endblock %}
 </html>

@@ -5,4 +5,5 @@ urlpatterns = patterns(
     ''
     , url(r'^analytics/', include('analytics.urls', namespace='analytics'))
     , url(r'^admin/', include(admin.site.urls))
+	, url(r'^', include('analytics.urls'))
 )

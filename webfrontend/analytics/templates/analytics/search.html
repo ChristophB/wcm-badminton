@@ -1,13 +1,12 @@
+{% extends "analytics/base.html" %}
 {% load render_table from django_tables2 %}
-{% load staticfiles %}
 
 <!doctype html>
 <html>
-  <link rel="stylesheet" type="text/css" 
-	href="{% static 'analytics/style.css' %}" />
+  {% block content %}
   <head>
     <link rel="stylesheet" 
-	  href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css" />
+	  href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css"/>
   </head>
   <body>
     <h1>Players</h1>
@@ -68,4 +67,5 @@
       {% render_table table %}
     </div>
   </body>
+  {% endblock %}
 </html>

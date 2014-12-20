@@ -4,7 +4,7 @@ from analytics import views
 
 urlpatterns = patterns(
     ''
-    #, url(r'^$', views.IndexView.as_view(), name='index')
+    , url(r'^$', views.IndexView.as_view(), name='index')
     , url(r'^(?P<pk>[\dA-Z\-]+)/$'
           , views.PlayerView.as_view()
           , name='player')
@@ -17,4 +17,7 @@ urlpatterns = patterns(
     , url(r'^result/$'
           , views.ResultView.as_view()
           , name='result')
+    , url(r'^editor/$'
+          , views.EditorView.as_view()
+          , name='editor')
 )                   

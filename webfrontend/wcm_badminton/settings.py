@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'django_nvd3',
     'djangobower',
     'analytics',
+    'django',
+    'sitetree'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -95,6 +97,7 @@ STATIC_URL = '/static/'
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
 )
 
 TEMPLATE_LOADERS = (

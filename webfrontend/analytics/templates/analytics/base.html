@@ -1,0 +1,18 @@
+ {% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" 
+	href="{% static 'analytics/style.css' %}" />
+    <title>Badminton Statistics</title>
+  </head>
+  <body>
+	  <ul id="navigation">
+	   	  <li id="home"><a href="{% url 'index' %}">Home</a></li>
+		  <li id="search"><a href="{% url 'search' %}">Search</a></li>
+		  <li id="editor"><a href="{% url 'editor' %}">Editor</a></li>
+		  <li id="query"><a href="{% url 'query' %}">Query</a></li>
+	  </ul> 
+	  {% block content %}{% endblock %}
+  </body> 
+</html>

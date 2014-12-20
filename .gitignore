@@ -1,6 +1,13 @@
 /build/
+/crawler/data/
 /crawler/data/mensDoubles/
 /crawler/data/mensSingles/
 /crawler/data/mixedDoubles/
 /crawler/data/womensDoubles/
 /crawler/data/womensSingles/
+/crawler/dataAdults/mensDoubles/
+/crawler/dataAdults/mensSingles/
+/crawler/dataAdults/mixedDoubles/
+/crawler/dataAdults/womensDoubles/
+/crawler/dataAdults/womensSingles/
+*.pyc

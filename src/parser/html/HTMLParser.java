@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,6 +20,7 @@ import parser.Parser;
  * @version 1.7.5
  */
 public class HTMLParser implements Parser {
+	
 	public static final String DEFAULT_USER_AGENT = "Mozilla/5.0";
 	public static final int DEFAULT_TIMEOUT = 10000;
 	/**

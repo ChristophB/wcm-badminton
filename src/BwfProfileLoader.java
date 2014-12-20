@@ -10,6 +10,7 @@ import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import org.jsoup.Jsoup;
 
@@ -21,6 +22,11 @@ import org.jsoup.Jsoup;
  *
  */
 public class BwfProfileLoader extends WebsiteOperations{
+	
+	/**
+	 * stores the filenames of all downloaded websites.
+	 */
+	private HashSet<String> uniqueWebsiteList;
 	
 	/**
 	 * determines, whether a proxy is used or not.
@@ -42,6 +48,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 */
 	public BwfProfileLoader() {
 		this.useProxy = false;
+		this.uniqueWebsiteList = new HashSet<String>();
 	}
 
 	/**
@@ -54,6 +61,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 		loadAllWomensSinglesProfilesAsHTML(useProxy);
 		loadAllWomensDoublesProfilesAsHTML(useProxy);
 		loadAllMixedProfilesAsHTML(useProxy);
+		logger.info("Unique files whole: " + uniqueWebsiteList.size());
 	}
 	
 	/**
@@ -66,6 +74,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 		loadAllWomensSinglesProfilesAsHTML(proxy);
 		loadAllWomensDoublesProfilesAsHTML(proxy);
 		loadAllMixedProfilesAsHTML(proxy);
+		logger.info("Unique files whole: " + uniqueWebsiteList.size());
 	}
 
 	/**
@@ -164,34 +173,34 @@ public class BwfProfileLoader extends WebsiteOperations{
 	 * @param discipline
 	 */
 	public void loadAllProfilesFromUrlAsHTML(String discipline) {
-		System.out.println("start loading profiles for " + discipline);
+		logger.info("start loading profiles for " + discipline);
 		int numberOfPages = 1;
 		int currentPage = 0;		
 		ArrayList<URL> linkList;
 		URL currentUrl;
-		String filename;
-		String directory;
+		String filename = null;
+		String directory = null;
 		while (numberOfPages > 0) {
 			currentPage++;
-			System.out.println("current page:" + currentPage);
+			logger.info("current page:" + currentPage);
 			currentUrl = getUrl(discipline, currentPage);
 			setWebsiteURL(currentUrl);
 			filename = getFilename();
 			directory = getDirectory(discipline);
 			if(this.proxy == null){
-			saveWebsiteToHTMLFile(useProxy, directory + filename);
+				saveWebsiteToHTMLFile(useProxy, directory + filename);
 			}
 			else{
 				saveWebsiteToHTMLFile(this.proxy, directory + filename);
 			}
 			linkList = createLinklistOfProfiles();
-			System.out.println(linkList.size() + " profiles to process");
+			logger.info(linkList.size() + " profiles to process");
 			if (currentPage == 1) {
 				numberOfPages = getNumberOfPagesForDiscipline();
-				System.out.println(numberOfPages + " pages to process");
+				logger.info(numberOfPages + " pages to process");
 			}
 			numberOfPages--;	
-			for (URL url : linkList) {
+			for (URL url : linkList) {	
 				setWebsiteURL(url);
 				filename = getFilename();
 				if(this.proxy == null){
@@ -200,7 +209,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 				else{
 					saveWebsiteToHTMLFile(this.proxy, directory + filename);
 				}
-				
+				uniqueWebsiteList.add(filename);
 			}
 		}
 	}
@@ -316,7 +325,7 @@ public class BwfProfileLoader extends WebsiteOperations{
 								profileUrl.trim();
 								profileUrl = profileUrl.replace("../",
 											"http://bwf.tournamentsoftware.com/");
-								profileUrl = profileUrl.replace("overview", "biography");
+								profileUrl = profileUrl.replace("default", "biography");
 								
 								linkList.add(new URL(profileUrl));
 								

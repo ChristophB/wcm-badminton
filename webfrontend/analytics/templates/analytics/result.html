@@ -1,19 +1,20 @@
+{% extends "analytics/base.html" %}
 {% load staticfiles %}
 {% load nvd3_tags %}
 
 <!DOCTYPE html>
 <html>
+  {% block content %}
   {% if chartcontainer %}
   <head>
-    <link rel="stylesheet" type="text/css" 
-	  href="{% static 'analytics/style.css' %}" />
     {% include_chart_jscss %}
     {% load_chart charttype chartdata chartcontainer extra %}
     <title>Result</title>
   </head>
   <body>
-    {% include_container chartcontainer 720 1920 %}
+    {% include_container chartcontainer 768 1366 %}
   </body> 
   {% endif %}
+  {% endblock %}
 </html>
 

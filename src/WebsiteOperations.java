@@ -12,6 +12,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.util.logging.Logger;
 
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
@@ -26,6 +27,11 @@ import parser.html.sites.HideMyAssHTMLParser;
  * @author Marcel
  */
 public class WebsiteOperations {
+	
+	/**
+	 * logging some intermediate states could be helpful.
+	 */
+	protected static final Logger logger = Logger.getLogger( BwfProfileLoader.class.getName() );
 
 	/**
 	 * number of crawled urls will be stores here.
