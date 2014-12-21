@@ -20,4 +20,7 @@ urlpatterns = patterns(
     , url(r'^editor/$'
           , views.EditorView.as_view()
           , name='editor')
+    , url(r'^international/$'
+          , views.InternationalView.as_view()
+          , name='international')
 )                   

@@ -1,0 +1,37 @@
+{% extends "analytics/base.html" %}
+<!DOCTYPE html>
+<html>
+{% block content %}
+  <head>
+    <title>International Distribution</title>
+  </head>
+  <body> 
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="http://datamaps.github.io/scripts/datamaps.world.min.js"></script>
+	
+	<div id="container" style="position: relative; width: 900px; height: 800px;"></div>
+	<script>
+	var data = 	{DEU: 	{
+	                fillKey: 'MEDIUM',
+	                numberOfThings: 2002
+	                	},
+	            }
+    var map = new Datamap({
+        element: document.getElementById('container'),
+        fills: {
+        	LOW: '#CEF6F5',
+        	MEDIUM: '#58ACFA',
+            HIGH: '#0404B4',
+            UNKNOWN: 'rgb(0,0,0)',
+            defaultFill: 'white'
+        },
+        data: data
+    });
+
+    //draw a legend for this map
+    map.legend();
+	</script>
+  </body> 
+{% endblock %}
+</html>

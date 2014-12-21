@@ -58,15 +58,20 @@ class ResultView(TemplateView):
             group_count = self.request.GET.get('group_count')
             if group_count in ('nationality'):
                 group_count += '__nationality'
+                charttype      = "discreteBarChart"
+                chartcontainer = 'discretebarchart_container'
             if group_count in ('club', 'coach'):
+                charttype      = "discreteBarChart"
+                chartcontainer = 'discretebarchart_container'
                 group_count += '__name'
 
             xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
             ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count') 
-            chartdata      = {'x': xdata, 'y': ydata}
+            chartdata = {'x': xdata, 'y': ydata}
             
-            charttype      = "pieChart"
-            chartcontainer = 'piechart_container'
+            if group_count in ('hand', 'gender'):
+                charttype      = "pieChart"
+                chartcontainer = 'piechart_container'
             context['charttype']      = charttype
             context['chartdata']      = chartdata
             context['chartcontainer'] = chartcontainer
@@ -92,3 +97,6 @@ class IndexView(TemplateView):
     
 class EditorView(TemplateView):
     template_name = 'analytics/editor.html'
+    
+class InternationalView(TemplateView):
+    template_name = 'analytics/international.html'
