@@ -5,30 +5,35 @@
   <head>
     <title>International Distribution</title>
   </head>
-  <body> 
+  <body>
+  	<div id = "topTenCountries">
+  		{{ topTen|safe }} 
+  	</div>
+  	
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="http://d3js.org/topojson.v1.min.js"></script>
 	<script src="http://datamaps.github.io/scripts/datamaps.world.min.js"></script>
-	
-	<div id="container" style="position: relative; width: 900px; height: 800px;"></div>
+	<div id = "container" style="position: absolute; width: 850px; height: 350px;"></div>
 	<script>
-	var data = 	{DEU: 	{
-	                fillKey: 'MEDIUM',
-	                numberOfThings: 2002
-	                	},
-	            }
+	var data = 	{{ data|safe }}
     var map = new Datamap({
         element: document.getElementById('container'),
         fills: {
         	LOW: '#CEF6F5',
-        	MEDIUM: '#58ACFA',
-            HIGH: '#0404B4',
-            UNKNOWN: 'rgb(0,0,0)',
+        	MEDIUM: '#95bfea',
+            HIGH: '#2f7fd0',
+            VERYHIGH: '#0404B4',
             defaultFill: 'white'
         },
-        data: data
+        data: data,
+        geographyConfig: {
+            popupTemplate: function(geo, data) {
+                return ['<div class="hoverinfo"><strong>',
+                        data.numberOfThings + ' professional players in ' + geo.properties.name,
+                        '</strong></div>'].join('');
+            }
+        }
     });
-
     //draw a legend for this map
     map.legend();
 	</script>

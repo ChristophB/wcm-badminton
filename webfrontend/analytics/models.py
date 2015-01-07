@@ -54,6 +54,7 @@ class Language(models.Model):
 class Nationality(models.Model):
     id          = models.AutoField(primary_key=True) 
     nationality = models.TextField(unique=True)
+    countrycode= models.TextField(unique=True)
 
     class Meta:
         managed  = False

@@ -78,3 +78,18 @@ ul#navigation {
 	margin-top: 3%;
 	margin-left: 5%;
 }
+
+#container{
+	position: relative; 
+	width: 50%; 
+	height: 100%; 
+	left: 20%; 
+	top: 10%;
+	margin-top: 5%;
+}	
+
+#topTenCountries{
+	width: 15%;
+	margin-top: 3%;
+	margin-left: 3%;
+}

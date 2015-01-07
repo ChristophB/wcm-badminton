@@ -1,4 +1,5 @@
 import re
+import heapq
 
 from django.shortcuts import render
 from django.views import generic
@@ -100,3 +101,57 @@ class EditorView(TemplateView):
     
 class InternationalView(TemplateView):
     template_name = 'analytics/international.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super(InternationalView, self).get_context_data()
+        group_count = 'nationality__countrycode'
+            
+        countries = Player.objects.values_list(group_count).order_by(group_count).distinct()
+        
+        numberOfThingsWhole = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count') 
+        
+        countryList = list(countries)
+        numberList = list(numberOfThingsWhole)
+        maxPlayers = max(numberList)
+        
+        #create top ten countries
+        sortedList = list(numberList)
+        sortedList.sort(reverse=True)
+        helperList = list(numberList)
+        counter = 1
+        topTen = '<b>Top 10 countries</b> <br> <br>'
+        while counter <= 10:
+            numberOfPlayers = sortedList[counter - 1]
+            maxIndex = helperList.index(numberOfPlayers)
+            countryName = countryList[maxIndex]
+            topTen += str(counter) + '. ' + countryName[0] + ' ' + str(numberOfPlayers[0]) + '<br>'
+            counter = counter + 1
+        context['topTen'] = topTen
+        
+        #create data in json format
+        counter = 0;
+        data = "{"        
+        while counter < len(countries):
+            country = countryList[counter]
+            numberOfThings = numberList[counter]
+            if 0 < numberOfThings[0] < int(maxPlayers[0]/20):
+                fillKey = 'LOW'
+            elif int(maxPlayers[0]/20) <= numberOfThings[0] < int(maxPlayers[0]/5):
+                fillKey = 'MEDIUM' 
+            elif int(maxPlayers[0]/5) <= numberOfThings[0] < int(maxPlayers[0]/2):
+                fillKey = 'HIGH'
+            elif numberOfThings[0] >= int(maxPlayers[0]/2):
+                fillKey = 'VERYHIGH' 
+            else:
+                fillKey = 'defaultFill'
+            #create data in json format
+            data += str(country[0])
+            data += ": { fillKey: '" + fillKey
+            data += "', numberOfThings: " + str(numberOfThings[0]) + "},"
+              
+            counter = counter + 1   
+        data += "}"
+        context['data'] = data
+        
+        return context
+    
