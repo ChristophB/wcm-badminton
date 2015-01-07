@@ -1,5 +1,4 @@
 import re
-import heapq
 
 from django.shortcuts import render
 from django.views import generic
@@ -10,7 +9,7 @@ from django.db.models import Count
 from django_tables2 import RequestConfig, SingleTableView
 from django.core import serializers
 
-from analytics.models import Player, PlayerLanguage
+from analytics.models import Player, PlayerLanguage, Image
 from analytics.forms import GroupCountForm
 from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
@@ -20,6 +19,18 @@ class PlayerView(generic.DetailView):
     template_name       = 'analytics/player.html'
     context_object_name = 'player'
 
+    def get_context_data(self, **kwargs):
+        context = super(PlayerView, self).get_context_data()
+        context['image'] = Image.objects.get(player_id=self.kwargs.get('pk'))
+        
+        return context
+
+
+class PlayerUpdateView(generic.edit.UpdateView):
+    model         = Player
+    fields        = ['hand', 'gender', 'name', 'firstname', 'coach']
+    template_name = 'analytics/player_update.html'
+    
     
 class SearchView(SingleTableView):
     model = Player

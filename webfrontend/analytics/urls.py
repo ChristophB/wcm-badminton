@@ -8,6 +8,9 @@ urlpatterns = patterns(
     , url(r'^(?P<pk>[\dA-Z\-]+)/$'
           , views.PlayerView.as_view()
           , name='player')
+    , url(r'^player_update/(?P<pk>[\dA-Z\-]+)/$'
+          , views.PlayerUpdateView.as_view()
+          , name='player_update')
     , url(r'^search/$'
           , views.SearchView.as_view()
           , name='search')
