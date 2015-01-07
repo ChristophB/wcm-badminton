@@ -45,7 +45,7 @@ INSTALLED_APPS = (
     'djangobower',
     'analytics',
     'django',
-    'sitetree'
+    #'sitetree'
 )
 
 MIDDLEWARE_CLASSES = (

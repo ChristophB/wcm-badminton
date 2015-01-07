@@ -150,6 +150,8 @@ class Player(models.Model):
     #     else:
     #         return False
 
+    def get_absolute_url(self):
+            return u'/analytics/%s' % self.id
 
 class PlayerLanguage(models.Model):
     player   = models.ForeignKey(Player, primary_key=True)

@@ -7,18 +7,32 @@
   </head>
   <body>
     {% if player %}
+    <img src="{{ image.url }}">
     <ul>
       <li>ID: {{ player.id }}</li>
       <li>Name: {{ player.name }}</li>
       <li>Firstname: {{ player.firstname }}</li>
       <li>Birthdate: {{ player.birthdate }}</li>
-      <li>Gender: {{ player.gender }}</li>
-      <li>Hand: {{ player.hand }}</li>
+      <li>Gender: <a href="/search/?gender={{ player.gender }}">{{ player.gender }}</a></li>
+      <li>Hand: <a href="/search/?hand={{ player.hand }}">{{ player.hand }}</a></li>
       <li>Height: {{ player.height }}</li>
-      <li>Nationality: {{ player.nationality }}</li>
-      <li>Club: {{ player.club }}</li>
-      <li>Coach: {{ player.coach }}</li>
+      <li>Nationality: 
+	{% if player.nationality %}<a href="/search/?nationality={{ player.nationality.id }}">{% endif %}
+	  {{ player.nationality }}
+	  {% if player.nationality %}</a>{% endif %}
+      </li>
+      <li>Club: 
+	{% if player.club %}<a href="/search/?club={{ player.club.id }}">{% endif %}
+	  {{ player.club }}
+	  {% if player.club %}</a>{% endif %}
+      </li>
+      <li>Coach: 
+	{% if player.coach %}<a href="/search/?coach={{ player.coach.id }}">{% endif %}
+	  {{ player.coach }}
+	  {% if player.coach %}</a>{% endif %}
+      </li>
     </ul> 
+    <a href="/player_update/{{ player.id }}">Update Profile</a>
     {% else %}
     <p>Invalid Player selected.</p>
     {% endif %}

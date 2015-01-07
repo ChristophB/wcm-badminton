@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS city;
 DROP TABLE IF EXISTS club;
 DROP TABLE IF EXISTS coach;
 DROP TABLE IF EXISTS nationality;
+DROP TABLE IF EXISTS firstname;
 DROP TYPE IF EXISTS gender;
 DROP TYPE IF EXISTS hand;
 DROP TYPE IF EXISTS image_url;
@@ -105,6 +106,11 @@ CREATE TABLE player_language (
        	 	     	     ON DELETE NO ACTION
 			     ON UPDATE CASCADE
        , PRIMARY KEY(player_id, language_id) 			    
+);
+CREATE TABLE firstname (
+       id     int primary key not null
+       , name varchar(50) not null
+       , sex  gender not null
 );
 
 GRANT ALL ON ALL TABLES IN SCHEMA public TO wcm_badminton;
