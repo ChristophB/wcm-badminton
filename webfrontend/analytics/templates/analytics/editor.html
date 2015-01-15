@@ -1,12 +1,36 @@
 {% extends "analytics/base.html" %}
 <!DOCTYPE html>
 <html>
-{% block content %}
-<head>
-	<title>PostgreSQL Editor</title>
-</head>
-<body>
-	Write your own SQL-queries :)
-</body>
-{% endblock %}
+  {% block content %}
+  <form action="." method="post">
+    {% csrf_token %}
+    <p>
+      {{ form.query.errors }}<br />
+      {{ form.query.label_tag }}<br />
+      {{ form.query }}<br />
+      <input type="submit" name="query_count" value="Execute" />
+    </p>
+  </form>
+  <br />
+  {% if message %}
+  <div class="errorBox">
+    {{ message }}
+  </div>
+  <br />
+  {% endif %}
+  <table border="2" class="querySet">
+    <tr>
+      {% for key in header %}
+      <th>{{ key }}</th>
+      {% endfor %}
+    </tr>
+    {% for row in data %}
+    <tr>
+      {% for value in row %}
+      <td>{{ value }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+  {% endblock %}
 </html>

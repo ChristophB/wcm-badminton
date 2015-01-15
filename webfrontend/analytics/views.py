@@ -1,16 +1,21 @@
 import re
+import sys
 
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.views import generic
 from django.views.generic import TemplateView
 from django.views.generic.base import View
+from django.views.generic.edit import FormView
 from django.http import HttpResponse
 from django.db.models import Count
+from django.db import connection
 from django_tables2 import RequestConfig, SingleTableView
+from django.template import RequestContext
 from django.core import serializers
+from django.core.context_processors import csrf
 
 from analytics.models import Player, PlayerLanguage, Image
-from analytics.forms import GroupCountForm
+from analytics.forms import GroupCountForm, QueryForm
 from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
 
@@ -107,9 +112,50 @@ class QueryView(TemplateView):
 class IndexView(TemplateView):
     template_name = 'analytics/index.html'
     
-class EditorView(TemplateView):
+class EditorView(FormView):
     template_name = 'analytics/editor.html'
+    form_class    = QueryForm
+    success_url   = '.'
+
+    def form_valid(self, form):
+        c = {}
+        header = []
+        message = ''
+        data = []
+        c.update(csrf(self.request))
+        form  = QueryForm(initial=self.request.POST) 
+        query = self.request.POST.get('query')
+        
+        if ('insert' in query.lower() or 'update' in query.lower() 
+            or 'delete' in query.lower() or 'create' in query.lower() 
+            or 'drop' in query.lower()):
+            message = 'Only SELECT is allowed!'
+        else:
+            cursor = connection.cursor()
+            try:
+                cursor.execute(query)
+                desc   = cursor.description
+                header = [col[0] for col in desc] 
+                data   = cursor.fetchall()
+            except:
+                message = sys.exc_info()[1]
+            finally:
+                cursor.close()
+
+        return render_to_response(
+            'analytics/editor.html'
+            , {
+                'form'     : form 
+                , 'header' : header
+                , 'data'   : data
+                , 'message': message
+            }
+            , RequestContext(self.request)
+        )
+
     
+        
+
 class InternationalView(TemplateView):
     template_name = 'analytics/international.html'
     
