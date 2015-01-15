@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS club;
 DROP TABLE IF EXISTS coach;
 DROP TABLE IF EXISTS nationality;
 DROP TABLE IF EXISTS firstname;
+DROP TABLE IF EXISTS countrycode;
 DROP TYPE IF EXISTS gender;
 DROP TYPE IF EXISTS hand;
 DROP TYPE IF EXISTS image_url;
@@ -28,6 +29,7 @@ CREATE TABLE coach (
 CREATE TABLE nationality (
        id serial PRIMARY KEY
        , nationality text NOT NULL UNIQUE
+       , countryCode varchar(3)
 );
 CREATE TABLE style (
        id serial PRIMARY KEY
@@ -111,6 +113,11 @@ CREATE TABLE firstname (
        id     int primary key not null
        , name varchar(50) not null
        , sex  gender not null
+);
+CREATE TABLE CountryCode (
+       id            SERIAL PRIMARY KEY
+       , countryCode VARCHAR(3) NOT NULL
+       , name        VARCHAR(50) NOT NULL
 );
 
 GRANT ALL ON ALL TABLES IN SCHEMA public TO wcm_badminton;
