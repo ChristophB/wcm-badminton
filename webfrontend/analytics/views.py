@@ -89,6 +89,14 @@ class ResultView(TemplateView):
             if group_count in ('hand', 'gender'):
                 charttype      = "pieChart"
                 chartcontainer = 'piechart_container'
+                sum = 0
+                for absoluteValue in ydata:
+                    sum += int(absoluteValue[0])
+                relValueList = list()
+                for absoluteValue in ydata:
+                    relValue = absoluteValue[0] / sum * 100
+                    relValueList.append(relValue) 
+                context['relativeValues'] = relValueList
             context['charttype']      = charttype
             context['chartdata']      = chartdata
             context['chartcontainer'] = chartcontainer

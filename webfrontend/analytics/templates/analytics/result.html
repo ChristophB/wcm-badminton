@@ -12,9 +12,28 @@
     <title>Result</title>
   </head>
   <body>
-    {% include_container chartcontainer 768 1366 %}
+  {% if relativeValues %}
+  	 <table id = "additionalValues">
+	  <tr>
+	  {% for chartValues in chartdata.x %}
+	     <td> {{ chartValues.0 }} </td>
+	    {% endfor %}
+	  </tr>
+	  <tr>
+	  {% for chartValues in chartdata.y %}
+	     <td> {{ chartValues.0 }} </td>
+	    {% endfor %}
+	  </tr>
+	  <tr>
+	  {% for relValue in relativeValues %}
+	       <td> {{ relValue }} </td>
+	    {% endfor %}
+	  </tr>
+	</table>
+ {% endif %} 
+ 
+    {% include_container chartcontainer %}
   </body> 
   {% endif %}
   {% endblock %}
 </html>
-
