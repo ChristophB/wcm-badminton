@@ -50,6 +50,10 @@ sub insertData {
 	$_ = insertReferencedValue('language', ['language'], [$_]);
 	insertRow('player_language', undef, [$data->{id}, $_]);
     }
+    foreach (@{$data->{disciplines}}) {
+	$_ = insertReferencedValue('discipline', ['name'], [$_]);
+	insertRow('player_discipline', undef, [$data->{id}, $_]);
+    }
 
     insertRow('image', undef, [@{$data}{('id', 'image')}])
 	if ($data->{image});

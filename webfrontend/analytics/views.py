@@ -14,7 +14,7 @@ from django.template import RequestContext
 from django.core import serializers
 from django.core.context_processors import csrf
 
-from analytics.models import Player, PlayerLanguage, Image
+from analytics.models import Player, PlayerLanguage, Image, PlayerDiscipline
 from analytics.forms import GroupCountForm, QueryForm
 from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
@@ -75,18 +75,32 @@ class ResultView(TemplateView):
             group_count = self.request.GET.get('group_count')
             if group_count in ('nationality'):
                 group_count += '__nationality'
-                charttype      = "discreteBarChart"
+                charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
             if group_count in ('club', 'coach'):
-                charttype      = "discreteBarChart"
+                charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
-                group_count += '__name'
+                group_count   += '__name'
 
-            xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
-            ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count') 
+            if group_count in ('language', 'discipline'):
+                charttype      = 'discreteBarChart'
+                chartcontainer = 'discretebarchart_container'
+                if group_count == 'language':
+                    group_count += '__language'
+                    xdata = PlayerLanguage.objects.values_list(group_count).order_by(group_count).distinct()
+                    ydata = PlayerLanguage.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
+                else:
+                    group_count += '__shortname'
+                    xdata = PlayerDiscipline.objects.values_list(group_count).order_by(group_count).distinct()
+                    ydata = PlayerDiscipline.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
+                    group_count = 'discipline'
+            else:
+                xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
+                ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
+ 
             chartdata = {'x': xdata, 'y': ydata}
-            
-            if group_count in ('hand', 'gender'):
+
+            if group_count in ('hand', 'gender', 'discipline'):
                 charttype      = "pieChart"
                 chartcontainer = 'piechart_container'
                 sum = 0
@@ -97,6 +111,7 @@ class ResultView(TemplateView):
                     relValue = absoluteValue[0] / sum * 100
                     relValueList.append(relValue) 
                 context['relativeValues'] = relValueList
+
             context['charttype']      = charttype
             context['chartdata']      = chartdata
             context['chartcontainer'] = chartcontainer

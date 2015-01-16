@@ -51,6 +51,20 @@ class Language(models.Model):
         return "%s" % self.language
 
 
+
+class Discipline(models.Model):
+    id        = models.AutoField(primary_key=True)
+    name      = models.TextField(unique=True)
+    shortname = models.TextField(unique=True)
+
+    class Meta:
+        managed  = False
+        db_table = 'discipline'
+
+    def __str__(self):
+        return "%s" % self.shortname
+
+
 class Nationality(models.Model):
     id          = models.AutoField(primary_key=True) 
     nationality = models.TextField(unique=True)
@@ -133,23 +147,11 @@ class Player(models.Model):
         managed  = False
         db_table = 'player'
 
-    # def clean(self):
-    #     if self.birthdate > datetime.date.today():
-    #         raise ValidationError('Birthdate is in future!')
-    #     if self.height < 50 or self.height > 250:
-    #         raise ValidationError('Invalide height value!')
-
     def __str__(self):
         if self.firstname and self.name:
             return "%s, %s" % (self.firstname, self.name)
         else:
             return "%s" % self.id
-
-    # def birthdate_realistic(self):
-    #     if self.birthdate <= datetime.date.today():
-    #         return True
-    #     else:
-    #         return False
 
     def get_absolute_url(self):
             return u'/analytics/%s' % self.id
@@ -164,6 +166,18 @@ class PlayerLanguage(models.Model):
 
     def __str__(self):
         return "%s -> %s" % (self.player, self.language)
+
+
+class PlayerDiscipline(models.Model):
+    player     = models.ForeignKey(Player, primary_key=True)
+    discipline = models.ForeignKey(Discipline, primary_key=True)
+
+    class Meta:
+        managed = False
+        db_table = 'player_discipline'
+
+    def __str__(self):
+        return "%s -> %s" % (self.player, self.discipline)
 
 
 class Image(models.Model):

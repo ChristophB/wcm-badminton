@@ -1,7 +1,7 @@
 UPDATE nationality AS n
 SET countrycode = c.countrycode
 FROM countrycode AS c
-WHERE c.name = n.nationality
+WHERE c.name = n.nationality;
 
 update nationality set countrycode = 'GBR' where nationality = 'England';
 update nationality set countrycode = 'CHN' where nationality = 'Macau';

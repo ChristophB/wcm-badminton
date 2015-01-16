@@ -52,8 +52,10 @@ class GroupCountForm(forms.Form):
             ('hand', 'Hand')
             , ('club', 'Club')
             , ('coach', 'Coach')
-            , ('nationality', 'Nationality')
+            , ('discipline', 'Discipline')
             , ('gender', 'Gender')
+            , ('language', 'Language')
+            , ('nationality', 'Nationality')
         )
         , required = True
     )

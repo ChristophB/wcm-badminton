@@ -1,8 +1,10 @@
 DROP TABLE IF EXISTS player_language;
+DROP TABLE IF EXISTS player_discipline;
 DROP TABLE IF EXISTS image;
 DROP TABLE IF EXISTS webresource;
 DROP TABLE IF EXISTS player;
 DROP TABLE IF EXISTS language;
+DROP TABLE IF EXISTS discipline;
 DROP TABLE IF EXISTS style;
 DROP TABLE IF EXISTS city;
 DROP TABLE IF EXISTS club;
@@ -109,17 +111,37 @@ CREATE TABLE player_language (
 			     ON UPDATE CASCADE
        , PRIMARY KEY(player_id, language_id) 			    
 );
+CREATE TABLE discipline (
+       id          serial PRIMARY KEY
+       , name      text NOT NULL UNIQUE
+       , shortname text NOT NULL UNIQUE
+);
+CREATE TABLE player_discipline (
+       player_id       text REFERENCES player(id) 
+       		            ON DELETE CASCADE 
+       		            ON UPDATE CASCADE
+       , discipline_id integer REFERENCES discipline(id)
+       	 	     	       ON DELETE NO ACTION
+			       ON UPDATE CASCADE
+       , PRIMARY KEY(player_id, discipline_id)
+);
 CREATE TABLE firstname (
-       id     int primary key not null
-       , name varchar(50) not null
-       , sex  gender not null
+       id     int PRIMARY KEY
+       , name varchar(50) NOT NULL
+       , sex  gender NOT NULL
 );
 CREATE TABLE CountryCode (
-       id            SERIAL PRIMARY KEY
-       , countryCode VARCHAR(3) NOT NULL
-       , name        VARCHAR(50) NOT NULL
+       id            serial PRIMARY KEY
+       , countryCode varchar(3) NOT NULL
+       , name        varchar(50) NOT NULL
 );
 
 GRANT ALL ON ALL TABLES IN SCHEMA public TO wcm_badminton;
 GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO wcm_badminton;
 
+INSERT INTO  discipline (name, shortname)
+VALUES ('Men''s Singles', 'MS'),
+       ('Women''s Singles', 'WS'),
+       ('Men''s Doubles', 'MD'),
+       ('Women''s Doubles', 'WD'), 
+       ('Mixed Doubles', 'MX');

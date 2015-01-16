@@ -20,17 +20,28 @@ foreach my $file (<../../crawler/data/*>) {
     my $athlete_start = 0;
     my $file_name     = (split '/', $file)[-1];
     my %data;
-    
+    my @disciplines;
+
     next unless ($file_name =~ /id=[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?-[A-Z0-9]*?$/g);
     #print 'Working on: '. $file_name. "\n";
     open (FILE, $file) or croak('Error: Could not open $file');
     $data{id} = (split 'id=', $file)[-1];
     while (<FILE>) {
 	chomp;
+	my $line = $_;
 	$profile_start = 1 if ($_ =~ /profileheader/);
 	$biodata_start = 1 if ($_ =~ /Biodata/);
 	$athlete_start = 1 if ($_ =~ /Athlete Profile/);
 	
+	if ($line =~ /(Men's|Women's|Mixed) (Singles|Doubles)/g) {
+	    push @disciplines, 'Men\'s Singles'   if ($line =~ /Men's Singles/);
+	    push @disciplines, 'Men\'s Doubles'   if ($line =~ /Men's Doubles/);
+	    push @disciplines, 'Women\'s Singles' if ($line =~ /Women's Singles/);
+	    push @disciplines, 'Women\'s Doubles' if ($line =~ /Women's Doubles/);
+	    push @disciplines, 'Mixed Doubles'    if ($line =~ /Mixed Doubles/);
+	    @disciplines = uniq(@disciplines);
+	}
+
 	next unless ($profile_start);
 	
 	if ($_ =~ /<h3 title="/) {
@@ -55,6 +66,7 @@ foreach my $file (<../../crawler/data/*>) {
 	    $profile_start = 0;
 	}
     }
+    $data{disciplines} = \@disciplines;
     $data{gender} = $data{gender} ? $data{gender} : 'u';
     $players_counter++ if (insertData(\%data));
     
@@ -100,6 +112,11 @@ sub getDate {
 	if ($string =~ /\//g);
     $dt = $strp->parse_datetime($string);
     return defined $dt ? $dt->ymd : undef;
+}
+
+sub uniq {
+    my %seen;
+    grep !$seen{$_}++, @_;
 }
 
 1;
