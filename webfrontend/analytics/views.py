@@ -81,6 +81,9 @@ class ResultView(TemplateView):
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
                 group_count   += '__name'
+            if group_count in ('height'):
+                charttype      = 'discreteBarChart'
+                chartcontainer = 'discretebarchart_container'
 
             if group_count in ('language', 'discipline'):
                 charttype      = 'discreteBarChart'

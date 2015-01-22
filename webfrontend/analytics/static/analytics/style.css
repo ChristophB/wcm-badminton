@@ -10,6 +10,7 @@ body{
     padding-left: 20px;
     padding-top: 10px;
     border: 1px solid #8c8c8c;
+    margin-bottom: 1%;
 }
 .filter label {
     display: block;
@@ -117,4 +118,15 @@ ul#navigation {
 	left: 30%;
 	width: 40%;
 	margin-top: -5%;
+}
+
+#logo{
+	position: relative;
+	width: 100px;
+	height: 64px; 
+   	background-image: url("images/jumpsmash.png");
+   	background-repeat: no-repeat;
+    background-size: contain;
+    top: 5%;
+	left: 4%;
 }

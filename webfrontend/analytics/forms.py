@@ -56,6 +56,7 @@ class GroupCountForm(forms.Form):
             , ('gender', 'Gender')
             , ('language', 'Language')
             , ('nationality', 'Nationality')
+            , ('height', 'Height')
         )
         , required = True
     )
