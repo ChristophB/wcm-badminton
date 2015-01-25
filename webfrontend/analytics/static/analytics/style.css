@@ -1,6 +1,8 @@
 body{
     background: #96f39d;
     text-ident: 5%;
+    min-width: 1000px;
+    max-width: 1400px;
 }
 
 .filter form {
@@ -113,20 +115,47 @@ ul#navigation {
 	margin-top: 5%;
 }
 
-#piechart_container{
-	position: relative;
-	left: 30%;
-	width: 40%;
-	margin-top: -5%;
-}
 
 #logo{
-	position: relative;
+	background-image: url("images/jumpsmash.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 1em;
 	width: 100px;
-	height: 64px; 
-   	background-image: url("images/jumpsmash.png");
-   	background-repeat: no-repeat;
-    background-size: contain;
-    top: 5%;
-	left: 4%;
+	height: 64px;
+	left: 3em;
+}
+
+#playerImage{
+	position: relative;
+	left: 3%;
+	margin-top: 2%;
+}
+
+#playerInformationLeft{
+	left: 15em;
+	margin-top: -7em;
+	position: absolute;
+}
+
+#playerInformationRight{
+	position: absolute;
+	left: 50em;
+	margin-top: -7em;
+}
+
+#updateProfile{
+	position: absolute;
+	left: 22em;
+	margin-top: 8em;
+	font-size: 1.5em;
+	background: #000000;
+	color: #FFFFFF;
+	text-shadow: 0 0 15px #88FF77, 0 0 15px #88FF77, 0 0 15px #88FF77, 0 0 15px #88FF77;
+	text-decoration: none;
+	text-underline: none;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }

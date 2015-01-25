@@ -7,13 +7,15 @@
   </head>
   <body>
     {% if player %}
-    <img src="{{ image.url }}">
-    <ul>
+    <img src="{{ image.url }}" id = "playerImage">
+    <ul id = "playerInformationLeft">
       <li>ID: {{ player.id }}</li>
       <li>Name: {{ player.name }}</li>
       <li>Firstname: {{ player.firstname }}</li>
       <li>Birthdate: {{ player.birthdate }}</li>
       <li>Gender: <a href="/search/?gender={{ player.gender }}">{{ player.gender }}</a></li>
+    </ul>
+    <ul id = "playerInformationRight">
       <li>Hand: <a href="/search/?hand={{ player.hand }}">{{ player.hand }}</a></li>
       <li>Height: {{ player.height }}</li>
       <li>Nationality: 
@@ -32,7 +34,7 @@
 	  {% if player.coach %}</a>{% endif %}
       </li>
     </ul> 
-    <a href="/player_update/{{ player.id }}">Update Profile</a>
+    <a href="/player_update/{{ player.id }}" id = "updateProfile">Update Profile</a>
     {% else %}
     <p>Invalid Player selected.</p>
     {% endif %}

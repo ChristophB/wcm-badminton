@@ -73,6 +73,7 @@ class ResultView(TemplateView):
         context = super(ResultView, self).get_context_data()
         if self.request.GET.get('group_count'):
             group_count = self.request.GET.get('group_count')
+            
             if group_count in ('nationality'):
                 group_count += '__nationality'
                 charttype      = 'discreteBarChart'
@@ -100,7 +101,7 @@ class ResultView(TemplateView):
             else:
                 xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
                 ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
- 
+
             chartdata = {'x': xdata, 'y': ydata}
 
             if group_count in ('hand', 'gender', 'discipline'):
@@ -178,10 +179,7 @@ class EditorView(FormView):
             }
             , RequestContext(self.request)
         )
-
-    
         
-
 class InternationalView(TemplateView):
     template_name = 'analytics/international.html'
     
