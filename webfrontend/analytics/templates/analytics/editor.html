@@ -18,6 +18,7 @@
   </div>
   <br />
   {% endif %}
+  {% if data %}
   <table border="2" class="querySet">
     <tr>
       {% for key in header %}
@@ -32,5 +33,6 @@
     </tr>
     {% endfor %}
   </table>
+  {% endif %}
   {% endblock %}
 </html>
