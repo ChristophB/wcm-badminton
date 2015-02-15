@@ -8,7 +8,11 @@
   <body>
     <form action="." method="post">
       {% csrf_token %}
-      {{ form.as_p }}
+      {% for field in form %}
+      {% if not field.value or field.value == "u" or field.value == "unknown" %}
+      <p>{{ field.label_tag }} {{ field }}</p>
+      {% endif %}
+      {% endfor %}
       <input type="submit" value="Update" />
     </form>
   </body> 

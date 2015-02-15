@@ -33,7 +33,10 @@ class PlayerView(generic.DetailView):
 
 class PlayerUpdateView(generic.edit.UpdateView):
     model         = Player
-    fields        = ['hand', 'gender', 'name', 'firstname', 'coach']
+    fields        = [
+        'hand', 'gender', 'name', 'firstname'
+        , 'coach', 'nationality', 'height', 'club'
+    ]
     template_name = 'analytics/player_update.html'
     
     
