@@ -87,9 +87,9 @@
      <!-- should rotate x-axis labels -->
      <script>      
      	var xTicks = d3.select('.nv-x.nv-axis > g').selectAll('g');
-		xTicks
-  			.selectAll('text')
+		xTicks.selectAll('text')
  			.attr('transform', function(d,i,j) { return 'translate (-10, 25) rotate(-90 0,0)' });
+ 		d3.select(".nv-legendWrap").attr("transform", "translate(-850, 150)");
  	 </script>
     
   </body> 

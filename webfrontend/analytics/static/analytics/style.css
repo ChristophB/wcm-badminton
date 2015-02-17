@@ -99,16 +99,17 @@ ul#navigation {
 
 .errorBox {
     background-color: #BDBDBD;
-    color: red;
-    width: 90%;
-    min-height: 60px;
-    text-align: center;
-    line-height: 30px;
+	color: #F00;
+	width: 29em;
+	min-height: 5em;
+	text-align: center;
+	line-height: 2em;
 }
 
 .querySet {
     background-color: #eee;
     border: 1px solid #8c8c8c;
+    margin-top: 15%;
 }
 
 #logo{
@@ -294,14 +295,30 @@ ul#navigation {
 	margin-left: 34.5%;
 }
 
+#id_query{
+	resize: none;
+	width: 35em;
+	height: 10em;
+}
 
+#queryEditor{
+	margin-left: 2%;	
+}
 
+#erDiagram{
+	background-image: url("images/ER-Diagramm.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	margin-left: 30em;
+	top: 1em;
+	width: 50em;
+	height: 50em;
+	left: 3em;
+	margin-top: 7em;
+}
 
-
-
-
-
-
-
-
-
+#predefinedQuerySite, #searchSite{
+	margin-top: 3%;
+	margin-left: 2%;
+}

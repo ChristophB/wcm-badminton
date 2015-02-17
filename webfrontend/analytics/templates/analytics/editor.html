@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
   {% block content %}
+  <div id = "queryEditor">
   <form action="." method="post">
     {% csrf_token %}
     <p>
@@ -34,5 +35,7 @@
     {% endfor %}
   </table>
   {% endif %}
+  </div>
+  <div id = "erDiagram"></div>
   {% endblock %}
 </html>

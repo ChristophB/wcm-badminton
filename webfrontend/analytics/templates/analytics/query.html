@@ -6,11 +6,15 @@
     <title>Query</title>
   </head>
   <body>
+  <div id = "predefinedQuerySite">
+  Select one of the options for predefined statistics.
+  <br><br>
     <form action="/analytics/result/" method="get">
       {% csrf_token %}
       {{ group_count_form }}
       <input type="submit" name="submit_group_count" value="Show" />
     </form>
   </body>
+  </div>
 {% endblock %}
 </html>
