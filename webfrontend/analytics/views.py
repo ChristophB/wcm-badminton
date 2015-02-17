@@ -32,14 +32,13 @@ class PlayerView(generic.DetailView):
 
 
 class PlayerUpdateView(generic.edit.UpdateView):
-    model         = Player
+    model = Player
     fields        = [
         'hand', 'gender', 'name', 'firstname'
-        , 'coach', 'nationality', 'height', 'club'
+        , 'height', 'coach', 'nationality', 'club'
     ]
     template_name = 'analytics/player_update.html'
-    
-    
+
 class SearchView(SingleTableView):
     model = Player
     table_class = PlayerTable

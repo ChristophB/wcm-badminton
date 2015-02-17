@@ -6,14 +6,20 @@
     <title>Update Player Profile</title>
   </head>
   <body>
-    <form action="." method="post">
+	{{ hallo }}
+    <form action="." method="post" id="playerUpdateForm">
       {% csrf_token %}
-      {% for field in form %}
-      {% if not field.value or field.value == "u" or field.value == "unknown" %}
-      <p>{{ field.label_tag }} {{ field }}</p>
-      {% endif %}
-      {% endfor %}
-      <input type="submit" value="Update" />
+	  <table>
+		{% for field in form %}
+		{% if field.value and field.value != "u" and field.value != "unknown" %}
+		{{ field.as_hidden }}
+		{% else %}
+		<tr><td>{{ field.label_tag }}</td><td>{{ field }}</td></tr>
+		{% endif %}
+		{% endfor %}
+	  </table>
+	  <br />
+	  <input type="submit" value="Update" />
     </form>
   </body> 
 {% endblock %}
