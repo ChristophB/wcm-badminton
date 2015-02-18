@@ -25,39 +25,39 @@ CREATE TABLE club (
        , name text NOT NULL UNIQUE
 );
 CREATE TABLE coach (
-       id serial PRIMARY KEY
+       id     serial PRIMARY KEY
        , name text NOT NULL UNIQUE
 );    
 CREATE TABLE nationality (
-       id serial PRIMARY KEY
+       id            serial PRIMARY KEY
        , nationality text NOT NULL UNIQUE
        , countryCode varchar(3)
 );
 CREATE TABLE style (
-       id serial PRIMARY KEY
+       id      serial PRIMARY KEY
        , style text NOT NULL UNIQUE
 );
 CREATE TABLE city (
-       id serial PRIMARY KEY
-       , name text NOT NULL
+       id      serial PRIMARY KEY
+       , name  text NOT NULL
        , state text
        , UNIQUE (name, state)
 );
 CREATE TABLE player (
        id                      text PRIMARY KEY
-       , firstname 	       text
-       , name 		       text
-       , birthdate 	       date CHECK(birthdate BETWEEN '1900-01-01' AND CURRENT_DATE)
-       , gender 	       gender NOT NULL 
+       , firstname 	           text
+       , name 		           text
+       , birthdate 	           date CHECK(birthdate BETWEEN '1900-01-01' AND CURRENT_DATE)
+       , gender 	           gender NOT NULL 
        , birthplace_city_id    integer REFERENCES city(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , club_id 	       integer REFERENCES club(id) 
+       , club_id 	           integer REFERENCES club(id) 
                                        ON DELETE NO ACTION 
-  				       ON UPDATE CASCADE
-       , coach_id	       integer REFERENCES coach(id)
-       	 		      	       ON DELETE NO ACTION
-				       ON UPDATE CASCADE
+  				                       ON UPDATE CASCADE
+       , coach_id	           integer REFERENCES coach(id)
+       	 		      	               ON DELETE NO ACTION
+				                       ON UPDATE CASCADE
        , cur_residence_city_id integer REFERENCES city(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
@@ -67,13 +67,13 @@ CREATE TABLE player (
        , hand                  hand NOT NULL
        , height                double precision CHECK(height BETWEEN 50 AND 250)
        , nationality_id        integer REFERENCES nationality(id)
-       	 		     	       ON DELETE NO ACTION
-				       ON UPDATE CASCADE
-       , nickname 	       text
+       	 		     	               ON DELETE NO ACTION
+				                       ON UPDATE CASCADE
+       , nickname 	           text
        , start_competitive     text 
        --, start_competitive     integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate)
        	 		        			--AND EXTRACT(year FROM CURRENT_DATE))
-       , style_id 	       integer REFERENCES style(id)
+       , style_id 	           integer REFERENCES style(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
        , teammember_since      text
