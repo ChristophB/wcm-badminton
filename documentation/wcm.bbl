@@ -1,0 +1,77 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{BWF2015}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {BWF}{B.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{B1}
+  \strng{fullhash}{B1}
+  \field{sortinit}{B}
+  \field{title}{Welcome to BWF!}
+  \verb{url}
+  \verb http://bwf.tournamentsoftware.com/home.aspx
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\entry{Hand2015}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {NTV}{N.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{N1}
+  \strng{fullhash}{N1}
+  \field{sortinit}{N}
+  \field{title}{Linkshänder denken anders}
+  \verb{url}
+  \verb http://www.n-tv.de/wissen/Fakten_und_Mythen/Linkshaender-denken-anders-
+  \verb article11054671.html
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\entry{HMA2015}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {ass}{a.}%
+     {}{}%
+     {hide~my}{h.~m.}%
+     {}{}}%
+  }
+  \strng{namehash}{ahm1}
+  \strng{fullhash}{ahm1}
+  \field{sortinit}{A}
+  \field{title}{Hide my Ass!}
+  \verb{url}
+  \verb http://proxylist.hidemyass.com/
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

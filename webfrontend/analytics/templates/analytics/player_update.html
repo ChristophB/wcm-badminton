@@ -6,8 +6,7 @@
     <title>Update Player Profile</title>
   </head>
   <body>
-	{{ hallo }}
-    <form action="." method="post" id="playerUpdateForm">
+	<form action="." method="post" id="playerUpdateForm">
       {% csrf_token %}
 	  <table>
 		{% for field in form %}
