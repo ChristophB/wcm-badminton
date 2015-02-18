@@ -32,14 +32,13 @@ class PlayerView(generic.DetailView):
 
 
 class PlayerUpdateView(generic.edit.UpdateView):
-    model         = Player
+    model = Player
     fields        = [
         'hand', 'gender', 'name', 'firstname'
-        , 'coach', 'nationality', 'height', 'club'
+        , 'height', 'coach', 'nationality', 'club'
     ]
     template_name = 'analytics/player_update.html'
-    
-    
+
 class SearchView(SingleTableView):
     model = Player
     table_class = PlayerTable
@@ -76,6 +75,7 @@ class ResultView(TemplateView):
         context = super(ResultView, self).get_context_data()
         if self.request.GET.get('group_count'):
             group_count = self.request.GET.get('group_count')
+            context['groupcount'] = group_count
             
             if group_count in ('nationality'):
                 group_count += '__nationality'
@@ -97,7 +97,7 @@ class ResultView(TemplateView):
                     xdata = PlayerLanguage.objects.values_list(group_count).order_by(group_count).distinct()
                     ydata = PlayerLanguage.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
                 else:
-                    group_count += '__shortname'
+                    group_count += '__name'
                     xdata = PlayerDiscipline.objects.values_list(group_count).order_by(group_count).distinct()
                     ydata = PlayerDiscipline.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
                     group_count = 'discipline'
@@ -105,19 +105,39 @@ class ResultView(TemplateView):
                 xdata = Player.objects.values_list(group_count).order_by(group_count).distinct()
                 ydata = Player.objects.values_list(group_count).annotate(count=Count(group_count)).order_by(group_count).values_list('count')
 
-            chartdata = {'x': xdata, 'y': ydata}
+            xdata = makeXDataReadable(xdata)
 
             if group_count in ('hand', 'gender', 'discipline'):
                 charttype      = "pieChart"
                 chartcontainer = 'piechart_container'
                 sum = 0
+                sumKnown = 0
+                count = 0
+                unknownIndex = getIndexForUnknownData(xdata)
                 for absoluteValue in ydata:
                     sum += int(absoluteValue[0])
+                    if unknownIndex != -1 and count != unknownIndex:
+                        sumKnown += int(absoluteValue[0])
+                    count = count + 1
+
                 relValueList = list()
+                relValueKnownList = list()
+                count = 0
                 for absoluteValue in ydata:
-                    relValue = absoluteValue[0] / sum * 100
-                    relValueList.append(relValue) 
+                    relValue = round(absoluteValue[0] / sum * 100, 2)
+                    relValueList.append(relValue)
+                    if unknownIndex != -1 and count != unknownIndex:
+                        relValue = round(absoluteValue[0] / sumKnown * 100, 2)
+                        relValueKnownList.append(relValue)
+                    count = count + 1
+                     
                 context['relativeValues'] = relValueList
+                context['relativeValuesKnownData'] = relValueKnownList
+            
+            if group_count in ('discipline'):
+                context['fiveResults'] = 'yes'
+
+            chartdata = {'x': xdata, 'y': ydata}
 
             context['charttype']      = charttype
             context['chartdata']      = chartdata
@@ -133,6 +153,27 @@ class ResultView(TemplateView):
             return context ###
         return context
 
+def getIndexForUnknownData( xdata ):
+    index = 0;
+    for value in xdata:
+        if str(value[0]) == 'unknown':
+            return index
+        else:
+            index = index + 1 
+    return -1;
+
+def makeXDataReadable(xdata):
+    newXData = list()
+    for value in xdata:
+        if str(value[0]) == 'u':
+            newXData.append('unknown')
+        elif str(value[0]) == 'm':
+            newXData.append('male')
+        elif str(value[0]) == 'f':
+            newXData.append('female')
+    if not newXData: 
+        return xdata
+    return newXData;
 
 class QueryView(TemplateView):
     template_name = 'analytics/query.html'

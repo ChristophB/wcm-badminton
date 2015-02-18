@@ -13,33 +13,83 @@
   </head>
   <body>
   {% if relativeValues %}
-  	 <table id = "additionalValues">
+  	<h1>Statistics</h1>
+	<b>Considering all data</b></td>
+	{% if relativeValuesKnownData %}
+	<b id= "omitLabel">Omitting unknown data</b></td>
+	{% endif %} 
+
+	<div id= "additionalValues">
+  	 <table>
 	  <tr>
-	  {% for chartValues in chartdata.x %}
-	     <td> {{ chartValues.0 }} </td>
-	    {% endfor %}
+	  	<td>{{ groupcount }}</td>
+	  	<td>players</td>
+	  	<td>%</td>
+	  </tr>
+	    
+	  <tr>
+	     <td> {{ chartdata.x.0.0 }} </td>
+	     <td> {{ chartdata.y.0.0 }} </td>
+	     <td> {{ relativeValues.0 }} </td>
 	  </tr>
 	  <tr>
-	  {% for chartValues in chartdata.y %}
-	     <td> {{ chartValues.0 }} </td>
-	    {% endfor %}
+	     <td> {{ chartdata.x.1.0 }} </td>
+	     <td> {{ chartdata.y.1.0 }} </td>
+	     <td> {{ relativeValues.1 }} </td>
 	  </tr>
 	  <tr>
-	  {% for relValue in relativeValues %}
-	       <td> {{ relValue }} </td>
-	    {% endfor %}
+	  	<td> {{ chartdata.x.2.0 }} </td>
+	    <td> {{ chartdata.y.2.0 }} </td>
+	    <td> {{ relativeValues.2 }} </td>
 	  </tr>
 	  
+	  {% if fiveResults %}
+	  <tr>
+	     <td> {{ chartdata.x.3.0 }} </td>
+	     <td> {{ chartdata.y.3.0 }} </td>
+	     <td> {{ relativeValues.3 }} </td>
+	  </tr>
+	  <tr>
+	     <td> {{ chartdata.x.4.0 }} </td>
+	     <td> {{ chartdata.y.4.0 }} </td>
+	     <td> {{ relativeValues.4 }} </td>
+	  </tr>
+	  {% endif %}
+	  
 	</table>
+	</div>
+
+	{% if relativeValuesKnownData %}
+	<div id= "additionalKnownValues">
+  	 <table>
+	  <tr>
+	  	<td>{{ groupcount }}</td>
+	  	<td>players</td>
+	  	<td>%</td>
+	  </tr>
+	  <tr>
+	     <td> {{ chartdata.x.0.0 }} </td>
+	     <td> {{ chartdata.y.0.0 }} </td>
+	     <td> {{ relativeValuesKnownData.0 }} </td>
+	  </tr>
+	  <tr>
+	     <td> {{ chartdata.x.1.0 }} </td>
+	     <td> {{ chartdata.y.1.0 }} </td>
+	     <td> {{ relativeValuesKnownData.1 }} </td>
+	  </tr>
+	</table>
+	</div>
+	{% endif %} 
+	
  {% endif %} 
  
     {% include_container chartcontainer 450 1200 %}
      <!-- should rotate x-axis labels -->
      <script>      
      	var xTicks = d3.select('.nv-x.nv-axis > g').selectAll('g');
-		xTicks
-  			.selectAll('text')
+		xTicks.selectAll('text')
  			.attr('transform', function(d,i,j) { return 'translate (-10, 25) rotate(-90 0,0)' });
+ 		d3.select(".nv-legendWrap").attr("transform", "translate(-850, 150)");
  	 </script>
     
   </body> 

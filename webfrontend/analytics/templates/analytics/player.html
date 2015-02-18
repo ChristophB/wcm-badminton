@@ -8,32 +8,38 @@
   <body>
     {% if player %}
     <img src="{{ image.url }}" id = "playerImage">
-    <ul id = "playerInformationLeft">
-      <li>ID: {{ player.id }}</li>
-      <li>Name: {{ player.name }}</li>
-      <li>Firstname: {{ player.firstname }}</li>
-      <li>Birthdate: {{ player.birthdate }}</li>
-      <li>Gender: <a href="/search/?gender={{ player.gender }}">{{ player.gender }}</a></li>
-    </ul>
-    <ul id = "playerInformationRight">
-      <li>Hand: <a href="/search/?hand={{ player.hand }}">{{ player.hand }}</a></li>
-      <li>Height: {{ player.height }}</li>
-      <li>Nationality: 
-	{% if player.nationality %}<a href="/search/?nationality={{ player.nationality.id }}">{% endif %}
-	  {{ player.nationality }}
-	  {% if player.nationality %}</a>{% endif %}
-      </li>
-      <li>Club: 
-	{% if player.club %}<a href="/search/?club={{ player.club.id }}">{% endif %}
-	  {{ player.club }}
-	  {% if player.club %}</a>{% endif %}
-      </li>
-      <li>Coach: 
-	{% if player.coach %}<a href="/search/?coach={{ player.coach.id }}">{% endif %}
-	  {{ player.coach }}
-	  {% if player.coach %}</a>{% endif %}
-      </li>
-    </ul> 
+    <table id="playerInformationLeft">
+	  <tr><td>ID:</td><td>{{ player.id }}</td></tr>
+      <tr><td>Name:</td><td>{{ player.name }}</td></tr>
+      <tr><td>Firstname:</td><td>{{ player.firstname }}</td></tr>
+      <tr><td>Birthdate:</td><td>{{ player.birthdate }}</td></tr>
+      <tr><td>Gender:</td><td><a href="/search/?gender={{ player.gender }}">{{ player.gender }}</a></td></tr>
+	</table>
+	<table id="playerInformationRight">
+	  <tr><td>Hand:</td><td><a href="/search/?hand={{ player.hand }}">{{ player.hand }}</a></td></tr>
+      <tr><td>Height:</td><td>{{ player.height }}</td></tr>
+      <tr><td>Nationality:</td>
+		<td>
+		  {% if player.nationality %}<a href="/search/?nationality={{ player.nationality.id }}">{% endif %}
+			{{ player.nationality }}
+			{% if player.nationality %}</a>{% endif %}
+		</td>
+	  </tr>
+      <tr><td>Club:</td>
+		<td>
+		  {% if player.club %}<a href="/search/?club={{ player.club.id }}">{% endif %}
+			{{ player.club }}
+			{% if player.club %}</a>{% endif %}
+		</td>
+      </tr>
+      <tr><td>Coach:</td>
+		<td>
+		  {% if player.coach %}<a href="/search/?coach={{ player.coach.id }}">{% endif %}
+			{{ player.coach }}
+			{% if player.coach %}</a>{% endif %}
+		</td>
+      </tr>
+    </table>
     <a href="/player_update/{{ player.id }}" id = "updateProfile">Update Profile</a>
     {% else %}
     <p>Invalid Player selected.</p>

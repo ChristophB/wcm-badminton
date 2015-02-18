@@ -9,6 +9,7 @@
 	  href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css"/>
   </head>
   <body>
+  	<div id = "searchSite">
     <h1>Players</h1>
     Here you can search for groups of players with the same properties or players you are interested in by specifying some parameters.
     <br><br>
@@ -67,6 +68,7 @@
     </div>
     <div class="table">
       {% render_table table %}
+    </div>
     </div>
   </body>
   {% endblock %}

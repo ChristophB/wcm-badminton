@@ -99,22 +99,18 @@ ul#navigation {
 
 .errorBox {
     background-color: #BDBDBD;
-    color: red;
-    width: 90%;
-    min-height: 60px;
-    text-align: center;
-    line-height: 30px;
+	color: #F00;
+	width: 29em;
+	min-height: 5em;
+	text-align: center;
+	line-height: 2em;
 }
 
 .querySet {
     background-color: #eee;
     border: 1px solid #8c8c8c;
+    margin-top: 15%;
 }
-
-#additionalValues{
-	margin-top: 5%;
-}
-
 
 #logo{
 	background-image: url("images/jumpsmash.png");
@@ -145,6 +141,38 @@ ul#navigation {
 	margin-top: -7em;
 }
 
+#playerInformationLeft tr td:first-child, #playerInformationRight tr td:first-child {
+	font-weight: bold;
+}
+
+#playerUpdateForm option {
+	max-width: 300px;
+	min-width: 60px;
+}
+
+#playerUpdateForm tr td:first-child {
+	font-weight: bold;
+}
+
+#playerUpdateForm {
+	position: absolut;
+	margin-top: 2em;
+	margin-left: 3em;
+	max-width: 435px;
+}
+
+#playerUpdateForm textarea {
+	resize: none;
+	max-height: 18px;
+	min-height: 18px;
+	max-width: 150px;
+	min-width: 150px;
+}
+
+#playerUpdateForm input[type="submit"] {
+	float: right;
+}
+
 #updateProfile{
 	position: absolute;
 	left: 22em;
@@ -158,4 +186,171 @@ ul#navigation {
 	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
+}
+
+#additionalValues{
+	margin-top: 2%;
+	padding:0px;
+	width:30%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-bottom-left-radius:10px;
+	
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	border-bottom-right-radius:10px;
+	
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+	
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+	
+}
+
+#additionalKnownValues{
+	position: relative;
+	margin-top: -10.5%;
+	margin-left: 45%;
+	padding:0px;
+	width:30%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-bottom-left-radius:10px;
+	
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	border-bottom-right-radius:10px;
+	
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+	
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+	
+}
+
+#additionalValues table, #additionalKnownValues table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+#additionalValues tr:last-child td:last-child, #additionalKnownValues tr:last-child td:last-child{
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+#additionalValues table tr:first-child td:first-child, #additionalKnownValues table tr:first-child td:first-child {
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+}
+#additionalValues table tr:first-child td:last-child, #additionalKnownValues table tr:first-child td:last-child {
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+}
+#additionalValues tr:last-child td:first-child, #additionalKnownValues tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+#additionalValues tr:hover td, #additionalKnownValues tr:hover td{
+	background-color:#ffffff;
+}
+#additionalValues td, #additionalKnownValues td{
+	vertical-align:middle;
+	background-color:#007f3f;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:8px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+#additionalValues tr:last-child td, #additionalKnownValues tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+#additionalValues tr td:last-child, #additionalKnownValues tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+#additionalValues tr:last-child td:last-child, #additionalKnownValues tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+#additionalValues tr:first-child td, #additionalKnownValues tr:first-child td{
+	background:-o-linear-gradient(bottom, #007f00 5%, #bf5f00 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007f00), color-stop(1, #bf5f00) );
+	background:-moz-linear-gradient( center top, #007f00 5%, #bf5f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#007f00", endColorstr="#bf5f00");
+	background: -o-linear-gradient(top,#007f00,bf5f00);
+	background-color:#007f00;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:18px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+#additionalValues tr:first-child:hover td, #additionalKnownValues tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #007f00 5%, #bf5f00 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007f00), color-stop(1, #bf5f00) );
+	background:-moz-linear-gradient( center top, #007f00 5%, #bf5f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#007f00", endColorstr="#bf5f00");	
+	background: -o-linear-gradient(top,#007f00,bf5f00);
+	background-color:#007f00;
+}
+#additionalValues tr:first-child td:first-child, #additionalKnownValues tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+#additionalValues tr:first-child td:last-child, #additionalKnownValues tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+#omitLabel{
+	position: relative;
+	margin-left: 34.5%;
+}
+
+#id_query{
+	resize: none;
+	width: 35em;
+	height: 10em;
+}
+
+#queryEditor{
+	margin-left: 2%;	
+}
+
+#erDiagram{
+	background-image: url("images/ER-Diagramm.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	margin-left: 30em;
+	top: 1em;
+	width: 50em;
+	height: 50em;
+	left: 3em;
+	margin-top: 7em;
+}
+
+#predefinedQuerySite, #searchSite{
+	margin-top: 3%;
+	margin-left: 2%;
 }
