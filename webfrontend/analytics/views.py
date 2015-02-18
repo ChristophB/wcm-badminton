@@ -81,6 +81,7 @@ class ResultView(TemplateView):
                 group_count += '__nationality'
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
+                group_count = 'nationality'
             if group_count in ('club', 'coach'):
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
@@ -88,7 +89,6 @@ class ResultView(TemplateView):
             if group_count in ('height'):
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
-
             if group_count in ('language', 'discipline'):
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
@@ -128,6 +128,9 @@ class ResultView(TemplateView):
                 'tag_script_js'  : True,
                 'jquery_on_ready': False,
             }
+
+        if group_count in ('nationality'):
+            return context ###
         return context
 
 
