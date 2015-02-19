@@ -63,8 +63,39 @@ Als Daten haltendes Backend haben wir das objektrelationale Datenbankmanagements
 \item u.v.m.
 \end{itemize}
 
+\chapter{Vorüberlegungen}
+\section{Crawling und Parsing relevanter Webseiten}
+Warum, welche Seiten crawlen? -> biography-Seiten
+Auf HTML-Struktur der Seiten kurz eingehen.
+Lokalisierung relevanter Informationen, evtl. mit Screenshot.
+
+\section{Gestaltung des Frontends}
+Search-Seite mit einer Liste aller Player:
+
+paging (Auswahl players per page)
+Sortierung nach Spalten
+Filter-/Suchfunktion (Für alle Attribute entsprechende Filtermöglichkeiten)
+evtl. Möglichkeit für Auswahl der Sichtbaren Attribute
+http://django-filter.readthedocs.org/en/latest/usage.html https://django-tables2.readthedocs.org/en/latest/
+
+Details-Seite für ausgewählten Player:
+
+Darstellung aller Informationen zu Player
+Einbindung von Bildern
+(evtl. Grafik zum Rankingverlauf)
+Attribute aus externen Tabellen z.B. club, nationality als Link auf Search-Seite, wo alle Player mit dem jeweiligen Attribut aufgelistet werden
+Bearbeitungsfunktion für Felder mit NULL-Werten -> wäre Edit-Seite nötig (nur Informationen hinzufügen)
+Query-Seite zur erstellen von Abfragen
+
+Result-Seite für die Darstellung der Ergebnisse:
+
+Grafikgenerierung: Häufigkeiten ( Player.objects.values\_list('FIELD').annotate(count=Count('FIELD')).values\_list('count') )
+Ergebnis mit Player-Menge als Redirect auf Search-Seite
 
 \chapter{Umsetzung}
+\section{Systemvoraussetzungen}
+Django-Installation, Pakete
+
 \section{Aufbau des Backend}
 \label{Backend}
 Zunächst musste ein Crawler geschrieben werden, der die entsprechenden Webseiten herunterlädt und abspeichert. Diesen Schritt haben wir mit Hilfe von Java umgesetzt. Da es den Anschein hatte, dass die Webseite den Zugriff nach ca. 100 Dokumenten verweigert, wurde der Crawler um eine Funktion erweitert, mit deren Hilfe man einen Webproxy zwischenschalten kann, der dieses Problem löst. Sobald ein Dokument nicht heruntergeladen werden kann, wird der nächste Proxy aus der Liste genommen. Die Proxy-Liste stammt von http://proxylist.hidemyass.com/ \cite{HMA2015}. Insgesamt wurden 7854 Dokumente heruntergeladen.\\
