@@ -61,7 +61,7 @@ CREATE TABLE player (
        , cur_residence_city_id integer REFERENCES city(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , debut_year            text
+       , debut_year            integer
        --, debut_year            integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate) 
        	 		     			        --AND EXTRACT(year FROM CURRENT_DATE))
        , hand                  hand NOT NULL
@@ -70,13 +70,13 @@ CREATE TABLE player (
        	 		     	               ON DELETE NO ACTION
 				                       ON UPDATE CASCADE
        , nickname 	           text
-       , start_competitive     text 
+       , start_competitive     integer 
        --, start_competitive     integer CHECK(debut_year BETWEEN EXTRACT(year FROM birthdate)
        	 		        			--AND EXTRACT(year FROM CURRENT_DATE))
        , style_id 	           integer REFERENCES style(id)
                                        ON DELETE NO ACTION
                                        ON UPDATE CASCADE
-       , teammember_since      text
+       , teammember_since      integer
        --, teammember_since      integer CHECK(teammember_since BETWEEN EXTRACT(year FROM birthdate)
        	 		     	     			      --AND EXTRACT(year FROM CURRENT_DATE))
 );

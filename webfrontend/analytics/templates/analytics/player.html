@@ -14,6 +14,13 @@
       <tr><td>Firstname:</td><td>{{ player.firstname }}</td></tr>
       <tr><td>Birthdate:</td><td>{{ player.birthdate }}</td></tr>
       <tr><td>Gender:</td><td><a href="/search/?gender={{ player.gender }}">{{ player.gender }}</a></td></tr>
+	  <tr><td>Disciplines:</td>
+		<td>
+		  {% for value in discipline %}
+		  {{ value }}, 
+		  {% endfor %}
+		</td>
+	  </tr>
 	</table>
 	<table id="playerInformationRight">
 	  <tr><td>Hand:</td><td><a href="/search/?hand={{ player.hand }}">{{ player.hand }}</a></td></tr>
@@ -39,6 +46,13 @@
 			{% if player.coach %}</a>{% endif %}
 		</td>
       </tr>
+	  <tr><td>Languages:</td>
+		<td>
+		  {% for value in language %}
+		  {{ value }}, 
+		  {% endfor %}
+		</td>
+	  </tr>
     </table>
     <a href="/player_update/{{ player.id }}" id = "updateProfile">Update Profile</a>
     {% else %}

@@ -169,7 +169,7 @@ ul#navigation {
 	min-width: 150px;
 }
 
-#playerUpdateForm input[type="submit"] {
+#playerUpdateForm input[type="submit"],input[type="reset"] {
 	float: right;
 }
 

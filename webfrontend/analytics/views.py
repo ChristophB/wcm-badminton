@@ -26,14 +26,22 @@ class PlayerView(generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(PlayerView, self).get_context_data()
-        context['image'] = Image.objects.get(player_id=self.kwargs.get('pk'))
-        
+        context['image'] = Image.objects.get(
+            player_id = self.kwargs.get('pk')
+        )
+        context['language'] = PlayerLanguage.objects.filter(
+            player = self.kwargs.get('pk')
+        ).values_list('language__language', flat = True)
+        context['discipline'] = PlayerDiscipline.objects.filter(
+            player = self.kwargs.get('pk')
+        ).values_list('discipline__name', flat = True)
+
         return context
 
 
 class PlayerUpdateView(generic.edit.UpdateView):
     model = Player
-    fields        = [
+    fields = [
         'hand', 'gender', 'name', 'firstname'
         , 'height', 'coach', 'nationality', 'club'
     ]

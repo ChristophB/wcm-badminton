@@ -1,0 +1,46 @@
+\chapter{Vorüberlegungen}
+\section{Crawling und Parsing relevanter Webseiten}
+Warum, welche Seiten crawlen? -> biography-Seiten
+Auf HTML-Struktur der Seiten kurz eingehen.
+Lokalisierung relevanter Informationen, evtl. mit Screenshot.
+
+\section{Gestaltung des Frontends}
+Für die Gestaltung des Frontends haben wir uns folgende, mögliche Strukturierung überlegt:\\
+
+\noindent\textbf{Search-Seite mit einer Liste aller Spieler:}
+\begin{itemize}
+\item Die Seite soll aus zwei Teilen bestehen. Der obere Teil dient zur Spezifizierung von Suchkriterien, während der untere Teil die Ergebnismenge in Form einer Tabelle darstellen soll.
+\item Die Filter- und Suchfunktion des oberen Teils der Seite wird mit einem Formular realisiert, in dem zu allen Attributen einer Person Werte spezifiziert werden können. Neben der exakten Suche sollen die Felder auch ähnliche Werte finden (z.B. Eingabe des Nachnamens "`Berg"' liefert Treffer mit Nachnamen "`Berg"' und "`Bergmann"'). Die Eingabefelder sollen den Datentypen der Attribute entsprechend angepasst sein, durch zum Beispiel Textfelder, Auswahllisten, usw.
+\item Paging (Auswahlmöglichkeit wie viele Spieler pro Seite angezeigt werden sollen)
+\item Das Suchergebnis soll nach Spalten sortierbar sein, sowohl auf-, als auch absteigend.
+\item Optional: Benutzer kann die anzuzeigenden Tabellenspalten selber wählen.
+\end{itemize}
+
+\noindent\textbf{Detail-Seite für ausgewählten Spieler:}
+\begin{itemize}
+\item Darstellung aller Informationen zu einem Spieler
+\item Anzeige des Profilbildes
+\item Attributwerte, die sich aus externen Tabellen ergeben (z.B. club oder nationality) sollen als Hyperlink auf die Search-Seite angezeigt werden, wo alle Spieler mit dem jeweiligen Attribut aufgelistet werden.
+\item Wenn Attributwerte nicht gesetzt sind, sollen diese noch nachträglich eintragbar sein. Dazu muss es einen Verweis von dieser Seite auf eine Edit-Seite geben.
+\item Optional: Grafik zum Rankingverlauf
+\end{itemize}
+
+\noindent\textbf{Profilbearbeitung:}
+\begin{itemize}
+\item Die Seite sollte nur durch einen Redirect von einer Detail-Seite eines Spielers erreichbar sein.
+\item In einem Formular sollen alle Attribute es eines Spielers angezeigt werden, die noch nicht gesetzt sind.
+\item Nach einem Submit werden die Werte in der Datenbank nachgetragen und man wird zurück zur Detail-Seite verwiesen.
+\end{itemize}
+
+\noindent\textbf{Query-Seite zur erstellen von Abfragen:}
+\begin{itemize}
+\item Auf dieser Seite wird es eine Freitextfeld geben, wo der Nutzer eigene SQL-Anfragen eintragen kann.
+\item Es dürfen nur SELECT-Anfragen ausgeführt werden.
+\item Das Ergebnis der Anfrage wird unter dem Freitextfeld in Form einer Tabelle angezeigt.
+\end{itemize}
+
+\noindent\textbf{Seite für die grafische Darstellung}
+\begin{itemize}
+\item Fokussierung auf Häufigkeitsanalysen, da die benutzerspezifizierte Auswertungen zu komplex werden könnten und den Rahmen des Projekts sprengen würden.
+\item Darstellungsart der Ergebnisse sollte der Problematik angepasst sein. (Histogramm, Kuchendiagramm, Balkendiagramm) 
+\end{itemize}

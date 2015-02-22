@@ -120,22 +120,26 @@ class Player(models.Model):
     firstname          = models.TextField(blank=True)
     name               = models.TextField(blank=True)
     birthdate          = models.DateField(blank=True, null=True)
-    gender             = models.CharField(max_length = 1, 
-                                          choices = GENDER_CHOICES, 
-                                          default = UNSPECIFIED)
-    birthplace_city    = models.ForeignKey(City, 
-                                           related_name='player_birthplace_city', 
-                                           blank=True, 
-                                           null=True)
+    gender             = models.CharField(
+        max_length = 1, 
+        choices = GENDER_CHOICES, 
+        default = UNSPECIFIED)
+    birthplace_city    = models.ForeignKey(
+        City, 
+        related_name='player_birthplace_city', 
+        blank=True, 
+        null=True)
     club               = models.ForeignKey(Club, blank=True, null=True)
     coach              = models.ForeignKey(Coach, blank=True, null=True)
-    cur_residence_city = models.ForeignKey(City, 
-                                           related_name='player_cur_residence_city',
-                                           blank=True, 
-                                           null=True)
+    cur_residence_city = models.ForeignKey(
+        City, 
+        related_name='player_cur_residence_city',
+        blank=True, 
+        null=True)
     debut_year         = models.IntegerField(blank=True, null=True)
-    hand               = models.CharField(max_length = 10,
-                                          choices = HAND_CHOICES)
+    hand               = models.CharField(
+        max_length = 10,
+        choices = HAND_CHOICES)
     height             = models.FloatField(blank=True, null=True)
     nationality        = models.ForeignKey(Nationality, blank=True, null=True)
     nickname           = models.TextField(blank=True)
