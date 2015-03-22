@@ -1,7 +1,7 @@
 \chapter{Einleitung}
 \section{Gegenstand und Motivation}
 \subsection{Gegenstand}
-Jede moderne, dynamische Website arbeitet mit einer oder mehreren Datenbanken als Datenbasis. Dadurch ist es leicht möglich die Webseiten flexibler und erweiterbar zu gestalten. Die Anzahl der Webseiten, die in reinem HTML-Code geschrieben sind, ist mittlerweile verschwindend gering geworden, da dies zu statisch ist. 
+Jede moderne, dynamische Webseite arbeitet mit einer oder mehreren Datenbanken als Datenbasis. Dadurch ist es leicht möglich die Webseiten flexibel und erweiterbar zu gestalten. Die Anzahl der Webseiten, die in reinem HTML-Code geschrieben sind, ist mittlerweile verschwindend gering geworden, da dies zu statisch ist. 
 
 \subsection{Problematik}
 Trotz der Fülle an vorhandenen Datenbanken im Netz, ist nur ein Bruchteil davon offen zugänglich. Dies kann beispielsweise aus Datenschutzgründen geschehen, um die privaten Informationen von Kunden vor fremden Zugriffen zu bewahren, oder aus Profitgründen, wenn ein Unternehmen mit den vorhandenen Daten Geld verdient. 
@@ -9,7 +9,19 @@ Trotz der Fülle an vorhandenen Datenbanken im Netz, ist nur ein Bruchteil davon
 Die Daten sind also schlecht zugänglich und daher nicht für Analysezwecke geeignet. Außerdem besteht nicht die Möglichkeit Daten aus verschiedenen Quellen für eine Analyse zu vereinigen. 
 
 \subsection{Motivation}
-Da man aber beispielsweise über das Web-Interface viele Daten abgreifen kann, ist es möglich die vorhandenen Informationen aufzubereiten und eine eigene Datenbank für diese zu erstellen. Dieses Szenario lässt sich auf eine Vielzahl von Domänen anwenden. In dieser Arbeit liegt der Fokus auf einer speziellen Domäne: Badminton. Wie auch in anderen Sportarten, gibt es eine Weltrangliste für Teams oder einzelne Spieler, die von einer Organisation verwaltet und regelmäßig aktualisiert wird. Für die Rangliste beim Badminton ist die Badminton World Federation (BWF) zuständig, welche über folgenden Link erreicht werden kann: http://bwf.tournamentsoftware.com/home.aspx \cite{BWF2015}
+Da man aber beispielsweise über das Web-Interface viele Daten abgreifen kann, ist es möglich die vorhandenen Informationen aufzubereiten und eine eigene Datenbank für diese zu erstellen. Dieses Szenario lässt sich auf eine Vielzahl von Domänen anwenden. In dieser Arbeit liegt der Fokus auf einer speziellen Domäne: Badminton. Wie auch in anderen Sportarten, gibt es eine Weltrangliste für Teams oder einzelne Spieler, die von einer Organisation verwaltet und regelmäßig aktualisiert wird. Für die Rangliste beim Badminton ist die Badminton World Federation (BWF) zuständig, die über folgenden Link erreicht werden kann: http://bwf.tournamentsoftware.com/home.aspx \cite{BWF2015}
 
 \section{Zielsetzung}
 Ziel der Arbeit soll es sein, die entsprechenden HTML-Dokumente für die einzelnen Spieler herunterzuladen, aus diesen die relevanten Daten zu extrahieren und in eine eigenkonzipierte Datenbank zu importieren, um im Anschluss ein Webfrontend für eine angemessene Repräsentation und Zugänglichkeit der Informationen zu erstellen.
+
+Daraus ergeben sich die folgenden Arbeitspakete:
+\begin{enumerate}
+\item Crawling der entsprechenden HTML-Dokumente
+\item Entwurf einer geeigneten Datenbankstruktur
+\item Parsing der heruntergeladenen Dokumente und Extraktion der relevanten Information, um sie in die Datenbank zu importieren
+\item Entwurf eines Webfrontends
+	\begin{itemize}
+	\item für einen besseren Zugriff auf die Daten und
+	\item zur geeigneten Darstellung
+	\end{itemize}
+\end{enumerate}

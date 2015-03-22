@@ -1,8 +1,23 @@
 \chapter{Vorüberlegungen}
 \section{Crawling und Parsing relevanter Webseiten}
-Warum, welche Seiten crawlen? -> biography-Seiten
-Auf HTML-Struktur der Seiten kurz eingehen.
-Lokalisierung relevanter Informationen, evtl. mit Screenshot.
+Zunächst mussten die relevanten Webseiten identifiziert werden. Wir sind bei der Analyse der Webseitenstruktur zur Erkenntnis gekommen, dass alle, für unsere Datensammlung nötigen Informationen in den  "`biography.aspx"' Seiten hinterlegt sind. Diese Seiten besitzen alle eine Spieler-ID, die in der URL als GET-Parameter übergeben wird. Daraus ergeben sich zwei Möglichkeiten der Herangehensweise. 
+\begin{enumerate}
+\item Gezieltes lokalisieren der Profilseiten
+\item Finden aller Spieler-IDs, um sie anschließend für das Abrufen der "`biography.aspx"'- Seiten zu nutzen
+\end{enumerate}
+Dabei setzen beide Möglichkeiten an einem Crawling der "`ranking.aspx"'-Seiten an, wo zu jeder Spielgruppe (Men's Singles, Women's Singles, Men's Doubles, Women's Doubles, Mixed Doubles) alle Spieler, sortiert nach Platzierung in der jeweiligen Gruppe, gelistet sind.
+
+\subsection{Aufbau der Profilseite}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{images/bwf_profile}
+\caption{Ausschnitt aus der Profilseite der BWF-Webseite}
+\label{fig:bwf_profile}
+\end{figure}
+
+Die Profilseite gliedert sich in zwei Abschnitte (siehe Abbildung \ref{fig:bwf_profile}). Der obere Abschnitt beinhaltet allgemeine Informationen über den Spieler, wie zum Beispiel Namen und Geburtsdatum. 
+
+Im unteren Abschnitt sind weiterführende Informationen enthalten, die sich auf die beiden Bereiche "`Biodata"' und "`Athlete Profile"' aufteilen. Interessant für unsere Datensammlung ist dort vor allem der erstgenannte Bereich, da die darin enthaltenen Daten besser über alle Spieler verglichen werden können. Beispielsweise findet man im ersten Bereich die Größenangabe und den Geburtsort.
 
 \section{Gestaltung des Frontends}
 Für die Gestaltung des Frontends haben wir uns folgende, mögliche Strukturierung überlegt:\\
