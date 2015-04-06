@@ -34,6 +34,24 @@
   \field{year}{2015}
 \endentry
 
+\entry{PostgreSQL2015}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Group}{G.}%
+     {The PostgreSQL Global~Development}{T.~P. G.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GTPGD1}
+  \strng{fullhash}{GTPGD1}
+  \field{sortinit}{G}
+  \field{title}{PostgreSQL 9.4.1 Documentation}
+  \verb{url}
+  \verb http://www.postgresql.org/docs/9.4/static/index.html
+  \endverb
+  \field{year}{2015}
+\endentry
+
 \entry{Hand2015}{online}{}
   \name{author}{1}{}{%
     {{}%

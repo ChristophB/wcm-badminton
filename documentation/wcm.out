@@ -1,10 +1,21 @@
-\BOOKMARK [1][-]{section.1}{Motivation}{}% 1
-\BOOKMARK [1][-]{section.2}{Grundlagen}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Django}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Umsetzung}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Aufbau des Backend}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Aufbau des Frontend}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Erkenntnisse}{}% 7
-\BOOKMARK [2][-]{subsection.4.1}{Fehler und Verbesserungsm\366glichkeiten}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.2}{Erweiterungsm\366glichkeiten}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Zusammenfassung}{}% 10
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Gegenstand und Motivation}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Gegenstand}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Problematik}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Motivation}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Zielsetzung}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Grundlagen}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Django}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{PostgreSQL}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Vor\374berlegungen}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Crawling und Parsing relevanter Webseiten}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Aufbau der Profilseite}{section.3.1}% 12
+\BOOKMARK [1][-]{section.3.2}{Gestaltung des Frontends}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Umsetzung}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Systemvoraussetzungen}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Aufbau des Backend}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{Aufbau des Frontend}{chapter.4}% 17
+\BOOKMARK [0][-]{chapter.5}{Erkenntnisse}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Fehler und Verbesserungsm\366glichkeiten}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Erweiterungsm\366glichkeiten}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter*.2}{Zusammenfassung}{}% 21

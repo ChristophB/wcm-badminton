@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper]{scrreprt}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
@@ -17,6 +18,9 @@
 %SQL-Schriftart
 \lstset{language=Java,basicstyle=\footnotesize}
 
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
 %bindet die source.bib ein
 \bibliography{source}
 
@@ -25,6 +29,8 @@
 
 \begin{document}
 
+%ändert die Schriftart
+\changefont{cmr}{m}{n}
 \input{content/titelblatt} 
 \newpage
 
@@ -39,10 +45,10 @@
 
 \chapter*{Zusammenfassung}
 \addcontentsline{toc}{chapter}{Zusammenfassung}
-Durch den Einsatz verschiedener Technologien und Werkzeuge ist es gelungen, aus schlecht zugänglichen Daten eine Webseite zu erstellen, die interessante Aspekte der Daten visualisieren kann. Im gesamten Prozess der Entwicklung ging es auch um das Kennenlernen neuer Technologien, vor allem im Bereich Webdesign.
+Durch den Einsatz von Java, Perl, PostgreSQL und dem Webframework Django ist es gelungen, aus schlecht zugänglichen Daten der Badminton World Federation eine Datenbasis aufzubauen, eine Webseite zu erstellen und die interessanten Aspekte der Daten zu visualisieren. Mit Hilfe dieser Ergebnisse konnten neue Erkenntnisse zu Spielern, Länderverteilung, Verhältnis der Männer zu den Frauen im Sport und vieles mehr, gewonnen werden.
+\newline \newline
+Das allgemeine Vorgehen bei der Umsetzung lässt sich ebenfalls mit anderen Technologien umsetzen und auf andere Domänen anwenden, ist jedoch mit einigem Aufwand verbunden. Im gesamten Prozess der Entwicklung ging es auch um das Kennenlernen neuer Technologien, vor allem im Bereich Webdesign.
 
-\chapter*{Literaturverzeichnis}
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
 \printbibliography	
 
 \end{document}
