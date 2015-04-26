@@ -1,23 +1,24 @@
 import re
 import sys
 
-from django.shortcuts import render, render_to_response
+from django.core import serializers
+from django.core.context_processors import csrf
+from django.db import connection
+from django.db.models import Count
+from django.http import HttpResponse
+from django.shortcuts import render, render_to_response, redirect
+from django.template import RequestContext
 from django.views import generic
 from django.views.generic import TemplateView
 from django.views.generic.base import View
 from django.views.generic.edit import FormView
-from django.http import HttpResponse
-from django.db.models import Count
-from django.db import connection
 from django_tables2 import RequestConfig, SingleTableView
-from django.template import RequestContext
-from django.core import serializers
-from django.core.context_processors import csrf
 
-from analytics.models import Player, PlayerLanguage, Image, PlayerDiscipline
-from analytics.forms import GroupCountForm, QueryForm
-from analytics.tables import PlayerTable
 from analytics.filters import PlayerFilter
+from analytics.forms import GroupCountForm, QueryForm
+from analytics.models import Player, PlayerLanguage, Image, PlayerDiscipline
+from analytics.tables import PlayerTable
+
 
 class PlayerView(generic.DetailView):
     model               = Player
@@ -83,13 +84,10 @@ class ResultView(TemplateView):
         context = super(ResultView, self).get_context_data()
         if self.request.GET.get('group_count'):
             group_count = self.request.GET.get('group_count')
-            context['groupcount'] = group_count
             
-            if group_count in ('nationality'):
-                group_count += '__nationality'
-                charttype      = 'discreteBarChart'
-                chartcontainer = 'discretebarchart_container'
-                group_count = 'nationality'
+            context['groupcount'] = group_count            
+            if group_count in ('nationality'): 
+                return redirect('international')
             if group_count in ('club', 'coach'):
                 charttype      = 'discreteBarChart'
                 chartcontainer = 'discretebarchart_container'
@@ -156,9 +154,7 @@ class ResultView(TemplateView):
                 'tag_script_js'  : True,
                 'jquery_on_ready': False,
             }
-
-        if group_count in ('nationality'):
-            return context ###
+    
         return context
 
 def getIndexForUnknownData( xdata ):
@@ -291,3 +287,5 @@ class InternationalView(TemplateView):
         
         return context
     
+    def InternationalView(request):
+        return redirect('analytics/international.html')

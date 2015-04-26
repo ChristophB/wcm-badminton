@@ -29,7 +29,10 @@ public class BwfRankingMain {
 		logger.info(String.valueOf(FileSystemOperations.getFilesCount(new File(System.getProperty("user.dir") + "/crawler/data/"), true)));
 
 		//FileOperations.cleanCrawledDirectories();
-		//BwfProfileLoader loader = new BwfProfileLoader();
-		//loader.loadAllProfilesAsHTML(false);
+		BwfProfileLoader loader = new BwfProfileLoader();
+		//loader.loadAllProfilesAsHTML(true);
+		loader.loadAllMensDoublesProfilesAsHTML(true);
+		loader.loadAllWomensDoublesProfilesAsHTML(true);
+		loader.loadAllMixedProfilesAsHTML(true);
 	}
 }
